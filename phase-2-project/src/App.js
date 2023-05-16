@@ -1,5 +1,6 @@
 import MainParent from "./components/MainParent";
 import React from "react";
+import './index.css';
 
 function App() {
   return (

@@ -3,7 +3,8 @@
 
 function MainParent(){
   return (
-    <div></div>
+    <div>
+    </div>
   )
 }
 export default MainParent

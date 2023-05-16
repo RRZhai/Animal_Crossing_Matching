@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.game-select {
+  object-fit: cover;
+}
