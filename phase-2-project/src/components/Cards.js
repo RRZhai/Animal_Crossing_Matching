@@ -1,6 +1,8 @@
-function Card () {
+function Cards ({cards}) {
     return (
-        <div></div>
+        <div>
+            <h4>{cards.name}</h4>
+        </div>
     )
 }
-export default Card
+export default Cards

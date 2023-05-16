@@ -9,6 +9,7 @@ function MainParent(){
     fetch('http://localhost:3001/all')
     .then(r => r.json())
     .then(data => setCards(data))
+    .catch(err => console.error(err))
   }, [])
 
   return (

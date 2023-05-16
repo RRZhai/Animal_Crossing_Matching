@@ -1,10 +1,10 @@
-import Card from "./Cards"
+import Cards from "./Cards"
 
 function CardContainer ({cards}) {
-    const cards = cards.map(card => <Card key={card.id} card={card}/>)
+    const cardList = cards.map(card => <Cards key={card.id} card={card}/>)
     return (
         <div>
-            {cards}
+            {cardList}
         </div>
     )
 }
