@@ -1,7 +1,7 @@
-function Cards ({cards}) {
+function Cards ({card}) {
     return (
         <div>
-            <h4>{cards.name}</h4>
+            <h4>{card.name}</h4>
         </div>
     )
 }
