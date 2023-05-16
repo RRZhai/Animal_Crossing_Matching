@@ -6,7 +6,7 @@ function MainParent(){
   const [cards, setCards] = useState([])
 
   useEffect(() => {
-    fetch('/!ADDFETCHLOCATION')
+    fetch('http://localhost:3001/all')
     .then(r => r.json())
     .then(data => setCards(data))
   }, [])
