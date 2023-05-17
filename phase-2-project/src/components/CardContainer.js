@@ -66,11 +66,11 @@ function CardContainer({}){
     <div className='collected-container'>
     {cardHolder.map(card => {
         if (matchedCard.find(item => item.id === card.id )){
-            return (<div key={card.id} className='icon' id='show_icon' >
+            return (
             <Link to={`/cards/${card.id}`}>
-                <img onClick={() => setClickIcon(card)} src={card['image_uri']} />
+                <img onClick={() => setClickIcon(card)} key={card.id} className='icon' id='show_icon' src={card['image_uri']} />
             </Link>
-            </div>)
+            )
         } else {
             return <img className='icon' id='hide_icon' key={card.id} src={card['image_uri']} />
         }})}

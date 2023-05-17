@@ -1,7 +1,7 @@
-import { useParams} from "react-router-dom"
+import { useParams } from "react-router-dom"
 import {useEffect, useState } from "react"
 
-function Card({}){
+function Card(){
     const {id} = useParams()
     const [card, setCard] = useState(null)
 
@@ -15,18 +15,23 @@ function Card({}){
     console.log(card)
     if (!card){return <h1>Loading...</h1>}else{
         return (
+        <>
         <div className="card">
             <img src={card['image_uri']}/>
-            {card.location ? <div>`Location: {card.price}`</div> : null}
-            <ul>{card.rarity ? `Rarity: ${card.rarity}` : null}</ul>
-            <ul>{card.price ? `Price: ${card.price}` : null}</ul>
-            <ul>{card.personality ? `Personality: ${card.personality}` : null}</ul> 
-            <ul>{card.birthday ? `Birthday: ${card.birthday}` : null}</ul>
-            <ul>{card.species ? `Species: ${card.species}` : null}</ul>
-            <ul>{card.hobby ? `Hobby: ${card.hobby}` : null}</ul>
-            <ul>{card['museum-phrase'] ? card['museum-phrase'] : null}</ul>
-            <ul>{card['part-of'] ? `From: ${card['part-of']}` : null}</ul>
-        </div>)
+            <h2>{card.name}</h2>
+            <div>
+                {card.location ? <ul>Location: {card.location}</ul>  : null}
+                {card.rarity ? <ul>Rarity : {card.rarity}</ul>  : null}
+                {card.price ? <ul>Price: {card.price}</ul>  : null}
+                {card.personality ? <ul>Personality: {card.personality}</ul>  : null}
+                {card.birthday ? <ul>Birthday: {card.birthday}</ul>  : null}
+                {card.species ? <ul>Species: {card.species}</ul>  : null}
+                {card.hobby ? <ul>Hobby: {card.hobby}</ul>  : null}
+                {card['museum-phrase'] ? <ul>Description: {card['museum-phrase']}</ul>  : null}
+                {card['part-of'] ? <ul>Personality: {card['part-of']}</ul>  : null}
+            </div>
+        </div>
+        </>)
     }
 
 }
