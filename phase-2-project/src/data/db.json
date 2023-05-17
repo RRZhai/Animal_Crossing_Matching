@@ -8,7 +8,8 @@
         "price": 900,
         "catch-phrase": "I caught a bitterling! It's mad at me, but only a little.",
         "image_uri": "https://acnhapi.com/v1/images/fish/1",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 2,
@@ -18,7 +19,8 @@
         "price": 200,
         "catch-phrase": "I caught a pale chub! That name seems a bit judgy...",
         "image_uri": "https://acnhapi.com/v1/images/fish/2",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 3,
@@ -28,7 +30,8 @@
         "price": 160,
         "catch-phrase": "I caught a crucian carp! My skills are sharp!",
         "image_uri": "https://acnhapi.com/v1/images/fish/3",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 4,
@@ -38,7 +41,8 @@
         "price": 240,
         "catch-phrase": "I caught a dace! Hope I have some space!",
         "image_uri": "https://acnhapi.com/v1/images/fish/4",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 5,
@@ -48,7 +52,8 @@
         "price": 300,
         "catch-phrase": "I caught a carp! If I catch another they can carpool!",
         "image_uri": "https://acnhapi.com/v1/images/fish/5",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 6,
@@ -58,7 +63,8 @@
         "price": 4000,
         "catch-phrase": "I caught a koi! I don't know why it's so shy... or such a bad speller...",
         "image_uri": "https://acnhapi.com/v1/images/fish/6",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 7,
@@ -68,7 +74,8 @@
         "price": 1300,
         "catch-phrase": "I caught a goldfish! It's worth its weight in fish!",
         "image_uri": "https://acnhapi.com/v1/images/fish/7",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 8,
@@ -78,7 +85,8 @@
         "price": 1300,
         "catch-phrase": "I got a pop-eyed goldfish! It looks so...surprised!",
         "image_uri": "https://acnhapi.com/v1/images/fish/8",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 9,
@@ -88,7 +96,8 @@
         "price": 4500,
         "catch-phrase": "I caught a ranchu goldfish! But I prefer balsamicu goldfish!",
         "image_uri": "https://acnhapi.com/v1/images/fish/9",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 10,
@@ -98,7 +107,8 @@
         "price": 10000,
         "catch-phrase": "I caught an arowana! I'd make a joke, but I don't 'wana.",
         "image_uri": "https://acnhapi.com/v1/images/fish/41",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 11,
@@ -108,7 +118,8 @@
         "price": 15000,
         "catch-phrase": "I caught a dorado! I say \"dorado,\" you say \"doraydo.\"",
         "image_uri": "https://acnhapi.com/v1/images/fish/42",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 12,
@@ -118,7 +129,8 @@
         "price": 6000,
         "catch-phrase": "I caught a gar! Yar! It's a gar! Har har!",
         "image_uri": "https://acnhapi.com/v1/images/fish/43",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 13,
@@ -128,7 +140,8 @@
         "price": 10000,
         "catch-phrase": "I caught an arapaima! How did it get here? Arapaiknow!",
         "image_uri": "https://acnhapi.com/v1/images/fish/44",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 14,
@@ -138,7 +151,8 @@
         "price": 4000,
         "catch-phrase": "Wow! A saddled bichir! And me without my tiny riding crop...",
         "image_uri": "https://acnhapi.com/v1/images/fish/45",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 15,
@@ -148,7 +162,8 @@
         "price": 5000,
         "catch-phrase": "I caught a blowfish! I'm blown away!",
         "image_uri": "https://acnhapi.com/v1/images/fish/54",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 16,
@@ -158,7 +173,8 @@
         "price": 250,
         "catch-phrase": "I caught a puffer fish! I thought you would be tougher, fish!",
         "image_uri": "https://acnhapi.com/v1/images/fish/55",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 17,
@@ -168,7 +184,8 @@
         "price": 200,
         "catch-phrase": "I caught an anchovy! Stay away from my pizza!",
         "image_uri": "https://acnhapi.com/v1/images/fish/56",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 18,
@@ -178,7 +195,8 @@
         "price": 150,
         "catch-phrase": "I caught a horse mackerel! Of course, Mack...er...el.",
         "image_uri": "https://acnhapi.com/v1/images/fish/57",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 19,
@@ -188,7 +206,8 @@
         "price": 5000,
         "catch-phrase": "I caught a barred knifejaw! They must have a hard time eating!",
         "image_uri": "https://acnhapi.com/v1/images/fish/58",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 20,
@@ -198,7 +217,8 @@
         "price": 400,
         "catch-phrase": "I caught a sea bass! No, wait- it's at least a C+!",
         "image_uri": "https://acnhapi.com/v1/images/fish/59",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 21,
@@ -208,7 +228,8 @@
         "price": 10000,
         "catch-phrase": "I caught a blue marlin! Listen to this fish. it's got a point.",
         "image_uri": "https://acnhapi.com/v1/images/fish/67",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 22,
@@ -218,7 +239,8 @@
         "price": 4500,
         "catch-phrase": "I caught a giant trevally! Yeah, I'm pretty well-trevalled.",
         "image_uri": "https://acnhapi.com/v1/images/fish/68",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 23,
@@ -228,7 +250,8 @@
         "price": 6000,
         "catch-phrase": "I caught a mahi-mahi! It's all mahine-mahine.",
         "image_uri": "https://acnhapi.com/v1/images/fish/69",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 24,
@@ -238,7 +261,8 @@
         "price": 12000,
         "catch-phrase": "I caught a saw shark! You could call it a sea saw!",
         "image_uri": "https://acnhapi.com/v1/images/fish/72",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 25,
@@ -251,7 +275,8 @@
         "bubble-color": "#194c89",
         "text-color": "#fffad4",
         "saying": "Don't punch your nose to spite your face.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 26,
@@ -264,7 +289,8 @@
         "bubble-color": "#fff98f",
         "text-color": "#879b96",
         "saying": "Always go for the burn!",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 27,
@@ -277,7 +303,8 @@
         "bubble-color": "#00d1bd",
         "text-color": "#fffce9",
         "saying": "A thing of beauty is a joy forever.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 28,
@@ -290,7 +317,8 @@
         "bubble-color": "#ff791f",
         "text-color": "#fff2bb",
         "saying": "No pain, no gain!",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 29,
@@ -303,7 +331,8 @@
         "bubble-color": "#fff98f",
         "text-color": "#879b96",
         "saying": "Time spent with friends is time well spent.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 30,
@@ -316,7 +345,8 @@
         "bubble-color": "#4c3317",
         "text-color": "#fffce9",
         "saying": "Imitation is the sincerest form of flattery.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 31,
@@ -329,7 +359,8 @@
         "bubble-color": "#c0ab72",
         "text-color": "#fffce9",
         "saying": "Funny parents have funny kids.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 32,
@@ -342,7 +373,8 @@
         "bubble-color": "#acc8cf",
         "text-color": "#498992",
         "saying": "Take the good with the bad.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 33,
@@ -355,7 +387,8 @@
         "bubble-color": "#d86808",
         "text-color": "#fffce9",
         "saying": "You're not living unless you're sweating!",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 34,
@@ -368,7 +401,8 @@
         "bubble-color": "#ffd00d",
         "text-color": "#9b553a",
         "saying": "Better a live coward than a forgotten hero.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 35,
@@ -381,7 +415,8 @@
         "bubble-color": "#d8cc39",
         "text-color": "#8b5f57",
         "saying": "Friends go together like peanut butter and bananas.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 36,
@@ -394,7 +429,8 @@
         "bubble-color": "#ffd00d",
         "text-color": "#9b553a",
         "saying": "Always be down to monkey around!",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 37,
@@ -407,7 +443,8 @@
         "bubble-color": "#ffffff",
         "text-color": "#848484",
         "saying": "A glamour shot is worth a thousand words.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 38,
@@ -420,7 +457,8 @@
         "bubble-color": "#ffffff",
         "text-color": "#848484",
         "saying": "The gift says more about the giver.",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 39,
@@ -429,7 +467,8 @@
         "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_skull",
         "part-of": "Ankylosaurus",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 40,
@@ -438,7 +477,8 @@
         "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_tail",
         "part-of": "Ankylosaurus",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 41,
@@ -447,7 +487,8 @@
         "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_torso",
         "part-of": "Ankylosaurus",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 42,
@@ -456,7 +497,8 @@
         "museum-phrase": "Anomalocaris lived in the water long before the dinosaurs and are known for their, er, \"distinctive\" look. Flat bodies over three feet in length, bulging eyes like a...dragonfly, antennae like shrimp tails... They looked so peculiar that people originally thought they were multiple fossils stacked on top of each other! As a delightful side note, \"anomalocaris\" means \"abnormal shrimp\". Obviously this animal has a certain reputation in the scientific community!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/anomalocaris",
         "part-of": "anomalocaris",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 43,
@@ -465,7 +507,8 @@
         "museum-phrase": "Archaeopteryx's feathers led many people to believe it was the progenitor of the birds, eh wot... Sadly, further evidence indicates it's likely not a direct ancestor—more an evolutionary \"uncle\", if you will. Every time a specimen is found, new theories pop up. And new relatives come to roost in the family tree!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/archaeopteryx",
         "part-of": "archaeopteryx",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 44,
@@ -474,7 +517,8 @@
         "museum-phrase": "Ah, yes. Archelon. It was a sort of huge sea turtle. The largest thus far found, if you want to know. They were very sizable—some 13 feet long, with a shell the size of a small car... If you're into that sort of thing. They likely ate seaweed, shrimp, octopus, and possibly ammonites, given the era involved. It seems CERTAIN giant turtles had to be prima donnas and eat some of the oldest life forms on earth!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/archelon_tail",
         "part-of": "Archelon",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 45,
@@ -483,7 +527,8 @@
         "museum-phrase": "Brachiosaurus, whose name means \"arm lizard\" —eh, wot— was one of the largest herbivorous dinosaurs. Due to its long front legs and elongated neck, it seems to have specialized in eating plants up high. Alas, in order to support its large size, it likely needed to eat more or less every waking hour. What a ferocious forager it must have been indeed!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/brachio_skull",
         "part-of": "Brachiosaurus",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 46,
@@ -492,7 +537,8 @@
         "museum-phrase": "Good old Diplodocus, what would we do without you? This stout fellow embodied all the best in dinosaurs. Those sturdy legs, that magnificent tail, and, above all, that extraordinary neck! Did you know that its center of gravity was such that sitting up on its hind legs was probably easy? What's more, paired with its long neck, this ability greatly increased its reach for eating plants! Best of all, Diplodocus probably grew its entire life, having no \"adult size\". Would that we were all so gifted!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/diplo_chest",
         "part-of": "Diplodocus",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 47,
@@ -501,7 +547,8 @@
         "museum-phrase": "Ah, Mammoths, the bad boys—and girls!—of the ancient-mammal world. So woolly! So unkempt! They are, of course, most famous for their size, which could be up to 13 tons for the largest males. But they were subject to no one's rules, and some species were SMALLER than modern elephants! Scientists have pondered for years: were mammoths the COOLEST of all extinct species? Perhaps so!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/mammoth_torso",
         "part-of": "Mammoth",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 48,
@@ -510,7 +557,8 @@
         "museum-phrase": "The mighty Pteranodon! Among the very largest animals ever to fly, they were role models to us all. With a wingspan of over 23 feet in some cases, I find it simply stunning that they ever did more than glide! But fly they did, soaring dynamically and dramatically over land and sea! I wish I could have seen it...",
         "image_uri": "https://acnhapi.com/v1/images/fossils/right_ptera_wing",
         "part-of": "Pteranodon",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 49,
@@ -519,7 +567,8 @@
         "museum-phrase": "This shark-tooth pattern comes from the lower jaw of an ancient shark of the genus Helicoprion. Its teeth seem to have grown in a distinctive arrangement rather disturbingly termed a \"tooth-whorl\". I say \"seem\" because shark skeletons are made not of bone, but cartilage, except for their teeth. Consequently, their bodies are never preserved as fossils, and questions about their jaws remain unanswered. The size and placement in the stone of the shark's teeth are actually the only things we have to work with. Sometimes in research we must maintain a stiff upper lip, even in the absence of a stiff lower jaw!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/shark-tooth_pattern",
         "part-of": "shark-tooth pattern",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 50,
@@ -528,7 +577,8 @@
         "museum-phrase": "I'd say that T. Rex is the 800-pound gorilla of the dinosaur world, but it likely weighed well over nine tons. This fearsome chap is practically synonymous with the word \"dinosaur\", and for good reason! At up to 42 feet long with banana-sized teeth, it was one of the largest carnivores ever to walk the earth. It's unclear how fast T. Rex was since estimates vary wildly... I am just relieved I will never have to escape one. Hoo.",
         "image_uri": "https://acnhapi.com/v1/images/fossils/trex_torso",
         "part-of": "T. Rex",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 51,
@@ -537,7 +587,8 @@
         "museum-phrase": "Trilobites were ancient and extinct before the dinosaurs ever appeared! It boggles the mind! Hoo! They were also one of the most successful classes of animal ever, existing for over 300 million years. Some 50,000 species have been identified in sizes ranging from three millimeters to over two feet! Alas, that is the very limit of my enthusiasm for them, though, they look rather too much like bugs.",
         "image_uri": "https://acnhapi.com/v1/images/fossils/trilobite",
         "part-of": "trilobite",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 52,
@@ -546,7 +597,8 @@
         "price": 2800,
         "catch-phrase": "I got a pearl oyster! Aw, shucks. Don't clam up now!",
         "image_uri": "https://acnhapi.com/v1/images/sea/11",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 53,
@@ -555,7 +607,8 @@
         "price": 1500,
         "catch-phrase": "I got a mussel! It's been working out",
         "image_uri": "https://acnhapi.com/v1/images/sea/12",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 54,
@@ -564,7 +617,8 @@
         "price": 1000,
         "catch-phrase": "I got a whelk! Happy snails to ya.",
         "image_uri": "https://acnhapi.com/v1/images/sea/15",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 55,
@@ -573,7 +627,8 @@
         "price": 1000,
         "catch-phrase": "I got a turban shell! It's totally TURB...ular!",
         "image_uri": "https://acnhapi.com/v1/images/sea/16",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 56,
@@ -582,7 +637,8 @@
         "price": 2000,
         "catch-phrase": "I got an abalone! Why do I want a sandwich now?",
         "image_uri": "https://acnhapi.com/v1/images/sea/17",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 57,
@@ -591,7 +647,8 @@
         "price": 6000,
         "catch-phrase": "I got an umbrella octopus! Too bad I'm already soaked.",
         "image_uri": "https://acnhapi.com/v1/images/sea/21",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id":58,
@@ -600,7 +657,8 @@
         "price": 10000,
         "catch-phrase": "I got a vampire squid! A lot was at stake.",
         "image_uri": "https://acnhapi.com/v1/images/sea/22",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 59,
@@ -609,7 +667,8 @@
         "price": 1400,
         "catch-phrase": "I got a firefly squid! More like a glowswim squid.",
         "image_uri": "https://acnhapi.com/v1/images/sea/23",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 60,
@@ -618,7 +677,8 @@
         "price": 2200,
         "catch-phrase": "I got a gazami crab! What a gripping find!",
         "image_uri": "https://acnhapi.com/v1/images/sea/24",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 61,
@@ -627,7 +687,8 @@
         "price": 1900,
         "catch-phrase": "I got a Dungeness crab! Dun dun duuuun...geness.",
         "image_uri": "https://acnhapi.com/v1/images/sea/25",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 62,
@@ -636,7 +697,8 @@
         "price": 12000,
         "catch-phrase": "I got a spider crab! Water bugs can rest easy.",
         "image_uri": "https://acnhapi.com/v1/images/sea/29",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 63,
@@ -645,7 +707,8 @@
         "price": 3000,
         "catch-phrase": "I got a tiger prawn! I ain't lion!",
         "image_uri": "https://acnhapi.com/v1/images/sea/30",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 64,
@@ -654,7 +717,8 @@
         "price": 1400,
         "catch-phrase": "I got a sweet shrimp! It's being very considerate.",
         "image_uri": "https://acnhapi.com/v1/images/sea/31",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       },
       {
         "id": 65,
@@ -663,6 +727,7 @@
         "price": 4500,
         "catch-phrase": "I got a lobster! Lobjective complete.",
         "image_uri": "https://acnhapi.com/v1/images/sea/34",
-        "collected": "No"
+        "collected": "No",
+        "stat": ""
       }
 ]}
