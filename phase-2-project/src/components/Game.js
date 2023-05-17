@@ -12,7 +12,7 @@ function Game ({shuffledCards}) {
     const [startGame, setStartGame] = useState(false)
 
     const handleStartGame = () => setStartGame(value => !value)
-    startGame ? 
+    // startGame ? 
     return(
         <div>
             <button className="start-button" onClick={handleStartGame}> 
