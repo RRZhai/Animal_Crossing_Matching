@@ -9,7 +9,7 @@
         "catch-phrase": "I caught a bitterling! It's mad at me, but only a little.",
         "image_uri": "https://acnhapi.com/v1/images/fish/1",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 2,
@@ -20,7 +20,7 @@
         "catch-phrase": "I caught a pale chub! That name seems a bit judgy...",
         "image_uri": "https://acnhapi.com/v1/images/fish/2",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 3,
@@ -31,7 +31,7 @@
         "catch-phrase": "I caught a crucian carp! My skills are sharp!",
         "image_uri": "https://acnhapi.com/v1/images/fish/3",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 4,
@@ -42,7 +42,7 @@
         "catch-phrase": "I caught a dace! Hope I have some space!",
         "image_uri": "https://acnhapi.com/v1/images/fish/4",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 5,
@@ -53,7 +53,7 @@
         "catch-phrase": "I caught a carp! If I catch another they can carpool!",
         "image_uri": "https://acnhapi.com/v1/images/fish/5",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 6,
@@ -64,7 +64,7 @@
         "catch-phrase": "I caught a koi! I don't know why it's so shy... or such a bad speller...",
         "image_uri": "https://acnhapi.com/v1/images/fish/6",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 7,
@@ -75,7 +75,7 @@
         "catch-phrase": "I caught a goldfish! It's worth its weight in fish!",
         "image_uri": "https://acnhapi.com/v1/images/fish/7",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 8,
@@ -86,7 +86,7 @@
         "catch-phrase": "I got a pop-eyed goldfish! It looks so...surprised!",
         "image_uri": "https://acnhapi.com/v1/images/fish/8",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 9,
@@ -97,7 +97,7 @@
         "catch-phrase": "I caught a ranchu goldfish! But I prefer balsamicu goldfish!",
         "image_uri": "https://acnhapi.com/v1/images/fish/9",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 10,
@@ -108,7 +108,7 @@
         "catch-phrase": "I caught an arowana! I'd make a joke, but I don't 'wana.",
         "image_uri": "https://acnhapi.com/v1/images/fish/41",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 11,
@@ -119,7 +119,7 @@
         "catch-phrase": "I caught a dorado! I say \"dorado,\" you say \"doraydo.\"",
         "image_uri": "https://acnhapi.com/v1/images/fish/42",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 12,
@@ -130,7 +130,7 @@
         "catch-phrase": "I caught a gar! Yar! It's a gar! Har har!",
         "image_uri": "https://acnhapi.com/v1/images/fish/43",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 13,
@@ -141,7 +141,7 @@
         "catch-phrase": "I caught an arapaima! How did it get here? Arapaiknow!",
         "image_uri": "https://acnhapi.com/v1/images/fish/44",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 14,
@@ -152,7 +152,7 @@
         "catch-phrase": "Wow! A saddled bichir! And me without my tiny riding crop...",
         "image_uri": "https://acnhapi.com/v1/images/fish/45",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 15,
@@ -163,7 +163,7 @@
         "catch-phrase": "I caught a blowfish! I'm blown away!",
         "image_uri": "https://acnhapi.com/v1/images/fish/54",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 16,
@@ -174,7 +174,7 @@
         "catch-phrase": "I caught a puffer fish! I thought you would be tougher, fish!",
         "image_uri": "https://acnhapi.com/v1/images/fish/55",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 17,
@@ -185,7 +185,7 @@
         "catch-phrase": "I caught an anchovy! Stay away from my pizza!",
         "image_uri": "https://acnhapi.com/v1/images/fish/56",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 18,
@@ -196,7 +196,7 @@
         "catch-phrase": "I caught a horse mackerel! Of course, Mack...er...el.",
         "image_uri": "https://acnhapi.com/v1/images/fish/57",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 19,
@@ -207,7 +207,7 @@
         "catch-phrase": "I caught a barred knifejaw! They must have a hard time eating!",
         "image_uri": "https://acnhapi.com/v1/images/fish/58",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 20,
@@ -218,7 +218,7 @@
         "catch-phrase": "I caught a sea bass! No, wait- it's at least a C+!",
         "image_uri": "https://acnhapi.com/v1/images/fish/59",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 21,
@@ -229,7 +229,7 @@
         "catch-phrase": "I caught a blue marlin! Listen to this fish. it's got a point.",
         "image_uri": "https://acnhapi.com/v1/images/fish/67",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 22,
@@ -240,7 +240,7 @@
         "catch-phrase": "I caught a giant trevally! Yeah, I'm pretty well-trevalled.",
         "image_uri": "https://acnhapi.com/v1/images/fish/68",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 23,
@@ -251,7 +251,7 @@
         "catch-phrase": "I caught a mahi-mahi! It's all mahine-mahine.",
         "image_uri": "https://acnhapi.com/v1/images/fish/69",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 24,
@@ -262,7 +262,7 @@
         "catch-phrase": "I caught a saw shark! You could call it a sea saw!",
         "image_uri": "https://acnhapi.com/v1/images/fish/72",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 25,
@@ -276,7 +276,7 @@
         "text-color": "#fffad4",
         "saying": "Don't punch your nose to spite your face.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 26,
@@ -290,7 +290,7 @@
         "text-color": "#879b96",
         "saying": "Always go for the burn!",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 27,
@@ -304,7 +304,7 @@
         "text-color": "#fffce9",
         "saying": "A thing of beauty is a joy forever.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 28,
@@ -318,7 +318,7 @@
         "text-color": "#fff2bb",
         "saying": "No pain, no gain!",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 29,
@@ -332,7 +332,7 @@
         "text-color": "#879b96",
         "saying": "Time spent with friends is time well spent.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 30,
@@ -346,7 +346,7 @@
         "text-color": "#fffce9",
         "saying": "Imitation is the sincerest form of flattery.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 31,
@@ -360,7 +360,7 @@
         "text-color": "#fffce9",
         "saying": "Funny parents have funny kids.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 32,
@@ -374,7 +374,7 @@
         "text-color": "#498992",
         "saying": "Take the good with the bad.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 33,
@@ -388,7 +388,7 @@
         "text-color": "#fffce9",
         "saying": "You're not living unless you're sweating!",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 34,
@@ -402,7 +402,7 @@
         "text-color": "#9b553a",
         "saying": "Better a live coward than a forgotten hero.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 35,
@@ -416,7 +416,7 @@
         "text-color": "#8b5f57",
         "saying": "Friends go together like peanut butter and bananas.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 36,
@@ -430,7 +430,7 @@
         "text-color": "#9b553a",
         "saying": "Always be down to monkey around!",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 37,
@@ -444,7 +444,7 @@
         "text-color": "#848484",
         "saying": "A glamour shot is worth a thousand words.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 38,
@@ -458,7 +458,7 @@
         "text-color": "#848484",
         "saying": "The gift says more about the giver.",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 39,
@@ -468,7 +468,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_skull",
         "part-of": "Ankylosaurus",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 40,
@@ -478,7 +478,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_tail",
         "part-of": "Ankylosaurus",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 41,
@@ -488,7 +488,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_torso",
         "part-of": "Ankylosaurus",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 42,
@@ -498,7 +498,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/anomalocaris",
         "part-of": "anomalocaris",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 43,
@@ -508,7 +508,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/archaeopteryx",
         "part-of": "archaeopteryx",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 44,
@@ -518,7 +518,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/archelon_tail",
         "part-of": "Archelon",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 45,
@@ -528,7 +528,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/brachio_skull",
         "part-of": "Brachiosaurus",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 46,
@@ -538,7 +538,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/diplo_chest",
         "part-of": "Diplodocus",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 47,
@@ -548,7 +548,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/mammoth_torso",
         "part-of": "Mammoth",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 48,
@@ -558,7 +558,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/right_ptera_wing",
         "part-of": "Pteranodon",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 49,
@@ -568,7 +568,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/shark-tooth_pattern",
         "part-of": "shark-tooth pattern",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 50,
@@ -578,7 +578,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/trex_torso",
         "part-of": "T. Rex",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 51,
@@ -588,7 +588,7 @@
         "image_uri": "https://acnhapi.com/v1/images/fossils/trilobite",
         "part-of": "trilobite",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 52,
@@ -598,7 +598,7 @@
         "catch-phrase": "I got a pearl oyster! Aw, shucks. Don't clam up now!",
         "image_uri": "https://acnhapi.com/v1/images/sea/11",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 53,
@@ -608,7 +608,7 @@
         "catch-phrase": "I got a mussel! It's been working out",
         "image_uri": "https://acnhapi.com/v1/images/sea/12",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 54,
@@ -618,7 +618,7 @@
         "catch-phrase": "I got a whelk! Happy snails to ya.",
         "image_uri": "https://acnhapi.com/v1/images/sea/15",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 55,
@@ -628,7 +628,7 @@
         "catch-phrase": "I got a turban shell! It's totally TURB...ular!",
         "image_uri": "https://acnhapi.com/v1/images/sea/16",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 56,
@@ -638,7 +638,7 @@
         "catch-phrase": "I got an abalone! Why do I want a sandwich now?",
         "image_uri": "https://acnhapi.com/v1/images/sea/17",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 57,
@@ -648,7 +648,7 @@
         "catch-phrase": "I got an umbrella octopus! Too bad I'm already soaked.",
         "image_uri": "https://acnhapi.com/v1/images/sea/21",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id":58,
@@ -658,7 +658,7 @@
         "catch-phrase": "I got a vampire squid! A lot was at stake.",
         "image_uri": "https://acnhapi.com/v1/images/sea/22",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 59,
@@ -668,7 +668,7 @@
         "catch-phrase": "I got a firefly squid! More like a glowswim squid.",
         "image_uri": "https://acnhapi.com/v1/images/sea/23",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 60,
@@ -678,7 +678,7 @@
         "catch-phrase": "I got a gazami crab! What a gripping find!",
         "image_uri": "https://acnhapi.com/v1/images/sea/24",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 61,
@@ -688,7 +688,7 @@
         "catch-phrase": "I got a Dungeness crab! Dun dun duuuun...geness.",
         "image_uri": "https://acnhapi.com/v1/images/sea/25",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 62,
@@ -698,7 +698,7 @@
         "catch-phrase": "I got a spider crab! Water bugs can rest easy.",
         "image_uri": "https://acnhapi.com/v1/images/sea/29",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 63,
@@ -708,7 +708,7 @@
         "catch-phrase": "I got a tiger prawn! I ain't lion!",
         "image_uri": "https://acnhapi.com/v1/images/sea/30",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 64,
@@ -718,7 +718,7 @@
         "catch-phrase": "I got a sweet shrimp! It's being very considerate.",
         "image_uri": "https://acnhapi.com/v1/images/sea/31",
         "collected": "No",
-        "stat": ""
+        "stat": false
       },
       {
         "id": 65,
@@ -728,7 +728,7 @@
         "catch-phrase": "I got a lobster! Lobjective complete.",
         "image_uri": "https://acnhapi.com/v1/images/sea/34",
         "collected": "No",
-        "stat": ""
+        "stat": false
       }
   ]
 }
