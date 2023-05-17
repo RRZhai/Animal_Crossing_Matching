@@ -28,21 +28,23 @@ function Card(){
     if (!card){return <h1>Loading...</h1>}else{
         return (
         <div className="card">
-            <img onMouseEnter={handleOver} onMouseLeave={handleOver} src={card['image_uri']}/>
-            <div>
-                <h2 className="name">{card.name}</h2>
-                {ifOver ? <p style={{color:card["text-color"]}} >{card['catch-phrase'] ? card['catch-phrase'] : card["saying"]}</p> : null}
-            </div>
-            <div className="details">
-                {card.location ? <ul>Location: {card.location} <FiEdit3 /></ul>  : null}
-                {card.rarity ? <ul>Rarity : {card.rarity} <FiEdit3 /></ul>  : null}
-                {card.price ? <ul>Price: {card.price} <FiEdit3 /></ul>  : null}
-                {card.personality ? <ul>Personality: {card.personality} <FiEdit3 /></ul>  : null}
-                {card.birthday ? <ul>Birthday: {card.birthday} <FiEdit3 /></ul>  : null}
-                {card.species ? <ul>Species: {card.species} <FiEdit3 /></ul>  : null}
-                {card.hobby ? <ul>Hobby: {card.hobby} <FiEdit3 /></ul>  : null}
-                {card['museum-phrase'] ? <ul>Description: {card['museum-phrase']} <FiEdit3 /></ul>  : null}
-                {card['part-of'] ? <ul>Personality: {card['part-of']} <FiEdit3 /></ul>  : null}
+            <img id='card-img' onMouseEnter={handleOver} onMouseLeave={handleOver} src={card['image_uri']}/>
+            <div className="info">
+                <div>
+                    <h2 className="name">{(card.name).toUpperCase()}</h2>
+                    {ifOver ? <p style={{color:card["text-color"]}} >{card['catch-phrase'] ? card['catch-phrase'] : card["saying"]}</p> : null}
+                </div>
+                <div className="details">
+                    {card.location ? <ul>Location: {card.location} <FiEdit3 /></ul>  : null}
+                    {card.rarity ? <ul>Rarity : {card.rarity} <FiEdit3 /></ul>  : null}
+                    {card.price ? <ul>Price: {card.price} <FiEdit3 /></ul>  : null}
+                    {card.personality ? <ul>Personality: {card.personality} <FiEdit3 /></ul>  : null}
+                    {card.birthday ? <ul>Birthday: {card.birthday} <FiEdit3 /></ul>  : null}
+                    {card.species ? <ul>Species: {card.species} <FiEdit3 /></ul>  : null}
+                    {card.hobby ? <ul>Hobby: {card.hobby} <FiEdit3 /></ul>  : null}
+                    {card['museum-phrase'] ? <ul>Description: {card['museum-phrase']} <FiEdit3 /></ul>  : null}
+                    {card['part-of'] ? <ul>From: {card['part-of']} <FiEdit3 /></ul>  : null}
+                </div>
             </div>
         </div>)
     }

@@ -12,6 +12,8 @@ function CardContainer({cards}){
     },[])
 
   return(
+    <>
+    <h3 className='title'>My Collection</h3>
     <div className='collected-container'>
     {cardHolder.map(card => {
         if (cards.find(item => item.id === card.id )){
@@ -24,6 +26,7 @@ function CardContainer({cards}){
             return <img onClick={() => alert('You need to find me first!')} className='icon' id='hide_icon' key={card.id} src={card['image_uri']} />
         }})}
     </div>
+    </>
   )
 }
 export default CardContainer;

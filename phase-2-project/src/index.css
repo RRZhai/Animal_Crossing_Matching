@@ -3,17 +3,54 @@
 
 
 /* MainParent */
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#dbbf9e;
+    align-items: center;
+    gap: 5%
+}
+
+#gamename{
+    float: left;
+}
+
+#nav-bar{
+    float: left;
+    font-size: 100%;
+    border: 100%;
+}
+
+.menu{
+    margin: 0.5rem;
+}
+
+#player{
+    float: right;
+    opacity: 75%;
+}
+
+
 #homepage{
     display: flex;
     width: 100%;
 }
 
+/* Game */
+.main-container{
+    display: grid;
+}
 /* CardContainer */
 .collected-container{
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 2em;
     width: 25%
+}
+
+.title{
+    display: grid;
+    width: 100%;
 }
 .icon {
     width: calc(95%);
@@ -29,5 +66,18 @@
 /* Card */
 .card {
     display:flex;
-    width:10%
+    width:100%;
+    background-color: #dbbf9e ;
+}
+
+#card-img{
+    margin: 2%;
+    width: 40%;
+    border-radius: 10%;
+    background-size: 40%;
+    background-color: #fffffa;
+}
+
+.info{
+    width: 50%;
 }
