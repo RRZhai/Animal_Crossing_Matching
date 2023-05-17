@@ -16,9 +16,12 @@ function MainParent(){
     .then(data => setCards(data))
     .catch(err => console.error(err))
   }, [])
-  //state for game to start ⮯ 
-  // const [gameStart, setGameStart] = useState(false)
-  // const handleStartGame = (e) => setGameStart(currentValue => !currentValue)
+  let shuffledCards = cards
+  .map(card => ({ card, sort: Math.random() }))
+  .sort((a , b) => a.sort - b.sort)
+  .map(({ card }) => card)
+  
+  const shuffledAndSliced = shuffledCards.slice(0, 12)
 
   // passing the matchedcard as prop, this should be removed once the game component is created.
   const matchedCard = []
@@ -33,6 +36,11 @@ function MainParent(){
             <Card /> 
         </Route>
       </Switch>
+    <div className="main-container">
+      <Game shuffledCards={shuffledAndSliced}/> 
+      <div>
+      
+      </div>
     </div>
   )
 }
