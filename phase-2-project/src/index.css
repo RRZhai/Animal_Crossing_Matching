@@ -1,18 +1,22 @@
 /* App */
-#mainP
+
 
 
 /* MainParent */
-.collected-container {
-    display: flex
+#homepage{
+    display: flex;
+    width: 100%;
 }
-/* UserAchievement */
+
+/* CardContainer */
 .collected-container{
-    margin: 0%;
-    gap: 5px
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2em;
+    width: 25%
 }
 .icon {
-    width: calc(10% - 2em);
+    width: calc(95%);
     margin: 0.25%;
     border-radius: 10%;
     opacity: 80%;

@@ -1,9 +1,13 @@
-import { useParams} from "react-router-dom"
+import { useParams } from "react-router-dom"
 import {useEffect, useState } from "react"
+import { FiEdit3 } from 'react-icons/fi'
 
-function Card({}){
+function Card(){
+ 
     const {id} = useParams()
     const [card, setCard] = useState(null)
+    const [ifOver, setIfOver] = useState(false)
+    const [edit, setEdit] = useState('')
 
     useEffect(()=> {
         if(id){
@@ -12,20 +16,34 @@ function Card({}){
             .then(item => setCard(item))
         }
     }, [])
-    console.log(card)
+    const handleOver = () => {
+        setIfOver(current => !current)
+    }
+
+    const handleEdit = (e) => {
+        e.preventDefault()
+        setEdit(e.target.value)
+    }
+
     if (!card){return <h1>Loading...</h1>}else{
         return (
         <div className="card">
-            <img src={card['image_uri']}/>
-            {card.location ? <div>`Location: {card.price}`</div> : null}
-            <ul>{card.rarity ? `Rarity: ${card.rarity}` : null}</ul>
-            <ul>{card.price ? `Price: ${card.price}` : null}</ul>
-            <ul>{card.personality ? `Personality: ${card.personality}` : null}</ul> 
-            <ul>{card.birthday ? `Birthday: ${card.birthday}` : null}</ul>
-            <ul>{card.species ? `Species: ${card.species}` : null}</ul>
-            <ul>{card.hobby ? `Hobby: ${card.hobby}` : null}</ul>
-            <ul>{card['museum-phrase'] ? card['museum-phrase'] : null}</ul>
-            <ul>{card['part-of'] ? `From: ${card['part-of']}` : null}</ul>
+            <img onMouseEnter={handleOver} onMouseLeave={handleOver} src={card['image_uri']}/>
+            <div>
+                <h2 className="name">{card.name}</h2>
+                {ifOver ? <p style={{color:card["text-color"]}} >{card['catch-phrase'] ? card['catch-phrase'] : card["saying"]}</p> : null}
+            </div>
+            <div className="details">
+                {card.location ? <ul>Location: {card.location} <FiEdit3 /></ul>  : null}
+                {card.rarity ? <ul>Rarity : {card.rarity} <FiEdit3 /></ul>  : null}
+                {card.price ? <ul>Price: {card.price} <FiEdit3 /></ul>  : null}
+                {card.personality ? <ul>Personality: {card.personality} <FiEdit3 /></ul>  : null}
+                {card.birthday ? <ul>Birthday: {card.birthday} <FiEdit3 /></ul>  : null}
+                {card.species ? <ul>Species: {card.species} <FiEdit3 /></ul>  : null}
+                {card.hobby ? <ul>Hobby: {card.hobby} <FiEdit3 /></ul>  : null}
+                {card['museum-phrase'] ? <ul>Description: {card['museum-phrase']} <FiEdit3 /></ul>  : null}
+                {card['part-of'] ? <ul>Personality: {card['part-of']} <FiEdit3 /></ul>  : null}
+            </div>
         </div>)
     }
 
