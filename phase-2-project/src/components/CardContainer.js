@@ -72,7 +72,7 @@ function CardContainer({}){
             </Link>
             )
         } else {
-            return <img className='icon' id='hide_icon' key={card.id} src={card['image_uri']} />
+            return <img onClick={() => alert('You need to find me first!')} className='icon' id='hide_icon' key={card.id} src={card['image_uri']} />
         }})}
     </div>
   )

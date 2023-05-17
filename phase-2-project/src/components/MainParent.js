@@ -24,7 +24,7 @@ function MainParent(){
   // passing the matchedcard as prop, this should be removed once the game component is created.
   const matchedCard = []
   const handleEnter = () => {
-    setEnterGame(true)
+    setEnterGame(current => !current)
   }
 
   return (

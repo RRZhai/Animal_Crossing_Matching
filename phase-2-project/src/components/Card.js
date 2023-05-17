@@ -4,6 +4,7 @@ import {useEffect, useState } from "react"
 function Card(){
     const {id} = useParams()
     const [card, setCard] = useState(null)
+    const [ifOver, setIfOver] = useState(false)
 
     useEffect(()=> {
         if(id){
@@ -12,14 +13,19 @@ function Card(){
             .then(item => setCard(item))
         }
     }, [])
-    console.log(card)
+    const handleOver = () => {
+        setIfOver(current => !current)
+    }
+
     if (!card){return <h1>Loading...</h1>}else{
         return (
-        <>
         <div className="card">
-            <img src={card['image_uri']}/>
-            <h2>{card.name}</h2>
+            <img onMouseEnter={handleOver} onMouseLeave={handleOver} src={card['image_uri']}/>
             <div>
+                <h2 className="name">{card.name}</h2>
+                {ifOver ? <p style={{color:card["text-color"]}} >{card['catch-phrase'] ? card['catch-phrase'] : card["saying"]}</p> : null}
+            </div>
+            <div className="details">
                 {card.location ? <ul>Location: {card.location}</ul>  : null}
                 {card.rarity ? <ul>Rarity : {card.rarity}</ul>  : null}
                 {card.price ? <ul>Price: {card.price}</ul>  : null}
@@ -30,8 +36,7 @@ function Card(){
                 {card['museum-phrase'] ? <ul>Description: {card['museum-phrase']}</ul>  : null}
                 {card['part-of'] ? <ul>Personality: {card['part-of']}</ul>  : null}
             </div>
-        </div>
-        </>)
+        </div>)
     }
 
 }
