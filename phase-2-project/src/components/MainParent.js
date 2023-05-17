@@ -12,13 +12,20 @@ function MainParent(){
     .then(data => setCards(data))
     .catch(err => console.error(err))
   }, [])
-  //state for game to start ⮯ 
-  // const [gameStart, setGameStart] = useState(false)
-  // const handleStartGame = (e) => setGameStart(currentValue => !currentValue)
+//sort the cards after fetch call ⮯
+  let shuffledCards = cards
+  .map(card => ({ card, sort: Math.random() }))
+  .sort((a , b) => a.sort - b.sort)
+  .map(({ card }) => card)
+  
+  const shuffledAndSliced = shuffledCards.slice(0, 12)
 
   return (
-    <div>
-      <Game cards={cards}/>
+    <div className="main-container">
+      <Game shuffledCards={shuffledAndSliced}/> 
+      <div>
+      
+      </div>
     </div>
   )
 }

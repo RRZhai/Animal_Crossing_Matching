@@ -1,10 +1,10 @@
-import Cards from "./Cards"
+// import Cards from "./Cards"
 
-function CardContainer ({cards}) {
-    const cardList = cards.map(card => <Cards key={card.id} card={card}/>)
+function CardContainer () {
+    // const cardList = cards.map(card => <Cards key={card.id} card={card}/>)
     return (
         <div>
-            {cardList}
+            {/* {cardList} */}
         </div>
     )
 }

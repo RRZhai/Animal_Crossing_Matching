@@ -1,7 +1,8 @@
 function Cards ({card}) {
     return (
         <div>
-            <h4>{card.name}</h4>
+            <img src={card.image_uri} alt={card.name}/>
+            <h1>{card.name}</h1>
         </div>
     )
 }
