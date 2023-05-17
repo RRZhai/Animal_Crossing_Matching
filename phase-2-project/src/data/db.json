@@ -267,7 +267,7 @@
         "collected": "No"
       },
       {
-        "id": 37,
+        "id": 27,
         "name": "Pango",
         "personality": "Peppy",
         "birthday": "9/11",
@@ -483,15 +483,6 @@
         "museum-phrase": "Brachiosaurus, whose name means \"arm lizard\" —eh, wot— was one of the largest herbivorous dinosaurs. Due to its long front legs and elongated neck, it seems to have specialized in eating plants up high. Alas, in order to support its large size, it likely needed to eat more or less every waking hour. What a ferocious forager it must have been indeed!",
         "image_uri": "https://acnhapi.com/v1/images/fossils/brachio_skull",
         "part-of": "Brachiosaurus",
-        "collected": "No"
-      },
-      {
-        "id": 8,
-        "name": "dinosaur track",
-        "price": 1000,
-        "museum-phrase": "Dinosaur tracks are fossilized footprints left on the bottom of the sea or on soft earth. From these fossils, we can deduce the creature's territory range as well as its relationship with its herd... It has even become possible to work out the creature's size, distinctive gait, and, shockingly, walking speed! These trace fossils are like social-media feeds, enabling us to follow the daily lives of the dinosaurs!",
-        "image_uri": "https://acnhapi.com/v1/images/fossils/dinosaur_track",
-        "part-of": "dinosaur track",
         "collected": "No"
       },
       {

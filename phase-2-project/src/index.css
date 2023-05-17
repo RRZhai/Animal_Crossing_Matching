@@ -1,0 +1,29 @@
+/* App */
+#mainP
+
+
+/* MainParent */
+.collected-container {
+    display: flex
+}
+/* UserAchievement */
+.collected-container{
+    margin: 0%;
+    gap: 5px
+}
+.icon {
+    width: calc(10% - 2em);
+    margin: 0.25%;
+    border-radius: 10%;
+    opacity: 80%;
+}
+
+#hide_icon {
+    filter: blur(3px);
+}
+
+/* Card */
+.card {
+    display:flex;
+    width:10%
+}
