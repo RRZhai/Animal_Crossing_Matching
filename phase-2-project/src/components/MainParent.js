@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from "react"
 import Game from "./Game"
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, Link} from 'react-router-dom'
 import CardContainer from './CardContainer'
 import Card from './Card'
 
@@ -15,15 +15,26 @@ function MainParent(){
     .then(data => setCards(data))
     .catch(err => console.error(err))
   }, [])
+  //randomize ⮯
+  const shuffledCards = cards
+  .map(value => ({ value, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({value}) => value)
+  .slice(0, 12)
+  //duplicate the array ⮯
+  const newCardArray = [...shuffledCards, ...shuffledCards]
+  const reshuffledArray = newCardArray
+  .map(value => ({ value, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({value}) => value)
   
-
   // passing the matchedcard as prop, this should be removed once the game component is created.
   const matchedCard = []
   return (
     <div>
       <Switch> 
         <Route path="/Home">
-          <Game cards={cards}/>
+          <Game reshuffledArray={reshuffledArray} />
           <CardContainer cards={matchedCard} />
         </Route>
         <Route path="/cards/:id">

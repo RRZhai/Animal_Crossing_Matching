@@ -1,53 +1,44 @@
 import {useState} from "react"
 import Cards from "./Cards"
 
-function Game ({cards}) {
-    const newCards = [...cards, ...cards]
-    .sort(() => Math.random() - 0.5)
-    .splice(0, 12)
-
-    const [gameCards, setGameCards] = useState(newCards)
-    const [prevSelected, setPrevSelected] = useState(-1)
-    const check = (current) => {
-        if(gameCards[current].id === gameCards[prevSelected].id){
-            gameCards[current].stat = "correct"
-            gameCards[prevSelected].stat = "correct"
-            setGameCards([...gameCards])
-            setPrevSelected(-1)
-        }else{
-            gameCards[current].stat = "wrong"
-            gameCards[prevSelected].stat = "wrong"
-            setGameCards([...gameCards])
-            setTimeout(() => {
-                gameCards[current].stat = ""
-                gameCards[prevSelected] = ""
-                setGameCards([...cards])
-                setPrevSelected(-1)
-            }, 2000)
-        }
-    }
-    const handleClick = (id) => {
-        if(prevSelected === -1){
-            gameCards[id].stat = "active"
-            setGameCards([...gameCards])
-            setPrevSelected(id)
-        }else{
-            check(id)
-        }
-    }
-
-    const displayCards = cards.map((card, index) => <Cards
-      key={index} card={card} id={index} handleClick={handleClick}/>)
-
-    
+function Game ({ reshuffledArray }) {  
+const [items, setItems] = useState([])
+const [selected, setSelected] = useState(-1)
+//TODO fix the dam logic uuuuuuuhuhuhuhuh...im tired...it's 3AM
+// const checkStat = (current) => {
+//     if(items[current].id === items[selected].id){
+//       items[current].stat = "correct"
+//       items[selected].stat = "correct"
+//       setItems([...items])
+//       setSelected(-1) 
+//     }else{
+//       items[current].stat = "wrong"
+//       items[selected].stat = "wrong"
+//       setItems([...items])
+//       setTimeout(() => {
+//         items[current].stat = ""
+//         items[selected].stat = ""
+//         setItems([...items])
+//         setSelected(-1)
+//       }, 2000)
+//     }
+//   }
+// const handleClick = (id) => {
+//     if(selected === -1){
+//       items[id].stat = "active"
+//       setItems([...items])
+//       setSelected(id)
+//     }else{
+//       checkStat(id)
+//     }
+//   }
+    const displayCards = reshuffledArray.map((card, index) => <Cards 
+    key={index} card={card}  handleClick={handleClick}/>)
     return(
-        <div>
-            <button className="start-button" > 
-                Start Game
-            </button>
-            <div className="grid">
+        <div className="grid">
+            
                 {displayCards}
-            </div>
+            
         </div>
     )
 }

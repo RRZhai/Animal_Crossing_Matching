@@ -1,8 +1,8 @@
-function Cards ({card, handleClick, id}) {
+function Cards ({card, handleClick}) {
     const cardClass = card.stat ? "active" + card.stat : ""
     return (
-        <div className={"card" + cardClass} onClick={() => handleClick(id)}>
-            <img src={card.image_uri} alt={card.name} className="card-img"/>
+        <div className={"card" + cardClass}  onClick={ handleClick }>
+            <img src={card.image_uri} alt="" />
         </div>
     )
 }
