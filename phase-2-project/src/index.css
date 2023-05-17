@@ -1,8 +1,13 @@
 /* App */
-#mainP
+
 
 
 /* MainParent */
+#homepage{
+    display: flex;
+    width: 100%;
+}
+
 .collected-container {
     display: flex
 }
@@ -16,7 +21,7 @@
     margin: 0.25%;
     border-radius: 10%;
     opacity: 80%;
-}
+}g
 
 #hide_icon {
     filter: blur(3px);

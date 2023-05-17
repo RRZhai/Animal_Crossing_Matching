@@ -67,7 +67,7 @@ function CardContainer({}){
     {cardHolder.map(card => {
         if (matchedCard.find(item => item.id === card.id )){
             return (<div key={card.id} className='icon' id='show_icon' >
-            <Link to={`/cards/${card.id} `}>
+            <Link to={`/cards/${card.id}`}>
                 <img onClick={() => setClickIcon(card)} src={card['image_uri']} />
             </Link>
             </div>)

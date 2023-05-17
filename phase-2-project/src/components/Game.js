@@ -18,8 +18,8 @@ function Game ({cards}) {
 
     return(
         <div>
-            <button onClick={shuffleCards}>StartGame</button>
-            {cardsForGame}
+            {/* <button onClick={shuffleCards}>StartGame</button>
+            {cardsForGame} */}
         </div>
     )
 }

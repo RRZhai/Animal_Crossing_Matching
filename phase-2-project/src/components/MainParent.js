@@ -5,6 +5,7 @@ import UserAchievments from './UserAchievments'
 import {Switch, Route, Link} from 'react-router-dom'
 import CardContainer from './CardContainer'
 import Card from './Card'
+import HomePage from './HomePage'
 
 function MainParent(){
   //state for cards ⮯
@@ -25,8 +26,11 @@ function MainParent(){
   return (
     <div>
       <Switch> 
-        <Route path="/Home">
-          <Game cards={cards}/>
+        <Route path="/home">
+          <HomePage />
+        </Route>
+        <Route path="/game">
+          {/* <Game cards={cards}/> */}
           <CardContainer cards={matchedCard} />
         </Route>
         <Route path="/cards/:id">
