@@ -37,33 +37,50 @@ body {
   margin: 20px 0;
   background: #6589f9;
 }
+.container{
+    min-width: 0px;
+     height: 60%;
+     width: 80%;
+     margin-left: 10%;
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: center;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     gap: 10px;
+ }
 .card-grid{
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+   background-color: #fff;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   width: 23%;
+   height: 20%;
 }
 .card {
     position: relative;
 }
 .card img {
-    width: 100%;
     display: block;
     border: 2px solid #fff;
-    border-radius: 6px;
+    border-radius: 2px;
 }
-.card .front {
+.front {
     transform: rotateY(90deg);
     transition: all ease-in 0.2s;
     position: absolute;
+    width: 40%;
+    margin-left: 30%;
 }
 .flipped .front {
     transform: rotateY(0deg);
     transition-delay:  0.2s;
 }
-.card .back {
+.back {
     transition: all ease-in 0.2s;
     transition-delay: 0s;
+    width: 40%;
+    margin-left: 30%;
 }
 .flipped .back {
     transform: rotateY(90deg);

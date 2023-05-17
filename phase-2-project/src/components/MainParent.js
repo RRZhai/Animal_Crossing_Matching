@@ -31,7 +31,7 @@ function MainParent(){
   const reshuffledArray = newCardArray
   .map(value => ({ value, sort: Math.random() }))
   .sort((a, b) => a.sort - b.sort)
-  .map(({value}) => value)
+  .map(({value}) => ({value, id: Math.random()}))
 
   setCards(reshuffledArray)
   setTurns(0)
@@ -84,8 +84,12 @@ function MainParent(){
           <div>
             <button onClick={shuffledCards}>Start Game</button>
             <h4>Turns: {turns}</h4>
-          {displayCards}
+            <div className='container'>
+              {displayCards}
+            </div>
           </div>
+        </Route>
+        <Route path="/cards">
           <CardContainer cards={matchedCard} />
         </Route>
         <Route path="/cards/:id">
