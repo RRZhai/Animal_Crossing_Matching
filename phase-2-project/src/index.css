@@ -110,6 +110,7 @@ body {
    border-radius: 5px;
    width: 23%;
    height: 20%;
+   min-height: 30%;
 }
 .card {
     position: relative;
@@ -122,8 +123,8 @@ body {
 .front {
     transform: rotateY(90deg);
     transition: all ease-in 0.2s;
-    position: absolute;
     width: 40%;
+    height: 80%;
     margin-left: 30%;
 }
 .flipped .front {
@@ -134,6 +135,7 @@ body {
     transition: all ease-in 0.2s;
     transition-delay: 0s;
     width: 40%;
+    height: 80%;
     margin-left: 30%;
 }
 .flipped .back {
