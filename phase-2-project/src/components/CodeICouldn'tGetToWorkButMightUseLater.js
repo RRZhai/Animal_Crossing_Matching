@@ -95,3 +95,13 @@ const reshuffledArray = newCardArray
 // .card.active img{
 //   transform: scale(1);
 // }
+{/* <Route path="/Home">
+          <div>
+            <button onClick={shuffledCards}>Start Game</button>
+            <h4>Turns: {turns}</h4>
+            <div className='container'>
+              {displayCards}
+            </div>
+          </div>
+        </Route>
+        <Route path="/cards"></Route>  */}

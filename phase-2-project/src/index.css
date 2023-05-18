@@ -1,18 +1,59 @@
 /* App */
-#mainP
+
 
 
 /* MainParent */
-.collected-container {
-    display: flex
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#dbbf9e;
+    align-items: center;
+    gap: 5%
 }
-/* UserAchievement */
+
+#gamename{
+    float: left;
+}
+
+#nav-bar{
+    float: left;
+    font-size: 100%;
+    border: 100%;
+}
+
+.menu{
+    margin: 0.5rem;
+}
+
+#player{
+    float: right;
+    opacity: 75%;
+}
+
+
+#homepage{
+    display: flex;
+    width: 100%;
+}
+
+/* Game */
+.main-container{
+    display: grid;
+}
+/* CardContainer */
 .collected-container{
-    margin: 0%;
-    gap: 5px
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2em;
+    width: 25%
+}
+
+.title{
+    display: grid;
+    width: 100%;
 }
 .icon {
-    width: calc(10% - 2em);
+    width: calc(95%);
     margin: 0.25%;
     border-radius: 10%;
     opacity: 80%;
@@ -25,7 +66,20 @@
 /* Card */
 .card {
     display:flex;
-    width:10%
+    width:100%;
+    background-color: #dbbf9e ;
+}
+
+#card-img{
+    margin: 2%;
+    width: 40%;
+    border-radius: 10%;
+    background-size: 40%;
+    background-color: #fffffa;
+}
+
+.info{
+    width: 50%;
 }
 *,
 *::before,
@@ -85,4 +139,14 @@ body {
 .flipped .back {
     transform: rotateY(90deg);
     transition-delay: 0s;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #6589f9;
 }
