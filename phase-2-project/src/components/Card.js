@@ -32,7 +32,7 @@ function Card(){
             <div className="info">
                 <div id='detail'>
                     <h2 className="name">{(card.name).toUpperCase()}</h2>
-                    {ifOver ? <p className="phrase">{card['catch-phrase'] ? card['catch-phrase'] : card["saying"]}</p> : <p></p>}
+                    {ifOver ? <div className="phrase"><p >{card['catch-phrase'] ? card['catch-phrase'] : card["saying"]}</p></div> : <p></p>}
                 </div>
                 <div className="details">
                     {card.location ? <ul>Location:      {card.location} <FiEdit3 /></ul>  : null}
