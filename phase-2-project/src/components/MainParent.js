@@ -16,6 +16,8 @@ function MainParent(){
   const [choice1, setChoice1] = useState(null)
   const [choice2, setChoice2] = useState(null)
   const [disabled, setDisabled] = useState(false)
+  const [newCardId, setNewCardId] = useState(null)
+
   //fetch request ⮯
   useEffect(() => {
     fetch('http://localhost:3001/all')
@@ -71,6 +73,16 @@ function MainParent(){
     setTurns(value => value + 1)
     setDisabled(false)
   }
+
+  const handleSubmitNew = (e, submitForm) => {
+    e.preventDefault()
+    fetch('http://localhost:3001/all', {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(submitForm)
+    }).then(res => res.json())
+    .then(card => setNewCardId(card.id))
+}
   
   const displayCards = cards.map((card, index) => <GameCards 
   handleChoice={handleChoice} 
@@ -119,7 +131,7 @@ function MainParent(){
             <HighScore />
         </Route>
         <Route path='/collection'>
-          <MyCollection />
+          <MyCollection handleSubmitNew={handleSubmitNew} newCardId={newCardId}/>
         </Route>
         <Route path="/cards/:id">
             <Card /> 

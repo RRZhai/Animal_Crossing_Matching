@@ -81,6 +81,7 @@
 .info{
     width: 50%;
 }
+
 *,
 *::before,
 *::after {
@@ -149,4 +150,17 @@ body {
 body {
   margin: 20px 0;
   background: #6589f9;
+}
+
+/* Collection */
+form{
+    float: center;
+    margin: 15px;
+}
+.form-group{
+    padding: 10px;
+}
+
+.btn{
+    width: 100%;
 }
