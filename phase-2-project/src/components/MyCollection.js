@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import Card from "./Card"
-function MyCollection({handleSubmitNew, newCardId}) {
+function MyCollection({handleSubmitNew, newCard}) {
     const [selectType, setSelectType] = useState([])
     const [submitForm, setSubmitForm] = useState({})
 
@@ -91,13 +91,16 @@ function MyCollection({handleSubmitNew, newCardId}) {
     }
     
     return(
-        <>
-            <button onClick={handleVillager}>Villager</button>
-            <button onClick={handleFish}>Fish</button>
-            <button onClick={handleFossil}>Fossil</button>
-            <button onClick={handleSea}>Sea Creature</button>
-            <h3>Add New</h3>
+        <div className="form">
+            <h3 className="title">Add New</h3>
             <form onSubmit={(e) => handleSubmitNew(e, submitForm)}id='form'>
+            <select className="category">
+                <option onChange={handleVillager}>Select the Category ... </option>
+                <option onChange={handleVillager}>Villager</option>
+                <option onChange={handleFish}>Fish</option>
+                <option onChange={handleFossil}>Fossil</option>
+                <option onChange={handleSea}>Sea Creature</option>
+            </select>
             <div className="form-group">
                 <label className="label">Name</label>
                 <input onChange={handleAdd} name="name" className="input" required></input>
@@ -110,12 +113,12 @@ function MyCollection({handleSubmitNew, newCardId}) {
             </div>
             {selectType}
             <button className='btn'>Submit</button>
-            </form>
-            {newCardId ? 
-            <Link to={`/cards/${newCardId}`} >
+            {newCard ? 
+            <Link to={`/cards/${newCard.id}`} >
             <button className='btn'>Check New</button>
             </Link> : <button onClick={() => alert('You need to add before check!')} className='btn'>Check New</button>}  
-        </>
+            </form>
+        </div>
     )
 }
 

@@ -16,7 +16,7 @@ function MainParent(){
   const [choice1, setChoice1] = useState(null)
   const [choice2, setChoice2] = useState(null)
   const [disabled, setDisabled] = useState(false)
-  const [newCardId, setNewCardId] = useState(null)
+  const [newCard, setNewCard] = useState(null)
 
   //fetch request ⮯
   useEffect(() => {
@@ -81,7 +81,9 @@ function MainParent(){
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(submitForm)
     }).then(res => res.json())
-    .then(card => setNewCardId(card.id))
+    .then(card => {
+      setNewCard(card);
+      setCards(current => [...current, card])})
 }
   
   const displayCards = cards.map((card, index) => <GameCards 
@@ -102,7 +104,9 @@ function MainParent(){
   return (
     <div>
       <div className='header'>
-        <h2 id='gamename'>Animal Crossing Matching</h2>
+        <Link to={''}>
+          <img id='gamename' src='https://upload.wikimedia.org/wikipedia/en/9/9e/Animal_Crossing_Logo.png' />
+        </Link>
         <div id='nav-bar'>
           <Link to={``} onClick={handleHome} className='menu'>Main Menu</Link>
           <Link to={`/game`} onClick={handleNoHome} className='menu'>Play Game</Link>
@@ -110,7 +114,7 @@ function MainParent(){
           <Link to={`/score`} onClick={handleNoHome} className='menu'> Score </Link>
           <Link to={`/care`} onClick={handleNoHome} className='menu'> Customer Care </Link>
         </div >
-        <audio controls id='player'>
+        <audio controls autoPlay id='player'>
           <source src={`https://acnhapi.com/v1/music/${Math.floor(Math.random()*40)}`} type="audio/mpeg" />
         </audio>
       </div>
@@ -131,7 +135,10 @@ function MainParent(){
             <HighScore />
         </Route>
         <Route path='/collection'>
-          <MyCollection handleSubmitNew={handleSubmitNew} newCardId={newCardId}/>
+          <div className='collection-homepage'>
+            <CardContainer collectedCard={cards} cardsHolder={cards}/> 
+            <MyCollection handleSubmitNew={handleSubmitNew} />
+          </div>
         </Route>
         <Route path="/cards/:id">
             <Card /> 

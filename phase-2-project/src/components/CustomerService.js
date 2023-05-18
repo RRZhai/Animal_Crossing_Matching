@@ -1,6 +1,6 @@
 function CustomerService(){
     return(
-        <div>
+        <div className="care">
             <h3>Customer Care Hour</h3>
             <h3>Mon-Fri | 9am - 5pm PST</h3>
             <h3>info@animalcrossingmatching</h3>

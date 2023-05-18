@@ -1,22 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
-function CardContainer({cards}){
-    const [cardHolder, setCardHolder] = useState([])
+function CardContainer({collectedCard, cardsHolder}){
     const [clickIcon, setClickIcon] = useState({})
 
-    useEffect(() => {
-        fetch('http://localhost:3001/all')
-        .then(resp => resp.json())
-        .then(data => setCardHolder(data))
-    },[])
-
   return(
-    <div className='gameview'>
+    <div className='collection'>
     <h3 className='title'>My Collection</h3>
     <div className='collected-container'>
-    {cardHolder.map(card => {
-        if (cards.find(item => item.id === card.id )){
+    {cardsHolder.map(card => {
+        if (collectedCard.find(item => item.id === card.id )){
             return (
             <Link to={`/cards/${card.id}`} key={card.id}>
                 <img onClick={() => setClickIcon(card)} key={card.id} className='icon' id='show_icon' src={card['image_uri']} />
