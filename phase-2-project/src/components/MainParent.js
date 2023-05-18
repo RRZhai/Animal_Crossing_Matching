@@ -19,8 +19,8 @@ function MainParent(){
   const [showCards, setShowCards] = useState(false)
   const cardId = useId()
   const [toggleStart, setToggleStart] = useState(true)
+  const [cardsHolder, setCardsHolder] = useState([])
   const [newCard, setNewCard] = useState(null)
-
   //fetch request ⮯
   useEffect(() => {
     fetch('http://localhost:3001/all')
@@ -85,6 +85,12 @@ function MainParent(){
     setDisabled(false)
   }
 
+  useEffect(() => {
+      fetch('http://localhost:3001/all')
+      .then(res => res.json())
+      .then(data => setCardsHolder(data))
+  }, [])
+
   const handleSubmitNew = (e, submitForm) => {
     e.preventDefault()
     fetch('http://localhost:3001/all', {
@@ -93,10 +99,10 @@ function MainParent(){
         body: JSON.stringify(submitForm)
     }).then(res => res.json())
     .then(card => {
-      setNewCard(card);
-      setCards(current => [...current, card])})
-}
- 
+      setNewCard(card)
+    })
+    .then(setCardsHolder(current => [...current, submitForm]))
+} 
   
   const displayCards = cards.map((card, index) => <GameCards 
   handleChoice={handleChoice} 
@@ -108,7 +114,6 @@ function MainParent(){
   const handleNoHome = () => {
     setHome(true)
   }
-
   const handleHome = () => {
     setHome(false)
   }
@@ -135,13 +140,16 @@ function MainParent(){
       </Link>
       <Switch> 
         <Route path="/game">
-          <div>
-            <button onClick={shuffledCards}>
-              {toggleStart ? "Start Game" : "New Game"}
-            </button>
-            <h4>Turns: {turns}</h4>
-            <div className='container'>
-              {displayCards}
+          <div className='game'>
+            <CardContainer cardsHolder={cardsHolder}/> 
+            <div className='game-block'>
+              <button onClick={shuffledCards}>
+               {toggleStart ? "Start Game" : "New Game"}
+              </button>
+              <h3>Turns: {turns}</h3>
+                <div className='container'>
+                  {toggleStart ? null : displayCards}
+                </div>
             </div>
           </div>
         </Route>
@@ -150,7 +158,7 @@ function MainParent(){
         </Route>
         <Route path='/collection'>
           <div className='collection-homepage'>
-            <CardContainer collectedCard={cards} cardsHolder={cards}/> 
+            <CardContainer cardsHolder={cardsHolder}/> 
             <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard}/>
           </div>
         </Route>

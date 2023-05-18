@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
-function CardContainer({collectedCard, cardsHolder}){
+function CardContainer({cardsHolder}){
     const [clickIcon, setClickIcon] = useState({})
-
+    const collectedCard = cardsHolder.filter(card => card.stat === true)
   return(
     <div className='collection'>
     <h3 className='title'>My Collection</h3>
