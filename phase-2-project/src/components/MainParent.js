@@ -3,7 +3,7 @@ import {useState, useEffect, useId} from "react"
 import GameCards from "./GameCards"
 import CustomerService from './CustomerService'
 import {Switch, Route, Link} from 'react-router-dom'
-// import CardContainer from './CardContainer'
+import CardContainer from './CardContainer'
 import Card from './Card'
 import HighScore from './HighScore'
 import MyCollection from './MyCollection'
