@@ -1,9 +1,9 @@
 import React from 'react'
-import {useState, useEffect} from "react"
+import {useState, useEffect, useId} from "react"
 import GameCards from "./GameCards"
 import CustomerService from './CustomerService'
 import {Switch, Route, Link} from 'react-router-dom'
-import CardContainer from './CardContainer'
+// import CardContainer from './CardContainer'
 import Card from './Card'
 import HighScore from './HighScore'
 import MyCollection from './MyCollection'
@@ -16,6 +16,9 @@ function MainParent(){
   const [choice1, setChoice1] = useState(null)
   const [choice2, setChoice2] = useState(null)
   const [disabled, setDisabled] = useState(false)
+  const [showCards, setShowCards] = useState(false)
+  const cardId = useId()
+  const [toggleStart, setToggleStart] = useState(true)
   const [newCard, setNewCard] = useState(null)
 
   //fetch request ⮯
@@ -24,27 +27,35 @@ function MainParent(){
     .then(r => r.json())
     .then(data => setCards(data))
     .catch(err => console.error(err))
+    .then(setShowCards(true))
   }, [])
   //randomize ⮯
   const shuffledCards = () =>{
+    setToggleStart(value => !value)
     const shuffleCards = cards
-  .map(value => ({ value, sort: Math.random() }))
-  .sort((a, b) => a.sort - b.sort)
-  .map(({value}) => value)
-  const newShuffledCards = shuffleCards.slice(0, 12)
-  //duplicate the array ⮯
-  const newCardArray = [...newShuffledCards, ...newShuffledCards]
-  const reshuffledArray = newCardArray
-  .map(value => ({ value, sort: Math.random() }))
-  .sort((a, b) => a.sort - b.sort)
-  .map(({value}) => ({value, id: Math.random()}))
-
-  setCards(reshuffledArray)
-  setTurns(0)
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({value}) => value)
+    const newShuffledCards = shuffleCards.slice(0, 8)
+    //duplicate the array ⮯
+    const newCardArray = [...newShuffledCards, ...newShuffledCards]
+    const reshuffledArray = newCardArray
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({value}) => ({...value, uniqueId: cardId}))
+    //show front of cards when new game then flip them after a few seconds
+    setShowCards(true)
+    setTimeout(() => {
+      setShowCards(false)
+    }, 3000)
+    
+    setCards(reshuffledArray)
+    setTurns(0)
   }
   //handle users card selection
   const handleChoice = (card) => {
     choice1 ? setChoice2(card) : setChoice1(card)
+    
   }
   //compare the 2 cards
   useEffect(() => {
@@ -85,12 +96,13 @@ function MainParent(){
       setNewCard(card);
       setCards(current => [...current, card])})
 }
+ 
   
   const displayCards = cards.map((card, index) => <GameCards 
   handleChoice={handleChoice} 
   card={card} 
   key={index} 
-  flipped={card === choice1 || card === choice2 || card.stat}
+  flipped={card === choice1 || card === choice2 || card.stat || showCards}
   disabled={disabled}
   />)
   const handleNoHome = () => {
@@ -100,7 +112,7 @@ function MainParent(){
   const handleHome = () => {
     setHome(false)
   }
-
+  // const handleStartAndNewToggle = () => setToggleStart(value => !value)
   return (
     <div>
       <div className='header'>
@@ -124,7 +136,9 @@ function MainParent(){
       <Switch> 
         <Route path="/game">
           <div>
-            <button onClick={shuffledCards}>Start Game</button>
+            <button onClick={shuffledCards}>
+              {toggleStart ? "Start Game" : "New Game"}
+            </button>
             <h4>Turns: {turns}</h4>
             <div className='container'>
               {displayCards}

@@ -1,7 +1,11 @@
+// import { useState } from "react"
+
 function GameCards({card, handleChoice, flipped, disabled}){
+    
     const handleClick = () =>{
         if(!disabled){
             handleChoice(card)
+            
         }
     }
     return (
@@ -10,7 +14,7 @@ function GameCards({card, handleChoice, flipped, disabled}){
                 <img className="back" 
                 src="/animalCrossingLogo.png" 
                 alt="card back"
-                onClick={handleClick}
+                onClick={(e) => handleClick(e.target.value)}
                 />
         </div>
     )

@@ -175,8 +175,9 @@ body {
    justify-content: center;
    align-items: center;
    border-radius: 5px;
-   width: 200px;
-   height: 200px;
+   width: 23%;
+   height: 20%;
+   min-height: 30%;
 }
 .card {
     position: relative;
@@ -189,10 +190,9 @@ body {
 .front {
     transform: rotateY(90deg);
     transition: all ease-in 0.2s;
-    position: absolute;
-    width: 200px;
-    display:flex;
-    align-items: center;
+    width: 40%;
+    height: 80%;
+    margin-left: 30%;
 }
 .flipped .front {
     transform: rotateY(0deg);
@@ -201,8 +201,9 @@ body {
 .back {
     transition: all ease-in 0.2s;
     transition-delay: 0s;
-    width: 200px;
-    margin-top: 2rem;
+    width: 40%;
+    height: 80%;
+    margin-left: 30%;
 }
 .flipped .back {
     transform: rotateY(90deg);
