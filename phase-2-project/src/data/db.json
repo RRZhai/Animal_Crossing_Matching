@@ -729,11 +729,6 @@
       "image_uri": "https://acnhapi.com/v1/images/sea/34",
       "collected": "No",
       "stat": false
-    },
-    {
-      "name": "Test",
-      "saying": "im here for the test",
-      "id": 66
     }
   ]
 }

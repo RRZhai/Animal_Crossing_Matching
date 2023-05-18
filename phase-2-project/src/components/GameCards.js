@@ -1,7 +1,7 @@
 // import { useState } from "react"
 
 function GameCards({card, handleChoice, flipped, disabled}){
-    
+
     const handleClick = () =>{
         if(!disabled){
             handleChoice(card)
