@@ -26,8 +26,8 @@ function MainParent(){
     fetch('http://localhost:3001/all')
     .then(r => r.json())
     .then(data => setCards(data))
-    .catch(err => console.error(err))
     .then(setShowCards(true))
+    .catch(err => console.error(err))
   }, [])
   //randomize ⮯
   const shuffledCards = () =>{
@@ -96,15 +96,17 @@ function MainParent(){
       setNewCard(card);
       setCards(current => [...current, card])})
 }
- 
-  
-  const displayCards = cards.map((card, index) => <GameCards 
-  handleChoice={handleChoice} 
-  card={card} 
-  key={index} 
-  flipped={card === choice1 || card === choice2 || card.stat || showCards}
-  disabled={disabled}
-  />)
+
+const displayCards = cards.map((card, index) => <GameCards 
+handleChoice={handleChoice} 
+card={card} 
+key={index} 
+flipped={card === choice1 || card === choice2 || card.stat || showCards}
+disabled={disabled}
+/>)
+
+
+
   const handleNoHome = () => {
     setHome(true)
   }
@@ -144,9 +146,6 @@ function MainParent(){
               {displayCards}
             </div>
           </div>
-        </Route>
-        <Route path='/score'>
-            <HighScore />
         </Route>
         <Route path='/collection'>
           <div className='collection-homepage'>
