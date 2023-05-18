@@ -89,18 +89,19 @@ function MyCollection({handleSubmitNew, newCard}) {
     const handleAdd = (e) => {
         setSubmitForm({...submitForm, [e.target.name]:e.target.value})
     }
+    console.log(newCard)
     
     return(
         <div className="form">
             <h3 className="title">Add New</h3>
             <form onSubmit={(e) => handleSubmitNew(e, submitForm)}id='form'>
-            <select className="category">
-                <option onChange={handleVillager}>Select the Category ... </option>
-                <option onChange={handleVillager}>Villager</option>
-                <option onChange={handleFish}>Fish</option>
-                <option onChange={handleFossil}>Fossil</option>
-                <option onChange={handleSea}>Sea Creature</option>
-            </select>
+            <h3> Please Select Category First Before You Fill the Form ~</h3>
+            <div className="category">
+                <button onClick={handleVillager}>Villager</button>
+                <button onClick={handleFish}>Fish</button>
+                <button onClick={handleFossil}>Fossil</button>
+                <button onClick={handleSea}>Sea Creature</button>
+            </div>
             <div className="form-group">
                 <label className="label">Name</label>
                 <input onChange={handleAdd} name="name" className="input" required></input>

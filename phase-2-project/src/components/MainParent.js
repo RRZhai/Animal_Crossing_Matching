@@ -137,7 +137,7 @@ function MainParent(){
         <Route path='/collection'>
           <div className='collection-homepage'>
             <CardContainer collectedCard={cards} cardsHolder={cards}/> 
-            <MyCollection handleSubmitNew={handleSubmitNew} />
+            <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard}/>
           </div>
         </Route>
         <Route path="/cards/:id">
