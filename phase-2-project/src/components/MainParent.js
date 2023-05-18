@@ -12,6 +12,8 @@ function MainParent(){
   //state for cards ⮯
   const [cards, setCards] = useState([])
   const [home, setHome] = useState(false)
+  const [newCardId, setNewCardId] = useState(null)
+
   //fetch request ⮯
   useEffect(() => {
     fetch('http://localhost:3001/all')
@@ -19,6 +21,17 @@ function MainParent(){
     .then(data => setCards(data))
     .catch(err => console.error(err))
   }, [])
+
+  const handleSubmitNew = (e, submitForm) => {
+    e.preventDefault()
+    fetch('http://localhost:3001/all', {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(submitForm)
+    }).then(res => res.json())
+    .then(card => setNewCardId(card.id))
+    
+}
 
   let shuffledCards = cards
   .map(card => ({ card, sort: Math.random() }))
@@ -64,7 +77,7 @@ function MainParent(){
             <HighScore />
         </Route>
         <Route path='/collection'>
-          <MyCollection />
+          <MyCollection handleSubmitNew={handleSubmitNew} newCardId={newCardId}/>
         </Route>
         <Route path="/cards/:id">
             <Card /> 

@@ -14,7 +14,7 @@ function Game ({shuffledCards}) {
     const handleStartGame = () => setStartGame(value => !value)
     // startGame ? 
     return(
-        <div>
+        <div className='gameview'>
             <button className="start-button" onClick={handleStartGame}> 
                 Start Game
             </button>

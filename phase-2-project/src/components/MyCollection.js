@@ -1,22 +1,24 @@
 import { useState } from "react"
-
-function MyCollection() {
+import { Link } from "react-router-dom"
+import Card from "./Card"
+function MyCollection({handleSubmitNew, newCardId}) {
     const [selectType, setSelectType] = useState([])
-    const [submitForm, setSubmitForm] = useState([])
+    const [submitForm, setSubmitForm] = useState({})
+
     const handleVillager = () => {
         setSelectType(
             <div>
             <div className="form-group">
                 <label className="label">Personality</label>
-                <input name="personality" className="input" ></input>
+                <input onChange={handleAdd} name="personality" className="input" ></input>
             </div>
             <div className="form-group">
                 <label className="label">Birthday</label>
-                <input name="birthday" className="input" ></input>
+                <input onChange={handleAdd} name="birthday" className="input" ></input>
             </div>
             <div className="form-group">
                 <label className="label">Saying</label>
-                <input name="saying" className="input" ></input>
+                <input onChange={handleAdd} name="saying" className="input" ></input>
             </div>
             </div>
         )
@@ -27,19 +29,19 @@ function MyCollection() {
             <div>
                 <div className="form-group">
                     <label className="label">Location</label>
-                    <input name="location" className="input" ></input>
+                    <input onChange={handleAdd} name="location" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Rarity</label>
-                    <input name="rarity" className="input" ></input>
+                    <input onChange={handleAdd} name="rarity" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Saying</label>
-                    <input name="catch-phrase" className="input" ></input>
+                    <input onChange={handleAdd} name="catch-phrase" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Price</label>
-                    <input name="price" className="input" ></input>
+                    <input onChange={handleAdd} name="price" className="input" ></input>
                 </div>
             </div>
         )
@@ -50,15 +52,15 @@ function MyCollection() {
             <div>
                 <div className="form-group">
                     <label className="label">Location</label>
-                    <input name="location" className="input" ></input>
+                    <input onChange={handleAdd} name="location" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Saying</label>
-                    <input name="catch-phrase" className="input" ></input>
+                    <input onChange={handleAdd} name="catch-phrase" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Price</label>
-                    <input name="price" className="input" ></input>
+                    <input onChange={handleAdd} name="price" className="input" ></input>
                 </div>
             </div>
         )
@@ -69,52 +71,51 @@ function MyCollection() {
             <div>
                 <div className="form-group">
                     <label className="label">Speed</label>
-                    <input name="speed" className="input" ></input>
+                    <input onChange={handleAdd} name="speed" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Part Of</label>
-                    <input name="part-of" className="input" ></input>
+                    <input onChange={handleAdd} name="part-of" className="input" ></input>
                 </div>
                 <div className="form-group">
                     <label className="label">Price</label>
-                    <input name="price" className="input" ></input>
+                    <input onChange={handleAdd} name="price" className="input" ></input>
                 </div>
             </div>
         )
 
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setSubmitForm([...submitForm, [e.target.name]=e.target.value])
+    const handleAdd = (e) => {
+        setSubmitForm({...submitForm, [e.target.name]:e.target.value})
     }
-
-    // fetch('http://localhost:3001/all', {
-    //     method: "POST",
-    //     headers: {"Content-Type": "application/json"},
-    //     body: JSON.stringify(submitForm)
-    // })
-
+    
     return(
-        <form onSubmit={(e) => handleSubmit(e)}id='form'>
+        <>
             <button onClick={handleVillager}>Villager</button>
             <button onClick={handleFish}>Fish</button>
             <button onClick={handleFossil}>Fossil</button>
             <button onClick={handleSea}>Sea Creature</button>
             <h3>Add New</h3>
+            <form onSubmit={(e) => handleSubmitNew(e, submitForm)}id='form'>
             <div className="form-group">
                 <label className="label">Name</label>
-                <input name="name" className="input" placeholder="Add Name"></input>
+                <input onChange={handleAdd} name="name" className="input" required></input>
                 <label className="label">*</label>
             </div>
             <div className="form-group">
                 <label className="label">Image</label>
-                <input name="image_uri" className="input" placeholder="Add Image"></input>
+                <input onChange={handleAdd} name="image_uri" className="input" placeholder="Add Image" required></input>
                 <label className="label">*</label>
             </div>
             {selectType}
-            <button onClick={handleSubmit}>Submit</button>
-        </form>
+            <button className='btn'>Submit</button>
+            </form>
+            {newCardId ? 
+            <Link to={`/cards/${newCardId}`} >
+            <button className='btn'>Check New</button>
+            </Link> : <button onClick={() => alert('You need to add before check!')} className='btn'>Check New</button>}  
+        </>
     )
 }
 
