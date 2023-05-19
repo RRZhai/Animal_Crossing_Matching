@@ -7,6 +7,8 @@ Hey there, and a warm welcome from Animal Crossing Mathing! Get ready to dive he
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `npm install`
+### `npm run server`
 ### `npm start`
 
 Runs the app in the development mode.\
