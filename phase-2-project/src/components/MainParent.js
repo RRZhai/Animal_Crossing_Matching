@@ -36,6 +36,8 @@ function MainParent(){
   const history = useHistory()
   const [modalIsOpen, setIsOpen] = useState(false);
   const[matches, setMatches]= useState(0)
+  const[matchedCards, setMatchedCards]= useState([{}])
+
   function openModal() {
     setIsOpen(true);
   }
@@ -86,6 +88,7 @@ function MainParent(){
         if (choice1 && choice2){
           setDisabled(true)
           if(choice1.id === choice2.id){
+            setMatchedCards([...matchedCards, choice1])
             setCards(prevCards =>{
               return prevCards.map(card => {
                 if(card.id === choice1.id){
@@ -185,7 +188,7 @@ const calculateScore = ()=>{
       <Switch>
         <Route path="/game">
           <div className='game'>
-            <CardContainer cardsHolder={cardsHolder}/>
+            <CardContainer cardsHolder={cardsHolder} matchedCards={matchedCards}/>
             <div className='game-block'>
               <button onClick={shuffledCards}>
                {toggleStart ? "Start Game" : "New Game"}
@@ -216,7 +219,7 @@ const calculateScore = ()=>{
         </Route>
         <Route path='/collection'>
           <div className='collection-homepage'>
-            <CardContainer cardsHolder={cardsHolder}/>
+            <CardContainer cardsHolder={cardsHolder} matchedCards={matchedCards}/>
             <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard}/>
           </div>
         </Route>
