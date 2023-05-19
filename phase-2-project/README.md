@@ -15,7 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-GIF:
+GIF:![Untitled_2_AdobeExpress](https://github.com/drwomble/phase-2-project/assets/126899363/0aaa8167-3fdd-45a4-b553-c3ba83f429b5)
+
 
 FEATURES:
 This application packs a punch with a bunch of incredible features designed to showcase your knowledge gained from phrase1 and phrase2. We've got it all covered, from fetching data from the database to utilizing React states and props for seamless information flow between components. And that's not all!
