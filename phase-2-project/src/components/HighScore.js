@@ -10,10 +10,10 @@ useEffect(() => {
 }, [])
 
 const mappedScores= scoreList.map(score =>{
-return <div key={score.id}>
-<p> Name: {score.username}</p>
-<p> Score: {score.score}</p>
-</div>
+  return <div key={score.id}>
+      <p> Name: {score.username}</p>
+      <p> Score: {score.score}</p>
+      </div>
 })
 
     return(
