@@ -21,10 +21,6 @@ const customStyles = {
   },
 };
 
-
-
-
-
 function MainParent(){
   //state for cards ⮯
   const [cards, setCards] = useState([])
@@ -36,7 +32,9 @@ function MainParent(){
   const [showCards, setShowCards] = useState(false)
   const cardId = useId()
   const [toggleStart, setToggleStart] = useState(true)
+  const [cardsHolder, setCardsHolder] = useState([])
   const [newCard, setNewCard] = useState(null)
+
   const [userName, setUserName ] =useState('')
   const history = useHistory()
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -125,6 +123,12 @@ openModal()
     setDisabled(false)
   }
 
+  useEffect(() => {
+      fetch('http://localhost:3001/all')
+      .then(res => res.json())
+      .then(data => setCardsHolder(data))
+  }, [])
+
   const handleSubmitNew = (e, submitForm) => {
     e.preventDefault()
     fetch('http://localhost:3001/all', {
@@ -133,9 +137,10 @@ openModal()
         body: JSON.stringify(submitForm)
     }).then(res => res.json())
     .then(card => {
-      setNewCard(card);
-      setCards(current => [...current, card])})
-}
+      setNewCard(card)
+    })
+    .then(setCardsHolder(current => [...current, submitForm]))
+} 
 
 const calculateScore = ()=>{
   let maxScore = 8
@@ -146,8 +151,7 @@ const calculateScore = ()=>{
   return(maxScore)
   }
 
-
-    const handleSubmit =(e) =>{
+  const handleSubmit =(e) =>{
   e.preventDefault()
   fetch('http://localhost:3001/highscore', {
     method: "POST",
@@ -162,13 +166,13 @@ const calculateScore = ()=>{
   handleChoice={handleChoice}
   card={card}
   key={index}
+
   flipped={card === choice1 || card === choice2 || card.stat || showCards}
   disabled={disabled}
   />)
   const handleNoHome = () => {
     setHome(true)
   }
-
   const handleHome = () => {
     setHome(false)
   }
@@ -196,14 +200,16 @@ const calculateScore = ()=>{
       </Link>
       <Switch>
         <Route path="/game">
-          <div>
-            <h1 className='game-header'>Memory Card Game</h1>
-            <button onClick={shuffledCards} className='game-header'>
-              {toggleStart ? "Start Game" : "New Game"}
-            </button>
-            <h2 className='game-header'>Turns: {turns}</h2>
-            <div className='container'>
-              {displayCards}
+          <div className='game'>
+            <CardContainer cardsHolder={cardsHolder}/> 
+            <div className='game-block'>
+              <button onClick={shuffledCards}>
+               {toggleStart ? "Start Game" : "New Game"}
+              </button>
+              <h3>Turns: {turns}</h3>
+                <div className='container'>
+                  {toggleStart ? null : displayCards}
+                </div>
             </div>
               <Modal
               isOpen={modalIsOpen}
@@ -227,7 +233,7 @@ const calculateScore = ()=>{
         </Route>
         <Route path='/collection'>
           <div className='collection-homepage'>
-            <CardContainer collectedCard={cards} cardsHolder={cards}/>
+            <CardContainer cardsHolder={cardsHolder}/> 
             <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard}/>
           </div>
         </Route>

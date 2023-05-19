@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 // import Card from "./Card"
 function MyCollection({handleSubmitNew, newCard}) {
     const [selectType, setSelectType] = useState([])
-    const [submitForm, setSubmitForm] = useState({})
+    const [submitForm, setSubmitForm] = useState({stat:true})
 
     const handleVillager = () => {
         setSelectType(
@@ -89,7 +89,6 @@ function MyCollection({handleSubmitNew, newCard}) {
     const handleAdd = (e) => {
         setSubmitForm({...submitForm, [e.target.name]:e.target.value})
     }
-    console.log(newCard)
     
     return(
         <div className="form">
@@ -114,11 +113,11 @@ function MyCollection({handleSubmitNew, newCard}) {
             </div>
             {selectType}
             <button className='btn'>Submit</button>
+            </form>
             {newCard ? 
             <Link to={`/cards/${newCard.id}`} >
             <button className='btn'>Check New</button>
             </Link> : <button onClick={() => alert('You need to add before check!')} className='btn'>Check New</button>}  
-            </form>
         </div>
     )
 }

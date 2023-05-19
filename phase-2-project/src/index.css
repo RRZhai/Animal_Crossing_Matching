@@ -17,7 +17,7 @@ ul{
 /* MainParent */
 .header{
     display: flex;
-    background-color:#f8f4c7;
+    background-color:#dbbf9e;
     align-items: center;
     gap: 5%;
     justify-content: space-between;
@@ -29,7 +29,7 @@ ul{
     margin-left: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    width: 25%;
+    width: 40%;
 }
 
 #nav-bar{
@@ -59,10 +59,25 @@ ul{
     width: 100%;
 }
 
+/* Game */
+.game{
+    display: flex;
+}
+
+.game .collection{
+    width: 30%;
+}
+
+.game-block{
+    width: 65%;
+}
+.game-block{
+    width: 65%;
+}
+
 /*My Collection*/
 .collection-homepage{
     display: flex;
-    grid-template-columns: 40% ;
     gap: 5px;
 }
 
@@ -70,7 +85,7 @@ ul{
     display: grid;
     background-color: #dbbf9e;
     border-right: 2rem ridge rgba(230, 234, 166, 0.321);
-    width:40%;
+    width:70%;
 }
 
 .collected-container{
