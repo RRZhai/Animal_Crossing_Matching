@@ -1,10 +1,11 @@
+Animal Crossing Matching
+
+INTRODUCTION:
+Hey there, and a warm welcome from Animal Crossing Mathing! Get ready to dive headfirst into a JavaScript application that not only lets you collect villagers, fossils, fish, and sea creatures but also helps you become a true Animal Crossing aficionado! By matching those sly little cards, you'll not only have a blast but also expand your knowledge of all things Animal Crossing. Hold onto your hats, because Animal Crossing Mathing is not just any ordinary game—it's a group cooperation extravaganza! Get ready to team up with your friends and embark on an epic journey together. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
@@ -14,57 +15,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+GIF:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+FEATURES:
+This application packs a punch with a bunch of incredible features designed to showcase your knowledge gained from phrase1 and phrase2. We've got it all covered, from fetching data from the database to utilizing React states and props for seamless information flow between components. And that's not all!
 
-### `npm run build`
+1. Get ready for some serious fun with clickable cards in the game section. Each card holds a precious item waiting to be collected. You'll have a limited time to memorize the image before it disappears, so keep your eyes peeled! Your mission is to match those sneaky little cards and add their corresponding items to your very own collection. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Woohoo! When you successfully match those cards, the icon will light up like a disco ball, signaling your triumph! But the excitement doesn't stop there. Clicking on the image will unlock a treasure trove of details about that specific card. But beware! Don't get click-happy on the unblurred ones just yet. You'll need to find their matches first before they spill their secrets!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Congratulations on completing the game! But the excitement doesn't end there. Prepare to put your name in the spotlight and see if you're the ultimate champion in terms of contribution! Simply enter your name, and with a single click on "Check out the score," you'll be whisked away to the glorious score page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Want to expand your collection? No problemo! Just head over to the 'My Collection' section and add a shiny new card to your treasure trove. But hold on tight! Before you can add the card, don't forget to choose the category it belongs to. Once you've filled out the form, hit that glorious 'Submit' button. Voila! Your new card is ready to be explored. Simply click on the icon to reveal its secrets, or if you're feeling extra curious, click on 'Check New' to see it in all its glory!
 
-### `npm run eject`
+License, acknowledgments and further reading:
+Sources: 
+https://acnhapi.com/doc#section/Authentication
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
