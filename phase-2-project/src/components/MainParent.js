@@ -130,8 +130,9 @@ function MainParent(){
     }).then(res => res.json())
     .then(card => {
       setNewCard(card)
+      setCardsHolder(current => [...current, card])
     })
-    .then(setCardsHolder(current => [...current, submitForm]))
+    .then()
 }
 const calculateScore = ()=>{
   let maxScore = 8
