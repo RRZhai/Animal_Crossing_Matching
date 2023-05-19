@@ -270,3 +270,8 @@ h3{
     color: #fffffa;
     font-family: 'comic Sans MS';
 }
+.game-header{
+    align-items: center;
+    font-family: 'comic Sans MS';
+    display: auto;
+}

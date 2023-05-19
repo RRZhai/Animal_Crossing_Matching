@@ -730,5 +730,12 @@
       "collected": "No",
       "stat": false
     }
+  ],
+  "highscore": [
+    {
+      "id": 1,
+      "score": 100,
+      "username": "Ashley"
+    }
   ]
 }
