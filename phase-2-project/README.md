@@ -24,13 +24,17 @@ Image
 FEATURES:
 This application packs a punch with a bunch of incredible features designed to showcase your knowledge gained from phrase1 and phrase2. We've got it all covered, from fetching data from the database to utilizing React states and props for seamless information flow between components. And that's not all!
 
-
+<img width="1569" alt="Screenshot 2023-05-19 at 10 22 14 AM" src="https://github.com/drwomble/phase-2-project/assets/126899363/d108f07f-8cb2-41d5-8a67-031750a5d043">
 1. Get ready for some serious fun with clickable cards in the game section. Each card holds a precious item waiting to be collected. You'll have a limited time to memorize the image before it disappears, so keep your eyes peeled! Your mission is to match those sneaky little cards and add their corresponding items to your very own collection. 
 
+<img width="1569" alt="Screenshot 2023-05-19 at 10 22 14 AM" src="https://github.com/drwomble/phase-2-project/assets/126899363/e47c7d2b-4972-4eb7-889d-7c4404f85c0d">
 2. Woohoo! When you successfully match those cards, the icon will light up like a disco ball, signaling your triumph! But the excitement doesn't stop there. Clicking on the image will unlock a treasure trove of details about that specific card. But beware! Don't get click-happy on the unblurred ones just yet. You'll need to find their matches first before they spill their secrets!
 
+<img width="1569" alt="Screenshot 2023-05-19 at 10 23 24 AM" src="https://github.com/drwomble/phase-2-project/assets/126899363/5d04e15b-e500-4bfa-a85e-6de2d07c71d2">
 3. Congratulations on completing the game! But the excitement doesn't end there. Prepare to put your name in the spotlight and see if you're the ultimate champion in terms of contribution! Simply enter your name, and with a single click on "Check out the score," you'll be whisked away to the glorious score page.
 
+<img width="1569" alt="Screenshot 2023-05-19 at 10 12 34 AM" src="https://github.com/drwomble/phase-2-project/assets/126899363/50cb34e5-c9fa-4c4f-81c3-b75bdce4dc66">
+<img width="1569" alt="Screenshot 2023-05-19 at 10 25 19 AM" src="https://github.com/drwomble/phase-2-project/assets/126899363/efcce48c-fb38-44e9-93f4-273f780668fd">
 4. Want to expand your collection? No problemo! Just head over to the 'My Collection' section and add a shiny new card to your treasure trove. But hold on tight! Before you can add the card, don't forget to choose the category it belongs to. Once you've filled out the form, hit that glorious 'Submit' button. Voila! Your new card is ready to be explored. Simply click on the icon to reveal its secrets, or if you're feeling extra curious, click on 'Check New' to see it in all its glory!
 
 License, acknowledgments and further reading:
