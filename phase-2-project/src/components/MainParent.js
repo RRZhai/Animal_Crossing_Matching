@@ -9,7 +9,6 @@ import HighScore from './HighScore'
 import MyCollection from './MyCollection'
 import Modal from 'react-modal'
 Modal.setAppElement('#root');
-
 const customStyles = {
   content: {
     top: '50%',
@@ -20,7 +19,6 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
   },
 };
-
 function MainParent(){
   //state for cards ⮯
   const [cards, setCards] = useState([])
@@ -34,25 +32,22 @@ function MainParent(){
   const [toggleStart, setToggleStart] = useState(true)
   const [cardsHolder, setCardsHolder] = useState([])
   const [newCard, setNewCard] = useState(null)
-
   const [userName, setUserName ] =useState('')
   const history = useHistory()
   const [modalIsOpen, setIsOpen] = useState(false);
   const[matches, setMatches]= useState(0)
+  const[matchedCards, setMatchedCards]= useState([{}])
 
   function openModal() {
     setIsOpen(true);
   }
-
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
     // subtitle.style.color = '#f00';
   }
-
   function closeModal() {
     setIsOpen(false);
   }
-
   //fetch request ⮯
   useEffect(() => {
     fetch('http://localhost:3001/all')
@@ -80,7 +75,6 @@ function MainParent(){
     setTimeout(() => {
       setShowCards(false)
     }, 3000)
-
     setCards(reshuffledArray)
     setTurns(0)
   }
@@ -90,31 +84,31 @@ function MainParent(){
   }
   //compare the 2 cards
   useEffect(() => {
-if(matches !== 8){
-
-
-    if (choice1 && choice2){
-      setDisabled(true)
-      if(choice1.id === choice2.id){
-        setCards(prevCards =>{
-          return prevCards.map(card => {
-            if(card.id === choice1.id){
-              return {...card, stat: true}
-            }else{
-              return card
-            }
-          })
-        })
-setMatches(currentMatches => currentMatches+1)
-        resetTurn()
+    if(matches !== 8){
+        if (choice1 && choice2){
+          setDisabled(true)
+          if(choice1.id === choice2.id){
+            setMatchedCards([...matchedCards, choice1])
+            setCards(prevCards =>{
+              return prevCards.map(card => {
+                if(card.id === choice1.id){
+                  return {...card, stat: true}
+                }else{
+                  return card
+                }
+              })
+            })
+              setMatches(currentMatches => currentMatches + 1)
+            resetTurn()
+          }else{
+            setTimeout(() => resetTurn(), 2000)
+          }
+        }
       }else{
-        setTimeout(() => resetTurn(), 2000)
-      }
-    }
-  }else{
-openModal()
+    openModal()
+    setMatches(0)
   }
-  }, [choice1, choice2])
+}, [choice1, choice2])
   //reset turns
   const resetTurn = () => {
     setChoice1(null)
@@ -122,13 +116,11 @@ openModal()
     setTurns(value => value + 1)
     setDisabled(false)
   }
-
   useEffect(() => {
       fetch('http://localhost:3001/all')
       .then(res => res.json())
       .then(data => setCardsHolder(data))
   }, [])
-
   const handleSubmitNew = (e, submitForm) => {
     e.preventDefault()
     fetch('http://localhost:3001/all', {
@@ -140,8 +132,7 @@ openModal()
       setNewCard(card)
     })
     .then(setCardsHolder(current => [...current, submitForm]))
-} 
-
+}
 const calculateScore = ()=>{
   let maxScore = 8
   const extraTurns = turns-16
@@ -150,7 +141,6 @@ const calculateScore = ()=>{
   }
   return(maxScore)
   }
-
   const handleSubmit =(e) =>{
   e.preventDefault()
   fetch('http://localhost:3001/highscore', {
@@ -166,7 +156,6 @@ const calculateScore = ()=>{
   handleChoice={handleChoice}
   card={card}
   key={index}
-
   flipped={card === choice1 || card === choice2 || card.stat || showCards}
   disabled={disabled}
   />)
@@ -176,7 +165,6 @@ const calculateScore = ()=>{
   const handleHome = () => {
     setHome(false)
   }
-  
   return (
     <div>
       <div className='header'>
@@ -187,7 +175,6 @@ const calculateScore = ()=>{
           <Link to={``} onClick={handleHome} className='menu'>Main Menu</Link>
           <Link to={`/game`} onClick={handleNoHome} className='menu'>Play Game</Link>
           <Link to={`/collection`} onClick={handleNoHome} className='menu'>My Collection</Link>
-          <Link to={`/score`} onClick={handleNoHome} className='menu'> Score </Link>
           <Link to={`/care`} onClick={handleNoHome} className='menu'> Customer Care </Link>
           <Link to= '/high-scores' onClick={handleNoHome} className="menu">High Score</Link>
         </div >
@@ -201,14 +188,14 @@ const calculateScore = ()=>{
       <Switch>
         <Route path="/game">
           <div className='game'>
-            <CardContainer cardsHolder={cardsHolder}/> 
+            <CardContainer cardsHolder={cardsHolder} matchedCards={matchedCards}/>
             <div className='game-block'>
               <button onClick={shuffledCards}>
                {toggleStart ? "Start Game" : "New Game"}
               </button>
               <h3>Turns: {turns}</h3>
                 <div className='container'>
-                  {toggleStart ? null : displayCards}
+                  {displayCards}
                 </div>
             </div>
               <Modal
@@ -225,7 +212,6 @@ const calculateScore = ()=>{
                 <button type="submit" >Check Out Scores!</button>
               </form>
               </Modal>
-
           </div>
         </Route>
         <Route path='/high-score'>
@@ -233,7 +219,7 @@ const calculateScore = ()=>{
         </Route>
         <Route path='/collection'>
           <div className='collection-homepage'>
-            <CardContainer cardsHolder={cardsHolder}/> 
+            <CardContainer cardsHolder={cardsHolder} matchedCards={matchedCards}/>
             <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard}/>
           </div>
         </Route>
@@ -243,7 +229,6 @@ const calculateScore = ()=>{
         <Route path="/high-scores">
           <HighScore />
         </Route>
-
         <Route path='/care'>
           <CustomerService />
         </Route>

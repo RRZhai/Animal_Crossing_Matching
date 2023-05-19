@@ -738,19 +738,9 @@
       "username": "Ashley"
     },
     {
-      "username": "ZZ",
-      "score": 7.7,
+      "username": "zzzz",
+      "score": 7.4,
       "id": 2
-    },
-    {
-      "username": "zz",
-      "score": 8,
-      "id": 3
-    },
-    {
-      "username": "zzz",
-      "score": 8,
-      "id": 4
     }
   ]
 }
