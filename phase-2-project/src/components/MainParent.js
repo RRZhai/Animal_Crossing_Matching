@@ -64,7 +64,7 @@ function MainParent(){
   //randomize ⮯
   const shuffledCards = () =>{
     setToggleStart(value => !value)
-    const shuffleCards = cards
+    const shuffleCards = cardsHolder
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({value}) => value)
