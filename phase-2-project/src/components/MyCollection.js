@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 // import Card from "./Card"
 function MyCollection({handleSubmitNew, newCard}) {
     const [selectType, setSelectType] = useState([])
-    const [submitForm, setSubmitForm] = useState({stat:true})
+    const [submitForm, setSubmitForm] = useState({stat:false})
 
     const handleVillager = () => {
         setSelectType(
