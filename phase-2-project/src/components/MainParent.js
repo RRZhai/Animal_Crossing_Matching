@@ -70,7 +70,7 @@ function MainParent(){
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({value}) => value)
-    const newShuffledCards = shuffleCards.slice(0, 8)
+    const newShuffledCards = shuffleCards.slice(0, 2)
     //duplicate the array ⮯
     const newCardArray = [...newShuffledCards, ...newShuffledCards]
     const reshuffledArray = newCardArray
@@ -92,29 +92,27 @@ function MainParent(){
   }
   //compare the 2 cards
   useEffect(() => {
-if(matches !== 8){
-
-
-    if (choice1 && choice2){
-      setDisabled(true)
-      if(choice1.id === choice2.id){
-        setCards(prevCards =>{
-          return prevCards.map(card => {
-            if(card.id === choice1.id){
-              return {...card, stat: true}
-            }else{
-              return card
-            }
+    if(matches !== 2){
+      if (choice1 && choice2){
+        setDisabled(true)
+        if(choice1.id === choice2.id){
+          setCards(prevCards =>{
+            return prevCards.map(card => {
+              if(card.id === choice1.id){
+                return {...card, stat: true}
+              }else{
+                return card
+              }
+            })
           })
-        })
-setMatches(currentMatches => currentMatches+1)
-        resetTurn()
-      }else{
+            resetTurn()
+            setMatches(currentMatches => currentMatches + 1)
+    }else{
         setTimeout(() => resetTurn(), 2000)
+        }
       }
-    }
-  }else{
-openModal()
+    }else{  
+       openModal()
   }
   }, [choice1, choice2])
   //reset turns
@@ -134,7 +132,7 @@ openModal()
     }).then(res => res.json())
     .then(card => {
       setNewCard(card);
-      setCards(current => [...current, card])})
+  })
 }
 
 const calculateScore = ()=>{
@@ -153,11 +151,13 @@ const calculateScore = ()=>{
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({username: userName, score: calculateScore()})
-  }).then(res => res.json())
+  })
+  .then(res => res.json())
   .then(scoreObj => {
-   closeModal()
+    closeModal()
     history.push("/high-score")})
     }
+  //display cards
   const displayCards = cards.map((card, index) => <GameCards
   handleChoice={handleChoice}
   card={card}
@@ -183,7 +183,6 @@ const calculateScore = ()=>{
           <Link to={``} onClick={handleHome} className='menu'>Main Menu</Link>
           <Link to={`/game`} onClick={handleNoHome} className='menu'>Play Game</Link>
           <Link to={`/collection`} onClick={handleNoHome} className='menu'>My Collection</Link>
-          <Link to={`/score`} onClick={handleNoHome} className='menu'> Score </Link>
           <Link to={`/care`} onClick={handleNoHome} className='menu'> Customer Care </Link>
           <Link to= '/high-scores' onClick={handleNoHome} className="menu">High Score</Link>
         </div >
@@ -205,7 +204,7 @@ const calculateScore = ()=>{
             <div className='container'>
               {displayCards}
             </div>
-              <Modal
+            <Modal
               isOpen={modalIsOpen}
               onAfterOpen={afterOpenModal}
               onRequestClose={closeModal}
@@ -218,7 +217,7 @@ const calculateScore = ()=>{
                 <input type="text" onChange={e=>setUserName(e.target.value)}/>
                 <button type="submit" >Check Out Scores!</button>
               </form>
-              </Modal>
+            </Modal>
 
           </div>
         </Route>
