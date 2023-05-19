@@ -2,11 +2,28 @@ import React from 'react'
 import {useState, useEffect, useId} from "react"
 import GameCards from "./GameCards"
 import CustomerService from './CustomerService'
-import {Switch, Route, Link} from 'react-router-dom'
+import {Switch, Route, Link, useHistory} from 'react-router-dom'
 import CardContainer from './CardContainer'
 import Card from './Card'
 import HighScore from './HighScore'
 import MyCollection from './MyCollection'
+import Modal from 'react-modal'
+Modal.setAppElement('#root');
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+
+
+
 
 function MainParent(){
   //state for cards ⮯
@@ -20,6 +37,23 @@ function MainParent(){
   const cardId = useId()
   const [toggleStart, setToggleStart] = useState(true)
   const [newCard, setNewCard] = useState(null)
+  const [userName, setUserName ] =useState('')
+  const history = useHistory()
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const[matches, setMatches]= useState(0)
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   //fetch request ⮯
   useEffect(() => {
@@ -48,17 +82,20 @@ function MainParent(){
     setTimeout(() => {
       setShowCards(false)
     }, 3000)
-    
+
     setCards(reshuffledArray)
     setTurns(0)
   }
   //handle users card selection
   const handleChoice = (card) => {
     choice1 ? setChoice2(card) : setChoice1(card)
-    
+
   }
   //compare the 2 cards
   useEffect(() => {
+if(matches !== 8){
+
+
     if (choice1 && choice2){
       setDisabled(true)
       if(choice1.id === choice2.id){
@@ -71,11 +108,15 @@ function MainParent(){
             }
           })
         })
+setMatches(currentMatches => currentMatches+1)
         resetTurn()
       }else{
         setTimeout(() => resetTurn(), 2000)
       }
     }
+  }else{
+openModal()
+  }
   }, [choice1, choice2])
   //reset turns
   const resetTurn = () => {
@@ -95,13 +136,36 @@ function MainParent(){
     .then(card => {
       setNewCard(card);
       setCards(current => [...current, card])})
+
 }
- 
-  
-  const displayCards = cards.map((card, index) => <GameCards 
-  handleChoice={handleChoice} 
-  card={card} 
-  key={index} 
+
+const calculateScore = ()=>{
+let maxScore = 8
+const extraTurns = turns-16
+if (extraTurns > 0){
+return( maxScore - extraTurns * 0.3)
+}
+return(maxScore)
+}
+
+
+  const handleSubmit =(e) =>{
+e.preventDefault()
+fetch('http://localhost:3001/highscore', {
+  method: "POST",
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify({username: userName, score: calculateScore()})
+}).then(res => res.json())
+.then(scoreObj => {
+ closeModal()
+  history.push("/high-score")})
+  }
+
+
+  const displayCards = cards.map((card, index) => <GameCards
+  handleChoice={handleChoice}
+  card={card}
+  key={index}
   flipped={card === choice1 || card === choice2 || card.stat || showCards}
   disabled={disabled}
   />)
@@ -125,15 +189,16 @@ function MainParent(){
           <Link to={`/collection`} onClick={handleNoHome} className='menu'>My Collection</Link>
           <Link to={`/score`} onClick={handleNoHome} className='menu'> Score </Link>
           <Link to={`/care`} onClick={handleNoHome} className='menu'> Customer Care </Link>
+          <Link to= '/high-scores' onClick={handleNoHome} className="menu">High Score</Link>
         </div >
         <audio controls autoPlay id='player'>
           <source src={`https://acnhapi.com/v1/music/${Math.floor(Math.random()*40)}`} type="audio/mpeg" />
         </audio>
       </div>
       <Link to={`/game`}>
-        {home ? null : <img id='homepage' onClick={handleNoHome} src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_1200/ncom/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a"/>}    
+        {home ? null : <img id='homepage' onClick={handleNoHome} src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_1200/ncom/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a"/>}
       </Link>
-      <Switch> 
+      <Switch>
         <Route path="/game">
           <div>
             <button onClick={shuffledCards}>
@@ -143,20 +208,39 @@ function MainParent(){
             <div className='container'>
               {displayCards}
             </div>
+              <Modal
+              isOpen={modalIsOpen}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Score Modal"
+            >
+              <button onClick={closeModal}>close</button>
+              <div>Enter Your Name</div>
+              <form onSubmit={handleSubmit}>
+                <input type="text" onChange={e=>setUserName(e.target.value)}/>
+                <button type="submit" >Check Out Scores!</button>
+              </form>
+              </Modal>
+
           </div>
         </Route>
-        <Route path='/score'>
+        <Route path='/high-score'>
             <HighScore />
         </Route>
         <Route path='/collection'>
           <div className='collection-homepage'>
-            <CardContainer collectedCard={cards} cardsHolder={cards}/> 
+            <CardContainer collectedCard={cards} cardsHolder={cards}/>
             <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard}/>
           </div>
         </Route>
         <Route path="/cards/:id">
-            <Card /> 
+            <Card />
         </Route>
+        <Route path="/high-scores">
+          <HighScore />
+        </Route>
+
         <Route path='/care'>
           <CustomerService />
         </Route>
