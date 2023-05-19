@@ -89,7 +89,6 @@ function MainParent(){
   //handle users card selection
   const handleChoice = (card) => {
     choice1 ? setChoice2(card) : setChoice1(card)
-
   }
   //compare the 2 cards
   useEffect(() => {
@@ -173,7 +172,7 @@ const calculateScore = ()=>{
   const handleHome = () => {
     setHome(false)
   }
-  // const handleStartAndNewToggle = () => setToggleStart(value => !value)
+  
   return (
     <div>
       <div className='header'>
@@ -198,10 +197,11 @@ const calculateScore = ()=>{
       <Switch>
         <Route path="/game">
           <div>
-            <button onClick={shuffledCards}>
+            <h1 className='game-header'>Memory Card Game</h1>
+            <button onClick={shuffledCards} className='game-header'>
               {toggleStart ? "Start Game" : "New Game"}
             </button>
-            <h4>Turns: {turns}</h4>
+            <h2 className='game-header'>Turns: {turns}</h2>
             <div className='container'>
               {displayCards}
             </div>
