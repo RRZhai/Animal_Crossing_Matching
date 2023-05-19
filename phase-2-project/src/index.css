@@ -69,10 +69,9 @@ ul{
 }
 
 .game-block{
-    width: 65%;
-}
-.game-block{
-    width: 65%;
+    width: 100%;
+    height: 100%;
+    object-position: 0%;
 }
 
 /*My Collection*/
@@ -180,7 +179,7 @@ body {
      margin-left: 10%;
      flex-wrap: wrap;
      display: flex;
-     justify-content: center;
+     /* justify-content: center; */
      grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-template-rows: 1fr 1fr 1fr 1fr;
      gap: 10px;
@@ -205,9 +204,10 @@ body {
 .front {
     transform: rotateY(90deg);
     transition: all ease-in 0.2s;
-    width: 40%;
-    height: 80%;
+    width: 30%;
+    height: 20%;
     margin-left: 30%;
+    align-tracks: center;
 }
 .flipped .front {
     transform: rotateY(0deg);
@@ -216,9 +216,11 @@ body {
 .back {
     transition: all ease-in 0.2s;
     transition-delay: 0s;
+    justify-content: center;
     width: 40%;
     height: 80%;
     margin-left: 30%;
+    align-tracks: center;
 }
 .flipped .back {
     transform: rotateY(90deg);
