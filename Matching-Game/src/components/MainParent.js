@@ -69,6 +69,7 @@ function MainParent() {
         setScoreList(data);
       });
   }, []);
+
   //randomize ⮯
   const shuffledCards = () => {
     setToggleStart((value) => !value);

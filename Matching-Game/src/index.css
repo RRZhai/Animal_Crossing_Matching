@@ -277,3 +277,19 @@ h3{
     font-family: 'comic Sans MS';
     display: auto;
 }
+
+/* High Score */
+.high-score{
+    text-align: center;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width : 50%;
+    background-color: #fdc0c7;
+    border-radius: 10rem;
+    font-family: "Gill Sans", sans-serif;
+    color: #fffffa;
+}
