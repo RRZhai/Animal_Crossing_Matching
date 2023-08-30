@@ -7,6 +7,7 @@ import CardContainer from "./CardContainer";
 import Card from "./Card";
 import HighScore from "./HighScore";
 import MyCollection from "./MyCollection";
+import MenuBar from "./MenuBar";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
 const customStyles = {
@@ -31,6 +32,7 @@ function MainParent() {
   const cardId = useId();
   const [toggleStart, setToggleStart] = useState(true);
   const [cardsHolder, setCardsHolder] = useState([]);
+  const [scoreList, setScoreList] = useState([]);
   const [newCard, setNewCard] = useState(null);
   const [userName, setUserName] = useState("");
   const history = useHistory();
@@ -58,6 +60,14 @@ function MainParent() {
       })
       .then(setShowCards(true))
       .catch((err) => console.error(err));
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/highscore")
+      .then((response) => response.json())
+      .then((data) => {
+        setScoreList(data);
+      });
   }, []);
   //randomize ⮯
   const shuffledCards = () => {
@@ -172,40 +182,7 @@ function MainParent() {
   };
   return (
     <div>
-      <div className="header">
-        <Link to={""}>
-          <img
-            id="gamename"
-            src="https://upload.wikimedia.org/wikipedia/en/9/9e/Animal_Crossing_Logo.png"
-          />
-        </Link>
-        <div id="nav-bar">
-          <Link to={``} onClick={handleHome} className="menu">
-            Main Menu
-          </Link>
-          <Link to={`/game`} onClick={handleNoHome} className="menu">
-            Play Game
-          </Link>
-          <Link to={`/collection`} onClick={handleNoHome} className="menu">
-            My Collection
-          </Link>
-          <Link to={`/care`} onClick={handleNoHome} className="menu">
-            {" "}
-            Customer Care{" "}
-          </Link>
-          <Link to="/high-scores" onClick={handleNoHome} className="menu">
-            High Score
-          </Link>
-        </div>
-        <audio controls autoPlay id="player">
-          <source
-            src={`https://acnhapi.com/v1/music/${Math.floor(
-              Math.random() * 40
-            )}`}
-            type="audio/mpeg"
-          />
-        </audio>
-      </div>
+      <MenuBar handleNoHome={handleNoHome} handleHome={handleHome} />
       <Link to={`/game`}>
         {home ? null : (
           <img
@@ -264,7 +241,7 @@ function MainParent() {
           <Card />
         </Route>
         <Route path="/high-scores">
-          <HighScore />
+          <HighScore scoreList={scoreList} />
         </Route>
         <Route path="/care">
           <CustomerService />
