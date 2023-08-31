@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 function MenuBar() {
-  const [songUrl, setSongUrl] = useState("");
+  const [songUrl, setSongUrl] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:3000/songs/${Math.floor(Math.random() * 10)}`)
-    .then((r) => r.json())
-    .then((data) => setSongUrl(data.url));
+      .then((r) => r.json())
+      .then((data) => setSongUrl(data.url));
   }, []);
-  console.log(songUrl)
+
   return (
     <div className="header">
       <Link to={""}>
@@ -35,11 +36,13 @@ function MenuBar() {
           Score
         </Link>
       </div>
-      <audio controls autoPlay id="player">
-        <source
-          src={songUrl}
-          type="audio/mpeg"
-        />
+      <audio
+        controls
+        autoPlay
+        muted
+        id="player"
+        src={songUrl}
+      >
       </audio>
     </div>
   );

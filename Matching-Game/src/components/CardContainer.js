@@ -24,12 +24,11 @@ function CardContainer({ cardsHolder, matchedCards }) {
             );
           } else {
             return (
-              <div className="icon-card">
+              <div className="icon-card" key={card.id}>
                 <img
                   onClick={() => alert("You need to find me first!")}
                   className="icon"
                   id="hide_icon"
-                  key={card.id}
                   src={card["image_uri"]}
                 />
               </div>
