@@ -11,20 +11,19 @@ function MenuBar() {
       </Link>
       <div id="nav-bar">
         <Link to={``} className="menu">
-          Main Menu
+          Main
         </Link>
         <Link to={`/game`} className="menu">
-          Play Game
+          Game
         </Link>
         <Link to={`/collection`} className="menu">
-          My Collection
+          Collection
         </Link>
         <Link to={`/care`} className="menu">
-          {" "}
-          Customer Care{" "}
+          Customer
         </Link>
         <Link to="/high-scores" className="menu">
-          High Score
+          Score
         </Link>
       </div>
       <audio controls autoPlay id="player">
