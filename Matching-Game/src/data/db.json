@@ -325,7 +325,7 @@
       "birthday": "11/10",
       "species": "Kangaroo",
       "hobby": "Education",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/229",
+      "image_uri": "https://dodo.ac/np/images/thumb/7/75/Kitt_NH.png/300px-Kitt_NH.png",
       "bubble-color": "#c0ab72",
       "text-color": "#fffce9",
       "saying": "Funny parents have funny kids.",
@@ -454,7 +454,7 @@
       "name": "anomalocaris",
       "price": 2000,
       "museum-phrase": "Anomalocaris lived in the water long before the dinosaurs and are known for their, er, \"distinctive\" look. Flat bodies over three feet in length, bulging eyes like a...dragonfly, antennae like shrimp tails... They looked so peculiar that people originally thought they were multiple fossils stacked on top of each other! As a delightful side note, \"anomalocaris\" means \"abnormal shrimp\". Obviously this animal has a certain reputation in the scientific community!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/anomalocaris",
+      "image_uri": "https://dodo.ac/np/images/d/d8/Anomalocaris_NH_Icon.png",
       "part-of": "anomalocaris",
       "collected": true
     },
@@ -463,26 +463,26 @@
       "name": "archaeopteryx",
       "price": 1300,
       "museum-phrase": "Archaeopteryx's feathers led many people to believe it was the progenitor of the birds, eh wot... Sadly, further evidence indicates it's likely not a direct ancestor—more an evolutionary \"uncle\", if you will. Every time a specimen is found, new theories pop up. And new relatives come to roost in the family tree!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/archaeopteryx",
+      "image_uri": "https://dodo.ac/np/images/4/49/Archaeopteryx_NH_Icon.png",
       "part-of": "archaeopteryx",
       "collected": false
     },
     {
       "id": 44,
-      "name": "archelon tail",
+      "name": "archelon torso",
       "price": 3500,
       "museum-phrase": "Ah, yes. Archelon. It was a sort of huge sea turtle. The largest thus far found, if you want to know. They were very sizable—some 13 feet long, with a shell the size of a small car... If you're into that sort of thing. They likely ate seaweed, shrimp, octopus, and possibly ammonites, given the era involved. It seems CERTAIN giant turtles had to be prima donnas and eat some of the oldest life forms on earth!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/archelon_tail",
+      "image_uri": "https://dodo.ac/np/images/thumb/6/6a/Archelon_Torso_NL_Model.png/200px-Archelon_Torso_NL_Model.png",
       "part-of": "Archelon",
       "collected": false
     },
     {
       "id": 45,
-      "name": "brachio skull",
-      "price": 6000,
-      "museum-phrase": "Brachiosaurus, whose name means \"arm lizard\" —eh, wot— was one of the largest herbivorous dinosaurs. Due to its long front legs and elongated neck, it seems to have specialized in eating plants up high. Alas, in order to support its large size, it likely needed to eat more or less every waking hour. What a ferocious forager it must have been indeed!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/brachio_skull",
-      "part-of": "Brachiosaurus",
+      "name": "archelon torso",
+      "price": 4000,
+      "museum-phrase": "Archelon. What a ferocious forager it must have been indeed!",
+      "image_uri": "https://dodo.ac/np/images/a/a0/Archelon_Skull_NL_Model.png",
+      "part-of": "Archelon",
       "collected": false
     },
     {
@@ -490,7 +490,7 @@
       "name": "diplo chest",
       "price": 4000,
       "museum-phrase": "Good old Diplodocus, what would we do without you? This stout fellow embodied all the best in dinosaurs. Those sturdy legs, that magnificent tail, and, above all, that extraordinary neck! Did you know that its center of gravity was such that sitting up on its hind legs was probably easy? What's more, paired with its long neck, this ability greatly increased its reach for eating plants! Best of all, Diplodocus probably grew its entire life, having no \"adult size\". Would that we were all so gifted!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/diplo_chest",
+      "image_uri": "https://dodo.ac/np/images/9/94/Diplo_Chest_NL_Model.png",
       "part-of": "Diplodocus",
       "collected": false
     },
@@ -499,7 +499,7 @@
       "name": "mammoth torso",
       "price": 2500,
       "museum-phrase": "Ah, Mammoths, the bad boys—and girls!—of the ancient-mammal world. So woolly! So unkempt! They are, of course, most famous for their size, which could be up to 13 tons for the largest males. But they were subject to no one's rules, and some species were SMALLER than modern elephants! Scientists have pondered for years: were mammoths the COOLEST of all extinct species? Perhaps so!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/mammoth_torso",
+      "image_uri": "https://dodo.ac/np/images/d/d9/Mammoth_Torso_PG_Model.png",
       "part-of": "Mammoth",
       "collected": false
     },
@@ -508,7 +508,7 @@
       "name": "right ptera wing",
       "price": 4500,
       "museum-phrase": "The mighty Pteranodon! Among the very largest animals ever to fly, they were role models to us all. With a wingspan of over 23 feet in some cases, I find it simply stunning that they ever did more than glide! But fly they did, soaring dynamically and dramatically over land and sea! I wish I could have seen it...",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/right_ptera_wing",
+      "image_uri": "https://dodo.ac/np/images/6/68/Ptera_Right_Wing_PG_Model.png",
       "part-of": "Pteranodon",
       "collected": true
     },
@@ -517,7 +517,7 @@
       "name": "shark-tooth pattern",
       "price": 1000,
       "museum-phrase": "This shark-tooth pattern comes from the lower jaw of an ancient shark of the genus Helicoprion. Its teeth seem to have grown in a distinctive arrangement rather disturbingly termed a \"tooth-whorl\". I say \"seem\" because shark skeletons are made not of bone, but cartilage, except for their teeth. Consequently, their bodies are never preserved as fossils, and questions about their jaws remain unanswered. The size and placement in the stone of the shark's teeth are actually the only things we have to work with. Sometimes in research we must maintain a stiff upper lip, even in the absence of a stiff lower jaw!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/shark-tooth_pattern",
+      "image_uri": "https://dodo.ac/np/images/b/b1/Shark-Tooth_Pattern_NH_Icon.png",
       "part-of": "shark-tooth pattern",
       "collected": true
     },
@@ -526,7 +526,7 @@
       "name": "T. rex torso",
       "price": 5500,
       "museum-phrase": "I'd say that T. Rex is the 800-pound gorilla of the dinosaur world, but it likely weighed well over nine tons. This fearsome chap is practically synonymous with the word \"dinosaur\", and for good reason! At up to 42 feet long with banana-sized teeth, it was one of the largest carnivores ever to walk the earth. It's unclear how fast T. Rex was since estimates vary wildly... I am just relieved I will never have to escape one. Hoo.",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/trex_torso",
+      "image_uri": "https://dodo.ac/np/images/7/70/T-Rex_Torso_PG_Model.png",
       "part-of": "T. Rex",
       "collected": false
     },
@@ -535,7 +535,7 @@
       "name": "trilobite",
       "price": 1300,
       "museum-phrase": "Trilobites were ancient and extinct before the dinosaurs ever appeared! It boggles the mind! Hoo! They were also one of the most successful classes of animal ever, existing for over 300 million years. Some 50,000 species have been identified in sizes ranging from three millimeters to over two feet! Alas, that is the very limit of my enthusiasm for them, though, they look rather too much like bugs.",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/trilobite",
+      "image_uri": "https://dodo.ac/np/images/a/ac/Trilobite_NH_Icon.png",
       "part-of": "trilobite",
       "collected": false
     },
@@ -545,7 +545,7 @@
       "speed": "Medium",
       "price": 2800,
       "catch-phrase": "I got a pearl oyster! Aw, shucks. Don't clam up now!",
-      "image_uri": "https://acnhapi.com/v1/images/sea/11",
+      "image_uri": "https://dodo.ac/np/images/5/52/Pearl_Oyster_NH.png",
       "collected": false
     },
     {
@@ -554,7 +554,7 @@
       "speed": "Slow",
       "price": 1500,
       "catch-phrase": "I got a mussel! It's been working out",
-      "image_uri": "https://acnhapi.com/v1/images/sea/12",
+      "image_uri": "https://dodo.ac/np/images/a/a9/Mussel_NH.png",
       "collected": false
     },
     {
@@ -563,7 +563,7 @@
       "speed": "Slow",
       "price": 1000,
       "catch-phrase": "I got a whelk! Happy snails to ya.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/15",
+      "image_uri": "https://dodo.ac/np/images/5/54/Whelk_NH.png",
       "collected": false
     },
     {
@@ -572,7 +572,7 @@
       "speed": "Slow",
       "price": 1000,
       "catch-phrase": "I got a turban shell! It's totally TURB...ular!",
-      "image_uri": "https://acnhapi.com/v1/images/sea/16",
+      "image_uri": "https://dodo.ac/np/images/6/63/Turban_Shell_NH.png",
       "collected": true
     },
     {
@@ -581,7 +581,7 @@
       "speed": "Medium",
       "price": 2000,
       "catch-phrase": "I got an abalone! Why do I want a sandwich now?",
-      "image_uri": "https://acnhapi.com/v1/images/sea/17",
+      "image_uri": "https://dodo.ac/np/images/f/fd/Abalone_NH.png",
       "collected": false
     },
     {
@@ -590,7 +590,7 @@
       "speed": "Fast",
       "price": 6000,
       "catch-phrase": "I got an umbrella octopus! Too bad I'm already soaked.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/21",
+      "image_uri": "https://dodo.ac/np/images/c/c0/Umbrella_Octopus_NH.png",
       "collected": false
     },
     {
@@ -599,7 +599,7 @@
       "speed": "Very fast",
       "price": 10000,
       "catch-phrase": "I got a vampire squid! A lot was at stake.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/22",
+      "image_uri": "https://dodo.ac/np/images/0/0d/Vampire_Squid_NH.png",
       "collected": false
     },
     {
@@ -608,7 +608,7 @@
       "speed": "Slow",
       "price": 1400,
       "catch-phrase": "I got a firefly squid! More like a glowswim squid.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/23",
+      "image_uri": "https://dodo.ac/np/images/7/71/Firefly_Squid_NH.png",
       "collected": false
     },
     {
@@ -617,7 +617,7 @@
       "speed": "Medium",
       "price": 2200,
       "catch-phrase": "I got a gazami crab! What a gripping find!",
-      "image_uri": "https://acnhapi.com/v1/images/sea/24",
+      "image_uri": "https://dodo.ac/np/images/thumb/8/80/Gazami_Crab_NH.png/400px-Gazami_Crab_NH.png",
       "collected": false
     },
     {
@@ -626,7 +626,7 @@
       "speed": "Medium",
       "price": 1900,
       "catch-phrase": "I got a Dungeness crab! Dun dun duuuun...geness.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/25",
+      "image_uri": "https://dodo.ac/np/images/6/67/Dungeness_Crab_NH.png",
       "collected": false
     },
     {
@@ -635,7 +635,7 @@
       "speed": "Very fast",
       "price": 12000,
       "catch-phrase": "I got a spider crab! Water bugs can rest easy.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/29",
+      "image_uri": "https://dodo.ac/np/images/thumb/c/cc/Spider_Crab_NH.png/400px-Spider_Crab_NH.png",
       "collected": false
     },
     {
@@ -644,7 +644,7 @@
       "speed": "Medium",
       "price": 3000,
       "catch-phrase": "I got a tiger prawn! I ain't lion!",
-      "image_uri": "https://acnhapi.com/v1/images/sea/30",
+      "image_uri": "https://dodo.ac/np/images/7/72/Tiger_Prawn_NH.png",
       "collected": false
     },
     {
@@ -653,7 +653,7 @@
       "speed": "Slow",
       "price": 1400,
       "catch-phrase": "I got a sweet shrimp! It's being very considerate.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/31",
+      "image_uri": "https://dodo.ac/np/images/8/80/Sweet_Shrimp_NH.png",
       "collected": true
     },
     {
@@ -662,7 +662,7 @@
       "speed": "Fast",
       "price": 4500,
       "catch-phrase": "I got a lobster! Lobjective complete.",
-      "image_uri": "https://acnhapi.com/v1/images/sea/34",
+      "image_uri": "https://dodo.ac/np/images/b/b6/Lobster_NH.png",
       "collected": false
     }
   ],
