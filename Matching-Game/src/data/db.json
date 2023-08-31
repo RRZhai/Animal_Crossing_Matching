@@ -17,7 +17,7 @@
       "rarity": "Common",
       "price": 200,
       "catch-phrase": "I caught a pale chub! That name seems a bit judgy...",
-      "image_uri": "https://acnhapi.com/v1/images/fish/2",
+      "image_uri": "https://dodo.ac/np/images/8/8a/Pale_Chub_NH.png",
       "collected": false
     },
     {
@@ -519,7 +519,7 @@
       "museum-phrase": "This shark-tooth pattern comes from the lower jaw of an ancient shark of the genus Helicoprion. Its teeth seem to have grown in a distinctive arrangement rather disturbingly termed a \"tooth-whorl\". I say \"seem\" because shark skeletons are made not of bone, but cartilage, except for their teeth. Consequently, their bodies are never preserved as fossils, and questions about their jaws remain unanswered. The size and placement in the stone of the shark's teeth are actually the only things we have to work with. Sometimes in research we must maintain a stiff upper lip, even in the absence of a stiff lower jaw!",
       "image_uri": "https://acnhapi.com/v1/images/fossils/shark-tooth_pattern",
       "part-of": "shark-tooth pattern",
-      "collected": false
+      "collected": true
     },
     {
       "id": 50,

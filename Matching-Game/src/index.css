@@ -205,13 +205,18 @@ body {
 .card-grid {
   background-color: #fff;
   display: flex;
+  justify-content: center;
   border-radius: 5px;
   width: 23%;
   aspect-ratio: 1/1;
 }
 
 .card-grid-content {
-  display: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
 }
 
 .card {
@@ -231,10 +236,8 @@ body {
 .front {
   transform: rotateY(90deg);
   transition: all ease-in 0.2s;
+  position: absolute;
   width: 80%;
-  display: absolute;
-  left: 10%;
-  top: 15%;
 }
 
 .flipped .front {
@@ -244,10 +247,8 @@ body {
 .back {
   transition: all ease-in 0.2s;
   transition-delay: 0s;
+  position: absolute;
   width: 80%;
-  display: absolute;
-  left: 10%;
-  top: 15%;
 }
 .flipped .back {
   transform: rotateY(90deg);
