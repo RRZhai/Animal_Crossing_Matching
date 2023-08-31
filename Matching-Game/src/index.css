@@ -271,29 +271,47 @@ body {
   border-right: 2rem ridge rgba(230, 234, 166, 0.321);
 }
 
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 form {
-  float: center;
-  padding: 2rem;
-  margin: auto;
+  margin-left: 2rem;
 }
+
 .form-group {
+  display: flex;
+  align-items: center;
   padding: 10px;
-  align-items: baseline;
 }
+
+.form h3 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* .form button {
+  margin-left: 2rem;
+  margin-right: 2rem;
+} */
 
 .label {
   font-family: "Gill Sans", sans-serif;
   font-size: 200%;
   display: grid;
   width: 100%;
-  margin-left: 2rem;
 }
 
-input {
-  width: 200px;
-  height: 30px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+.form input {
+  width: 200%;
+}
+
+.btn{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* Customer Service */
