@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function CardContainer({ cardsHolder, matchedCards, collectedCards }) {
+function CardContainer({ cardsHolder, matchedCards }) {
   const [clickIcon, setClickIcon] = useState({});
 
   return (
@@ -9,7 +9,7 @@ function CardContainer({ cardsHolder, matchedCards, collectedCards }) {
       <h3 className="title">Collection</h3>
       <div className="collected-container">
         {cardsHolder.map((card) => {
-          if (card.collected) {
+          if (matchedCards.find((item) => item.id === card.id)) {
             return (
               <Link
                 to={`/cards/${card.id}`}
@@ -18,7 +18,6 @@ function CardContainer({ cardsHolder, matchedCards, collectedCards }) {
               >
                 <img
                   onClick={() => setClickIcon(card)}
-                  key={card.id}
                   className="icon"
                   id="show_icon"
                   src={card["image_uri"]}

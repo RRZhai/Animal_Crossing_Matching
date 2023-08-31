@@ -40,9 +40,8 @@ function MainParent() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [matches, setMatches] = useState(0);
   const [matchedCards, setMatchedCards] = useState([{}]);
-  const [collectedCards, setCollectedCards] = useState(null);
 
-  console.log(collectedCards)
+  console.log(matchedCards)
   function openModal() {
     setIsOpen(true);
   }
@@ -60,7 +59,7 @@ function MainParent() {
       .then((data) => {
         setCards(data);
         setCardsHolder(data);
-        setCollectedCards(data.filter((card) => card.collected))
+        setMatchedCards(data.filter((card) => card.collected))
       })
       .then(setShowCards(true))
       .catch((err) => console.error(err));
@@ -73,6 +72,17 @@ function MainParent() {
         setScoreList(data);
       });
   }, []);
+
+  const handleMatched = (id) => {
+    fetch(`http://localhost:3000/all/${id}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ collected: true }),
+      headers: {
+        'Content-Type': 'application/json'
+      }.then((response) => response.json())
+      .then(data => {})
+    })
+  }
 
   //randomize ⮯
   const shuffledCards = () => {
@@ -189,7 +199,6 @@ function MainParent() {
             <CardContainer
               cardsHolder={cardsHolder}
               matchedCards={matchedCards}
-              collectedCards={collectedCards}
             />
             <div className="game-block">
               <button onClick={shuffledCards}>
