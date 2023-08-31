@@ -29,7 +29,7 @@ function Card() {
   } else {
     return (
       <div className="card">
-        <div id='info-container'>
+        <div id="info-container">
           <img
             id="card-img"
             onMouseEnter={handleOver}
@@ -39,17 +39,16 @@ function Card() {
           <div className="info">
             <div id="detail">
               <h2 className="name">{card.name.toUpperCase()}</h2>
+              <p>{card["saying"]}</p>
               {ifOver ? (
                 <div className="phrase">
-                  <p>
-                    {card["catch-phrase"]
-                      ? card["catch-phrase"]
-                      : card["saying"]}
-                  </p>
+                  {card["catch-phrase"] ? (
+                    <p>{card["catch-phrase"]}</p>
+                  ) : (
+                    <p>{card["saying"]}</p>
+                  )}
                 </div>
-              ) : (
-                <p></p>
-              )}
+              ) : null}
             </div>
             <div className="details">
               {card.location ? (
