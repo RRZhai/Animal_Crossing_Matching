@@ -128,7 +128,7 @@
       "price": 10000,
       "catch-phrase": "I caught an arapaima! How did it get here? Arapaiknow!",
       "image_uri": "https://acnhapi.com/v1/images/fish/44",
-      "collected": false
+      "collected": true
     },
     {
       "id": 14,

@@ -41,7 +41,6 @@ function MainParent() {
   const [matches, setMatches] = useState(0);
   const [matchedCards, setMatchedCards] = useState([{}]);
 
-  console.log(matchedCards)
   function openModal() {
     setIsOpen(true);
   }
@@ -79,9 +78,11 @@ function MainParent() {
       body: JSON.stringify({ collected: true }),
       headers: {
         'Content-Type': 'application/json'
-      }.then((response) => response.json())
-      .then(data => {})
-    })
+      }})
+      .then((response) => response.json())
+      .then(data => {
+        setMatchedCards([...matchedCards, choice1])
+      })
   }
 
   //randomize ⮯
@@ -116,7 +117,7 @@ function MainParent() {
       if (choice1 && choice2) {
         setDisabled(true);
         if (choice1.id === choice2.id) {
-          setMatchedCards([...matchedCards, choice1]);
+          handleMatched(choice1.id)
           setCards((prevCards) => {
             return prevCards.map((card) => {
               if (card.id === choice1.id) {
