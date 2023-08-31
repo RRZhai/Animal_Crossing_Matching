@@ -8,7 +8,7 @@
       "price": 900,
       "catch-phrase": "I caught a bitterling! It's mad at me, but only a little.",
       "image_uri": "https://acnhapi.com/v1/images/fish/1",
-      "collected": false
+      "collected": true
     },
     {
       "id": 2,
@@ -28,8 +28,7 @@
       "price": 160,
       "catch-phrase": "I caught a crucian carp! My skills are sharp!",
       "image_uri": "https://acnhapi.com/v1/images/fish/3",
-      "collected": false,
-      "stat": false
+      "collected": false
     },
     {
       "id": 4,
@@ -457,8 +456,7 @@
       "museum-phrase": "Anomalocaris lived in the water long before the dinosaurs and are known for their, er, \"distinctive\" look. Flat bodies over three feet in length, bulging eyes like a...dragonfly, antennae like shrimp tails... They looked so peculiar that people originally thought they were multiple fossils stacked on top of each other! As a delightful side note, \"anomalocaris\" means \"abnormal shrimp\". Obviously this animal has a certain reputation in the scientific community!",
       "image_uri": "https://acnhapi.com/v1/images/fossils/anomalocaris",
       "part-of": "anomalocaris",
-      "collected": "No",
-      "stat": false
+      "collected": true
     },
     {
       "id": 43,
@@ -512,8 +510,7 @@
       "museum-phrase": "The mighty Pteranodon! Among the very largest animals ever to fly, they were role models to us all. With a wingspan of over 23 feet in some cases, I find it simply stunning that they ever did more than glide! But fly they did, soaring dynamically and dramatically over land and sea! I wish I could have seen it...",
       "image_uri": "https://acnhapi.com/v1/images/fossils/right_ptera_wing",
       "part-of": "Pteranodon",
-      "collected": "No",
-      "stat": false
+      "collected": true
     },
     {
       "id": 49,
@@ -567,8 +564,7 @@
       "price": 1000,
       "catch-phrase": "I got a whelk! Happy snails to ya.",
       "image_uri": "https://acnhapi.com/v1/images/sea/15",
-      "collected": "No",
-      "stat": false
+      "collected": false
     },
     {
       "id": 55,
@@ -577,8 +573,7 @@
       "price": 1000,
       "catch-phrase": "I got a turban shell! It's totally TURB...ular!",
       "image_uri": "https://acnhapi.com/v1/images/sea/16",
-      "collected": "No",
-      "stat": false
+      "collected": true
     },
     {
       "id": 56,
@@ -650,8 +645,7 @@
       "price": 3000,
       "catch-phrase": "I got a tiger prawn! I ain't lion!",
       "image_uri": "https://acnhapi.com/v1/images/sea/30",
-      "collected": "No",
-      "stat": false
+      "collected": false
     },
     {
       "id": 64,
@@ -660,8 +654,7 @@
       "price": 1400,
       "catch-phrase": "I got a sweet shrimp! It's being very considerate.",
       "image_uri": "https://acnhapi.com/v1/images/sea/31",
-      "collected": "No",
-      "stat": false
+      "collected": true
     },
     {
       "id": 65,
@@ -670,8 +663,7 @@
       "price": 4500,
       "catch-phrase": "I got a lobster! Lobjective complete.",
       "image_uri": "https://acnhapi.com/v1/images/sea/34",
-      "collected": "No",
-      "stat": false
+      "collected": false
     }
   ],
   "highscore": [

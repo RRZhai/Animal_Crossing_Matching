@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function CardContainer({ cardsHolder, matchedCards }) {
+function CardContainer({ cardsHolder, matchedCards, collectedCards }) {
   const [clickIcon, setClickIcon] = useState({});
 
   return (
@@ -9,7 +9,7 @@ function CardContainer({ cardsHolder, matchedCards }) {
       <h3 className="title">Collection</h3>
       <div className="collected-container">
         {cardsHolder.map((card) => {
-          if (matchedCards.find((item) => item.id === card.id)) {
+          if (card.collected) {
             return (
               <Link
                 to={`/cards/${card.id}`}

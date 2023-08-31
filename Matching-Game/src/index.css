@@ -32,6 +32,7 @@ ul {
 
 #nav-bar {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   /* float: left;
@@ -77,20 +78,7 @@ select {
   object-position: 0%;
 }
 
-/*My Collection*/
-.collection-homepage {
-  display: flex;
-  gap: 5px;
-}
-
-.collection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #dbbf9e;
-  border-right: 2rem ridge rgba(230, 234, 166, 0.321);
-}
-
+/* game */
 .title {
   font-family: "Gill Sans", sans-serif;
   font-size: 200%;
@@ -266,6 +254,23 @@ body {
 }
 
 /* Collection */
+.collection-homepage {
+  display: flex;
+  gap: 5px;
+}
+
+.collection-homepage .collection {
+  width: 80%;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dbbf9e;
+  border-right: 2rem ridge rgba(230, 234, 166, 0.321);
+}
+
 form {
   float: center;
   padding: 2rem;

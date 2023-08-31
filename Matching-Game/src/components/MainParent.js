@@ -40,8 +40,9 @@ function MainParent() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [matches, setMatches] = useState(0);
   const [matchedCards, setMatchedCards] = useState([{}]);
-  const [collectedCards, setCollectedCards] = useState(cardsHolder.filter(card => card.collected === true));
+  const [collectedCards, setCollectedCards] = useState(null);
 
+  console.log(collectedCards)
   function openModal() {
     setIsOpen(true);
   }
@@ -59,6 +60,7 @@ function MainParent() {
       .then((data) => {
         setCards(data);
         setCardsHolder(data);
+        setCollectedCards(data.filter((card) => card.collected))
       })
       .then(setShowCards(true))
       .catch((err) => console.error(err));
@@ -187,6 +189,7 @@ function MainParent() {
             <CardContainer
               cardsHolder={cardsHolder}
               matchedCards={matchedCards}
+              collectedCards={collectedCards}
             />
             <div className="game-block">
               <button onClick={shuffledCards}>
