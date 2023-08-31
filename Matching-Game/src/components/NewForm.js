@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 // import Card from "./Card"
-function MyCollection({handleSubmitNew, newCard}) {
+function NewForm({handleSubmitNew, newCard}) {
     const [selectType, setSelectType] = useState([])
     const [submitForm, setSubmitForm] = useState({stat:false})
 
@@ -122,4 +122,4 @@ function MyCollection({handleSubmitNew, newCard}) {
     )
 }
 
-export default MyCollection
+export default NewForm

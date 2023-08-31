@@ -10,12 +10,21 @@ function GameCards({card, handleChoice, flipped, disabled}){
     }
     return (
         <div className={flipped ? "flipped card-grid" : " card-grid"}>
-                <img className="front" src={card.image_uri} alt="card front"/>
+            {flipped ? (
                 <img className="back" 
                 src="/animalCrossingLogo.png" 
                 alt="card back"
                 onClick={(e) => handleClick(e.target.value)}
                 />
+            ) : (
+                <img className="front" src={card.image_uri} alt="card front"/>
+            )}
+                {/* <img className="front" src={card.image_uri} alt="card front"/>
+                <img className="back" 
+                src="/animalCrossingLogo.png" 
+                alt="card back"
+                onClick={(e) => handleClick(e.target.value)}
+                /> */}
         </div>
     )
 }

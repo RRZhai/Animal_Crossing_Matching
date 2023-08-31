@@ -6,7 +6,7 @@ import { Switch, Route, Link, useHistory } from "react-router-dom";
 import CardContainer from "./CardContainer";
 import Card from "./Card";
 import HighScore from "./HighScore";
-import MyCollection from "./MyCollection";
+import NewForm from "./NewForm";
 import MenuBar from "./MenuBar";
 import Modal from "react-modal";
 import Home from "./Home";
@@ -223,7 +223,7 @@ function MainParent() {
               cardsHolder={cardsHolder}
               matchedCards={matchedCards}
             />
-            <MyCollection handleSubmitNew={handleSubmitNew} newCard={newCard} />
+            <NewForm handleSubmitNew={handleSubmitNew} newCard={newCard} />
           </div>
         </Route>
         <Route path="/cards/:id">
