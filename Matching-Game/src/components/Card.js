@@ -30,13 +30,13 @@ function Card() {
     return (
       <div id="info-card">
         <div id="info-container">
-          <img
-            id="card-img"
-            // onClick={handleOver}
-            onMouseEnter={handleOver}
-            onMouseLeave={handleOver}
-            src={card["image_uri"]}
-          />
+          <div id="card-img">
+            <img
+              onMouseEnter={handleOver}
+              onMouseLeave={handleOver}
+              src={card["image_uri"]}
+            />
+          </div>
           <div id="info">
             <h2 className="name">{card.name.toUpperCase()}</h2>
             {ifOver ? (

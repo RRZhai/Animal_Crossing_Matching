@@ -138,11 +138,25 @@ select {
 }
 
 #card-img {
+  display: flex;
   margin: 2%;
   width: 30%;
+  aspect-ratio: 1/1;
   border-radius: 10%;
-  background-size: 40%;
   background-color: #fffffa;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-img img {
+  display: flex;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+  /* object-fit: cover; */
+  /* justify-content: center; */
+  border-radius: 10%;
 }
 
 #info {
