@@ -9,7 +9,6 @@ function CardContainer({ cardsHolder, matchedCards }) {
       <div className="collected-container">
         {cardsHolder.map((card) => {
           if (matchedCards.find((item) => item.id === card.id)) {
-            console.log(card)
             return (
               <Link
                 to={`/cards/${card.id}`}

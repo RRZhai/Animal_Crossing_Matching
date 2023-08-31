@@ -110,6 +110,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #hide_icon {
@@ -204,8 +205,6 @@ body {
 .card-grid {
   background-color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
   width: 23%;
   aspect-ratio: 1/1;
@@ -213,22 +212,31 @@ body {
 
 .card-grid-content {
   display: relative;
-  justify-content: center;
-  align-items: center;
 }
+
 .card {
   position: relative;
 }
+
 .card img {
   display: block;
   border: 2px solid #fff;
   border-radius: 2px;
 }
+
+.gamecard{
+  position: relative;
+}
+
 .front {
   transform: rotateY(90deg);
   transition: all ease-in 0.2s;
-  width: 100%;
+  width: 80%;
+  display: absolute;
+  left: 10%;
+  top: 15%;
 }
+
 .flipped .front {
   transform: rotateY(0deg);
   transition-delay: 0.2s;
@@ -236,7 +244,10 @@ body {
 .back {
   transition: all ease-in 0.2s;
   transition-delay: 0s;
-  width: 100%;
+  width: 80%;
+  display: absolute;
+  left: 10%;
+  top: 15%;
 }
 .flipped .back {
   transform: rotateY(90deg);
@@ -309,7 +320,7 @@ form {
   width: 200%;
 }
 
-.btn{
+.btn {
   margin-left: 2rem;
   margin-right: 2rem;
 }
