@@ -119,6 +119,17 @@ ul{
 .card {
     display:flex;
     background-color: #dbbf9e ;
+    width: 100%;
+    justify-content: center;
+}
+
+#info-container{
+    position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 #card-img{
@@ -283,11 +294,19 @@ h3{
     text-align: center;
 }
 
+#score-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .score{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width : 50%;
+    width : 75%;
     background-color: #fdc0c7;
     border-radius: 10rem;
     font-family: "Gill Sans", sans-serif;

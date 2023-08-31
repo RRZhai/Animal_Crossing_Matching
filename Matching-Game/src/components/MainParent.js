@@ -39,6 +39,7 @@ function MainParent() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [matches, setMatches] = useState(0);
   const [matchedCards, setMatchedCards] = useState([{}]);
+  const [collectedCards, setCollectedCards] = useState(cardsHolder.filter(card => card.collected === true));
 
   function openModal() {
     setIsOpen(true);
