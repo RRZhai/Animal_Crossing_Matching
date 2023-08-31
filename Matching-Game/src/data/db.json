@@ -672,5 +672,47 @@
       "score": 100,
       "username": "Ashley"
     }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "url": "https://dodo.ac/np/images/c/c2/NH_K.K._Waltz_%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 2,
+      "url": "https://dodo.ac/np/images/5/5c/NL_Title.flac"
+    },
+    {
+      "id": 3,
+      "url": "https://dodo.ac/np/images/e/e9/NH_K.K._Bossa_%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 4,
+      "url": "https://dodo.ac/np/images/1/1a/NH_Imperial_K.K._%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 5,
+      "url": "https://dodo.ac/np/images/9/97/NH_Only_Me_%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 6,
+      "url": "https://dodo.ac/np/images/e/e2/NH_Forest_Life_%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 7,
+      "url": "https://dodo.ac/np/images/8/89/NH_Stale_Cupcakes_%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 8,
+      "url": "https://dodo.ac/np/images/f/f6/NH_K.K._Bazaar_%28Aircheck%2C_Hi-Fi%29.flac"
+    },
+    {
+      "id": 9,
+      "url": "https://dodo.ac/np/images/7/76/NH_K.K._Birthday_%28Live%29.flac"
+    },
+    {
+      "id": 10,
+      "url": "https://dodo.ac/np/images/b/b9/NH_K.K._Swing_%28Aircheck%2C_Hi-Fi%29.flac"
+    }
   ]
 }

@@ -1,6 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 function MenuBar() {
+  const [songUrl, setSongUrl] = useState("");
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/songs/${Math.floor(Math.random() * 10)}`)
+    .then((r) => r.json())
+    .then((data) => setSongUrl(data.url));
+  }, []);
+  console.log(songUrl)
   return (
     <div className="header">
       <Link to={""}>
@@ -28,7 +37,7 @@ function MenuBar() {
       </div>
       <audio controls autoPlay id="player">
         <source
-          src={`https://acnhapi.com/v1/music/${Math.floor(Math.random() * 40)}`}
+          src={songUrl}
           type="audio/mpeg"
         />
       </audio>
