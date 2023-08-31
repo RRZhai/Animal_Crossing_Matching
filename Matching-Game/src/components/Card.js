@@ -95,6 +95,11 @@ function Card() {
                     From: {card["part-of"]} <FiEdit3 />
                   </p>
                 ) : null}
+                {card["speed"] ? (
+                  <p>
+                    Speed: {card["speed"]} <FiEdit3 />
+                  </p>
+                ) : null}
               </div>
             </div>
           </div>

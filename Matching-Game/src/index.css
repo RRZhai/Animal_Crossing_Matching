@@ -222,6 +222,12 @@ body {
   width: 23%;
   aspect-ratio: 1/1;
 }
+
+.card-grid-content {
+  display: relative;
+  justify-content: center;
+  align-items: center;
+}
 .card {
   position: relative;
 }
@@ -242,9 +248,7 @@ body {
 .back {
   transition: all ease-in 0.2s;
   transition-delay: 0s;
-  justify-content: center;
-  width: 40%;
-  align-tracks: center;
+  width: 100%;
 }
 .flipped .back {
   transform: rotateY(90deg);
