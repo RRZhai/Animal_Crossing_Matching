@@ -27,7 +27,7 @@
       "rarity": "Common",
       "price": 160,
       "catch-phrase": "I caught a crucian carp! My skills are sharp!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/3",
+      "image_uri": "https://dodo.ac/np/images/5/5c/Crucian_Carp_NH.png",
       "collected": false
     },
     {
@@ -37,7 +37,7 @@
       "rarity": "Common",
       "price": 240,
       "catch-phrase": "I caught a dace! Hope I have some space!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/4",
+      "image_uri": "https://dodo.ac/np/images/3/34/Dace_NH.png",
       "collected": false
     },
     {
@@ -47,7 +47,7 @@
       "rarity": "Common",
       "price": 300,
       "catch-phrase": "I caught a carp! If I catch another they can carpool!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/5",
+      "image_uri": "https://dodo.ac/np/images/thumb/3/39/Carp_NH.png/400px-Carp_NH.png",
       "collected": false
     },
     {
@@ -57,7 +57,7 @@
       "rarity": "Uncommon",
       "price": 4000,
       "catch-phrase": "I caught a koi! I don't know why it's so shy... or such a bad speller...",
-      "image_uri": "https://acnhapi.com/v1/images/fish/6",
+      "image_uri": "https://dodo.ac/np/images/thumb/2/24/Koi_NH.png/400px-Koi_NH.png",
       "collected": false
     },
     {
@@ -67,7 +67,7 @@
       "rarity": "Common",
       "price": 1300,
       "catch-phrase": "I caught a goldfish! It's worth its weight in fish!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/7",
+      "image_uri": "https://dodo.ac/np/images/e/e7/Goldfish_NH.png",
       "collected": false
     },
     {
@@ -77,7 +77,7 @@
       "rarity": "Common",
       "price": 1300,
       "catch-phrase": "I got a pop-eyed goldfish! It looks so...surprised!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/8",
+      "image_uri": "https://dodo.ac/np/images/8/8a/Pop-Eyed_Goldfish_NH.png",
       "collected": false
     },
     {
@@ -87,7 +87,7 @@
       "rarity": "Uncommon",
       "price": 4500,
       "catch-phrase": "I caught a ranchu goldfish! But I prefer balsamicu goldfish!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/9",
+      "image_uri": "https://dodo.ac/np/images/4/41/Ranchu_Goldfish_NH.png",
       "collected": false
     },
     {
@@ -97,7 +97,7 @@
       "rarity": "Rare",
       "price": 10000,
       "catch-phrase": "I caught an arowana! I'd make a joke, but I don't 'wana.",
-      "image_uri": "https://acnhapi.com/v1/images/fish/41",
+      "image_uri": "https://dodo.ac/np/images/thumb/9/9a/Arowana_NH.png/400px-Arowana_NH.png",
       "collected": false
     },
     {
@@ -107,7 +107,7 @@
       "rarity": "Ultra-rare",
       "price": 15000,
       "catch-phrase": "I caught a dorado! I say \"dorado,\" you say \"doraydo.\"",
-      "image_uri": "https://acnhapi.com/v1/images/fish/42",
+      "image_uri": "https://dodo.ac/np/images/thumb/2/2f/Dorado_NH.png/400px-Dorado_NH.png",
       "collected": false
     },
     {
@@ -117,7 +117,7 @@
       "rarity": "Rare",
       "price": 6000,
       "catch-phrase": "I caught a gar! Yar! It's a gar! Har har!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/43",
+      "image_uri": "https://dodo.ac/np/images/thumb/c/c8/Gar_NH.png/400px-Gar_NH.png",
       "collected": false
     },
     {
@@ -127,7 +127,7 @@
       "rarity": "Rare",
       "price": 10000,
       "catch-phrase": "I caught an arapaima! How did it get here? Arapaiknow!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/44",
+      "image_uri": "https://dodo.ac/np/images/thumb/8/89/Arapaima_NH.png/400px-Arapaima_NH.png",
       "collected": true
     },
     {
@@ -137,7 +137,7 @@
       "rarity": "Uncommon",
       "price": 4000,
       "catch-phrase": "Wow! A saddled bichir! And me without my tiny riding crop...",
-      "image_uri": "https://acnhapi.com/v1/images/fish/45",
+      "image_uri": "https://dodo.ac/np/images/thumb/c/c6/Saddled_Bichir_NH.png/400px-Saddled_Bichir_NH.png",
       "collected": false
     },
     {
@@ -147,7 +147,7 @@
       "rarity": "Uncommon",
       "price": 5000,
       "catch-phrase": "I caught a blowfish! I'm blown away!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/54",
+      "image_uri": "https://dodo.ac/np/images/2/29/Blowfish_NH.png",
       "collected": false
     },
     {
@@ -157,17 +157,17 @@
       "rarity": "Common",
       "price": 250,
       "catch-phrase": "I caught a puffer fish! I thought you would be tougher, fish!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/55",
+      "image_uri": "https://dodo.ac/np/images/1/11/Puffer_Fish_NH.png",
       "collected": false
     },
     {
       "id": 17,
-      "name": "anchovy",
-      "location": "Sea",
+      "name": "tadpole",
+      "location": "Pond",
       "rarity": "Common",
-      "price": 200,
-      "catch-phrase": "I caught an anchovy! Stay away from my pizza!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/56",
+      "price": 100,
+      "catch-phrase": "I caught an tadpole... I'm sure it will grow on me.",
+      "image_uri": "https://dodo.ac/np/images/9/9f/Tadpole_NH.png",
       "collected": false
     },
     {
@@ -177,7 +177,7 @@
       "rarity": "Common",
       "price": 150,
       "catch-phrase": "I caught a horse mackerel! Of course, Mack...er...el.",
-      "image_uri": "https://acnhapi.com/v1/images/fish/57",
+      "image_uri": "https://dodo.ac/np/images/7/77/Horse_Mackerel_NH.png",
       "collected": false
     },
     {
@@ -187,7 +187,7 @@
       "rarity": "Uncommon",
       "price": 5000,
       "catch-phrase": "I caught a barred knifejaw! They must have a hard time eating!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/58",
+      "image_uri": "https://dodo.ac/np/images/1/17/Barred_Knifejaw_NH.png",
       "collected": false
     },
     {
@@ -197,7 +197,7 @@
       "rarity": "Common",
       "price": 400,
       "catch-phrase": "I caught a sea bass! No, wait- it's at least a C+!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/59",
+      "image_uri": "https://dodo.ac/np/images/thumb/d/d6/Sea_Bass_NH.png/400px-Sea_Bass_NH.png",
       "collected": false
     },
     {
@@ -207,7 +207,7 @@
       "rarity": "Rare",
       "price": 10000,
       "catch-phrase": "I caught a blue marlin! Listen to this fish. it's got a point.",
-      "image_uri": "https://acnhapi.com/v1/images/fish/67",
+      "image_uri": "https://dodo.ac/np/images/thumb/0/0e/Blue_Marlin_NH.png/400px-Blue_Marlin_NH.png",
       "collected": false
     },
     {
@@ -217,7 +217,7 @@
       "rarity": "Uncommon",
       "price": 4500,
       "catch-phrase": "I caught a giant trevally! Yeah, I'm pretty well-trevalled.",
-      "image_uri": "https://acnhapi.com/v1/images/fish/68",
+      "image_uri": "https://dodo.ac/np/images/thumb/1/1a/Giant_Trevally_NH.png/400px-Giant_Trevally_NH.png",
       "collected": false
     },
     {
@@ -227,7 +227,7 @@
       "rarity": "Rare",
       "price": 6000,
       "catch-phrase": "I caught a mahi-mahi! It's all mahine-mahine.",
-      "image_uri": "https://acnhapi.com/v1/images/fish/69",
+      "image_uri": "https://dodo.ac/np/images/thumb/c/ce/Mahi-Mahi_NH.png/400px-Mahi-Mahi_NH.png",
       "collected": false
     },
     {
@@ -237,7 +237,7 @@
       "rarity": "Rare",
       "price": 12000,
       "catch-phrase": "I caught a saw shark! You could call it a sea saw!",
-      "image_uri": "https://acnhapi.com/v1/images/fish/72",
+      "image_uri": "https://dodo.ac/np/images/thumb/4/44/Saw_Shark_NH.png/400px-Saw_Shark_NH.png",
       "collected": false
     },
     {
@@ -247,7 +247,7 @@
       "birthday": "9/3",
       "species": "Anteater",
       "hobby": "Education",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/1",
+      "image_uri": "https://dodo.ac/np/images/thumb/4/48/Cyrano_NH.png/300px-Cyrano_NH.png",
       "bubble-color": "#194c89",
       "text-color": "#fffad4",
       "saying": "Don't punch your nose to spite your face.",
@@ -260,7 +260,7 @@
       "birthday": "20/10",
       "species": "Anteater",
       "hobby": "Fitness",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/2",
+      "image_uri": "https://dodo.ac/np/images/thumb/d/d4/Antonio_NH.png/300px-Antonio_NH.png",
       "bubble-color": "#fff98f",
       "text-color": "#879b96",
       "saying": "Always go for the burn!",
@@ -273,7 +273,7 @@
       "birthday": "9/11",
       "species": "Anteater",
       "hobby": "Fashion",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/3",
+      "image_uri": "https://dodo.ac/np/images/thumb/d/d5/Pango_NH.png/300px-Pango_NH.png",
       "bubble-color": "#00d1bd",
       "text-color": "#fffce9",
       "saying": "A thing of beauty is a joy forever.",
@@ -286,7 +286,7 @@
       "birthday": "26/9",
       "species": "Bear",
       "hobby": "Fitness",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/8",
+      "image_uri": "https://dodo.ac/np/images/thumb/b/b9/Teddy_NH.png/300px-Teddy_NH.png",
       "bubble-color": "#ff791f",
       "text-color": "#fff2bb",
       "saying": "No pain, no gain!",
@@ -299,7 +299,7 @@
       "birthday": "9/9",
       "species": "Bear",
       "hobby": "Fashion",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/9",
+      "image_uri": "https://dodo.ac/np/images/thumb/b/bf/Pinky_NH.png/300px-Pinky_NH.png",
       "bubble-color": "#fff98f",
       "text-color": "#879b96",
       "saying": "Time spent with friends is time well spent.",
@@ -312,7 +312,7 @@
       "birthday": "26/10",
       "species": "Koala",
       "hobby": "Music",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/228",
+      "image_uri": "https://dodo.ac/np/images/thumb/a/ab/Eugene_NH.png/300px-Eugene_NH.png",
       "bubble-color": "#4c3317",
       "text-color": "#fffce9",
       "saying": "Imitation is the sincerest form of flattery.",
@@ -338,7 +338,7 @@
       "birthday": "24/4",
       "species": "Kangaroo",
       "hobby": "Fitness",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/234",
+      "image_uri": "https://dodo.ac/np/images/thumb/b/bf/Walt_NH.png/300px-Walt_NH.png",
       "bubble-color": "#acc8cf",
       "text-color": "#498992",
       "saying": "Take the good with the bad.",
@@ -351,7 +351,7 @@
       "birthday": "8/8",
       "species": "Lion",
       "hobby": "Fitness",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/237",
+      "image_uri": "https://dodo.ac/np/images/thumb/1/1f/Bud_NH.png/300px-Bud_NH.png",
       "bubble-color": "#d86808",
       "text-color": "#fffce9",
       "saying": "You're not living unless you're sweating!",
@@ -364,7 +364,7 @@
       "birthday": "23/7",
       "species": "Lion",
       "hobby": "Education",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/238",
+      "image_uri": "https://dodo.ac/np/images/thumb/c/cc/Elvis_NH.png/300px-Elvis_NH.png",
       "bubble-color": "#ffd00d",
       "text-color": "#9b553a",
       "saying": "Better a live coward than a forgotten hero.",
@@ -377,7 +377,7 @@
       "birthday": "19/1",
       "species": "Monkey",
       "hobby": "Play",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/245",
+      "image_uri": "https://dodo.ac/np/images/thumb/6/68/Simon_NH.png/300px-Simon_NH.png",
       "bubble-color": "#d8cc39",
       "text-color": "#8b5f57",
       "saying": "Friends go together like peanut butter and bananas.",
@@ -390,7 +390,7 @@
       "birthday": "2/4",
       "species": "Monkey",
       "hobby": "Fashion",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/246",
+      "image_uri": "https://dodo.ac/np/images/thumb/a/a8/Tammi_NH.png/300px-Tammi_NH.png",
       "bubble-color": "#ffd00d",
       "text-color": "#9b553a",
       "saying": "Always be down to monkey around!",
@@ -403,7 +403,7 @@
       "birthday": "28/12",
       "species": "Mouse",
       "hobby": "Music",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/254",
+      "image_uri": "https://dodo.ac/np/images/thumb/c/c0/Bella_NH.png/300px-Bella_NH.png",
       "bubble-color": "#ffffff",
       "text-color": "#848484",
       "saying": "A glamour shot is worth a thousand words.",
@@ -416,7 +416,7 @@
       "birthday": "7/7",
       "species": "Mouse",
       "hobby": "Fashion",
-      "image_uri": "https://acnhapi.com/v1/images/villagers/255",
+      "image_uri": "https://dodo.ac/np/images/thumb/1/12/Bree_NH.png/300px-Bree_NH.png",
       "bubble-color": "#ffffff",
       "text-color": "#848484",
       "saying": "The gift says more about the giver.",
@@ -427,7 +427,7 @@
       "name": "ankylo skull",
       "price": 3500,
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_skull",
+      "image_uri": "https://dodo.ac/np/images/5/5e/Ankylo_Skull_CF_Model.png",
       "part-of": "Ankylosaurus",
       "collected": false
     },
@@ -436,7 +436,7 @@
       "name": "ankylo tail",
       "price": 2500,
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_tail",
+      "image_uri": "https://dodo.ac/np/images/c/c5/Ankylo_Tail_CF_Model.png",
       "part-of": "Ankylosaurus",
       "collected": false
     },
@@ -445,7 +445,7 @@
       "name": "ankylo torso",
       "price": 3000,
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
-      "image_uri": "https://acnhapi.com/v1/images/fossils/ankylo_torso",
+      "image_uri": "https://dodo.ac/np/images/5/5c/Ankylo_Torso_CF_Model.png",
       "part-of": "Ankylosaurus",
       "collected": false
     },

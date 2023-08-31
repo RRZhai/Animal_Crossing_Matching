@@ -110,7 +110,10 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 #hide_icon {
@@ -237,7 +240,10 @@ body {
   transform: rotateY(90deg);
   transition: all ease-in 0.2s;
   position: absolute;
-  width: 80%;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .flipped .front {
