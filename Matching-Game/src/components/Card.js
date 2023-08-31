@@ -32,70 +32,70 @@ function Card() {
         <div id="info-container">
           <img
             id="card-img"
+            // onClick={handleOver}
             onMouseEnter={handleOver}
             onMouseLeave={handleOver}
             src={card["image_uri"]}
           />
           <div className="info">
+            <h2 className="name">{card.name.toUpperCase()}</h2>
+            {ifOver ? (
+              <div className="phrase">
+                {card["catch-phrase"] ? (
+                  <p>{card["catch-phrase"]}</p>
+                ) : (
+                  <p>{card["saying"]}</p>
+                )}
+              </div>
+            ) : null}
             <div id="detail">
-              <h2 className="name">{card.name.toUpperCase()}</h2>
-              <p>{card["saying"]}</p>
-              {ifOver ? (
-                <div className="phrase">
-                  {card["catch-phrase"] ? (
-                    <p>{card["catch-phrase"]}</p>
-                  ) : (
-                    <p>{card["saying"]}</p>
-                  )}
-                </div>
-              ) : null}
-            </div>
-            <div className="details">
-              {card.location ? (
-                <ul>
-                  Location: {card.location} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card.rarity ? (
-                <ul>
-                  Rarity : {card.rarity} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card.price ? (
-                <ul>
-                  Price: {card.price} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card.personality ? (
-                <ul>
-                  Personality: {card.personality} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card.birthday ? (
-                <ul>
-                  Birthday: {card.birthday} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card.species ? (
-                <ul>
-                  Species: {card.species} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card.hobby ? (
-                <ul>
-                  Hobby: {card.hobby} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card["museum-phrase"] ? (
-                <ul>
-                  Description: {card["museum-phrase"]} <FiEdit3 />
-                </ul>
-              ) : null}
-              {card["part-of"] ? (
-                <ul>
-                  From: {card["part-of"]} <FiEdit3 />
-                </ul>
-              ) : null}
+              <div className="details">
+                {card.location ? (
+                  <p>
+                    Location: {card.location} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card.rarity ? (
+                  <p>
+                    Rarity : {card.rarity} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card.price ? (
+                  <p>
+                    Price: {card.price} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card.personality ? (
+                  <p>
+                    Personality: {card.personality} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card.birthday ? (
+                  <p>
+                    Birthday: {card.birthday} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card.species ? (
+                  <p>
+                    Species: {card.species} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card.hobby ? (
+                  <p>
+                    Hobby: {card.hobby} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card["museum-phrase"] ? (
+                  <p>
+                    Description: {card["museum-phrase"]} <FiEdit3 />
+                  </p>
+                ) : null}
+                {card["part-of"] ? (
+                  <p>
+                    From: {card["part-of"]} <FiEdit3 />
+                  </p>
+                ) : null}
+              </div>
             </div>
           </div>
         </div>

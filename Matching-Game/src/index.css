@@ -128,8 +128,8 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 80%;
+    align-items: flex-start;
+    width: 100%;
 }
 
 #card-img{
@@ -144,15 +144,16 @@ ul{
     background: #fffffa;
     padding: 1rem;
     border-radius: 2rem;
+    width: 80%;
 }
 
 .phrase ::after{
     content: '';
     display: block;
     position: absolute;
-    left: 36.6%;
-    width:0;
-    height: 0;
+    left: 51.3%;
+    width:fit-content;
+    height: fit-content;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-right: 15px solid  #fffffa;
@@ -160,12 +161,11 @@ ul{
 
 .info{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 #detail{
     margin-top: 1%;
-    margin-left: 10%;
     width: 400px;
 }
 
