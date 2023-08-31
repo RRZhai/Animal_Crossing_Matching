@@ -9,6 +9,7 @@ import HighScore from "./HighScore";
 import MyCollection from "./MyCollection";
 import MenuBar from "./MenuBar";
 import Modal from "react-modal";
+import Home from "./Home";
 Modal.setAppElement("#root");
 const customStyles = {
   content: {
@@ -176,24 +177,10 @@ function MainParent() {
       disabled={disabled}
     />
   ));
-  const handleNoHome = () => {
-    setHome(true);
-  };
-  const handleHome = () => {
-    setHome(false);
-  };
+
   return (
     <div>
-      <MenuBar handleNoHome={handleNoHome} handleHome={handleHome} />
-      <Link to={`/game`}>
-        {home ? null : (
-          <img
-            id="homepage"
-            onClick={handleNoHome}
-            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_1200/ncom/software/switch/70010000027619/9989957eae3a6b545194c42fec2071675c34aadacd65e6b33fdfe7b3b6a86c3a"
-          />
-        )}
-      </Link>
+      <MenuBar />
       <Switch>
         <Route path="/game">
           <div className="game">
@@ -247,6 +234,9 @@ function MainParent() {
         </Route>
         <Route path="/care">
           <CustomerService />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </div>

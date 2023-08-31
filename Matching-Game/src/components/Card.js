@@ -28,7 +28,7 @@ function Card() {
     return <h1>Loading...</h1>;
   } else {
     return (
-      <div className="card">
+      <div id="info-card">
         <div id="info-container">
           <img
             id="card-img"
@@ -37,7 +37,7 @@ function Card() {
             onMouseLeave={handleOver}
             src={card["image_uri"]}
           />
-          <div className="info">
+          <div id="info">
             <h2 className="name">{card.name.toUpperCase()}</h2>
             {ifOver ? (
               <div className="phrase">

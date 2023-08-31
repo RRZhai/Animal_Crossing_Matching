@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function MenuBar({ handleHome, handleNoHome }) {
+function MenuBar() {
   return (
     <div className="header">
       <Link to={""}>
@@ -10,20 +10,20 @@ function MenuBar({ handleHome, handleNoHome }) {
         />
       </Link>
       <div id="nav-bar">
-        <Link to={``} onClick={handleHome} className="menu">
+        <Link to={``} className="menu">
           Main Menu
         </Link>
-        <Link to={`/game`} onClick={handleNoHome} className="menu">
+        <Link to={`/game`} className="menu">
           Play Game
         </Link>
-        <Link to={`/collection`} onClick={handleNoHome} className="menu">
+        <Link to={`/collection`} className="menu">
           My Collection
         </Link>
-        <Link to={`/care`} onClick={handleNoHome} className="menu">
+        <Link to={`/care`} className="menu">
           {" "}
           Customer Care{" "}
         </Link>
-        <Link to="/high-scores" onClick={handleNoHome} className="menu">
+        <Link to="/high-scores" className="menu">
           High Score
         </Link>
       </div>
