@@ -41,6 +41,7 @@ function MainParent() {
   const [matchedOneCard, setMatchedOneCard] = useState(null);
   const [counter, setCounter] = useState(null);
   const [coin, setCoin] = useState(0);
+  const [difficulty, setDifficulty] = useState(0);
 
   function openModal() {
     setIsOpen(true);
@@ -100,6 +101,11 @@ function MainParent() {
     }
   }, [counter]);
 
+  // game difficulty
+  const handleDifficulty = (value) => {
+    setDifficulty(value);
+  };
+
   //randomize ⮯
   const shuffledCards = () => {
     setCounter(30);
@@ -108,7 +114,9 @@ function MainParent() {
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-    const newShuffledCards = shuffleCards.slice(0, 8);
+    console.log(difficulty)
+    const newShuffledCards = shuffleCards.slice(0, difficulty);
+    console.log(newShuffledCards)
     //duplicate the array ⮯
     const newCardArray = [...newShuffledCards, ...newShuffledCards];
     const reshuffledArray = newCardArray
@@ -245,11 +253,41 @@ function MainParent() {
                   <>
                     <h3>Timer: {counter}s</h3>
                     <h3>Coin: {coin}</h3>
-                    <h3>Score: {calculateScore()}</h3>
                   </>
                 )}
               </div>
-              <div className="container">{displayCards}</div>
+              {toggleStart ? (
+                <div>
+                  <div className="container">
+                    <button
+                      onClick={(e) => handleDifficulty(e.target.value)}
+                      value="2"
+                    >
+                      Easy
+                    </button>
+                    <button
+                      onClick={(e) => handleDifficulty(e.target.value)}
+                      value="8"
+                    >
+                      Normal
+                    </button>
+                    <button
+                      onClick={(e) => handleDifficulty(e.target.value)}
+                      value="18"
+                    >
+                      Hard
+                    </button>
+                    <button
+                      onClick={(e) => handleDifficulty(e.target.value)}
+                      value="32"
+                    >
+                      Hell
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="container">{displayCards}</div>
+              )}
             </div>
             <Modal
               isOpen={modalIsOpen}
