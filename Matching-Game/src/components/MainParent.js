@@ -38,7 +38,9 @@ function MainParent() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [matches, setMatches] = useState(0);
   const [matchedCards, setMatchedCards] = useState([{}]);
+  const [matchedOneCard, setMatchedOneCard] = useState(null);
   const [counter, setCounter] = useState(null);
+  const [coin, setCoin] = useState(0);
 
   function openModal() {
     setIsOpen(true);
@@ -81,7 +83,8 @@ function MainParent() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setMatchedCards([...matchedCards, choice1]);
+        setMatchedOneCard(data);
+        setMatchedCards([...matchedCards, data]);
       });
   };
 
@@ -100,6 +103,7 @@ function MainParent() {
   //randomize ⮯
   const shuffledCards = () => {
     setCounter(30);
+    setCoin(0);
     const shuffleCards = cardsHolder
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
@@ -173,14 +177,7 @@ function MainParent() {
       })
       .then();
   };
-  const calculateScore = () => {
-    let maxScore = 8;
-    const extraTurns = turns - 16;
-    if (extraTurns > 0) {
-      return maxScore - extraTurns * 0.3;
-    }
-    return maxScore;
-  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:3000/highscore", {
@@ -203,6 +200,25 @@ function MainParent() {
       disabled={disabled}
     />
   ));
+
+  // Coin
+  useEffect(() => {
+    matchedOneCard
+      ? matchedOneCard.coin
+        ? setCoin((prev) => prev + matchedOneCard.coin)
+        : setCoin((prev) => prev + 200)
+      : setCoin(0);
+  }, [matchedOneCard]);
+
+  // Score
+  const calculateScore = () => {
+    let maxScore = 8;
+    const extraTurns = turns - 16;
+    if (extraTurns > 0) {
+      return maxScore - extraTurns * 0.3;
+    }
+    return maxScore;
+  };
 
   return (
     <div>
@@ -228,6 +244,7 @@ function MainParent() {
                 {toggleStart ? null : (
                   <>
                     <h3>Timer: {counter}s</h3>
+                    <h3>Coin: {coin}</h3>
                     <h3>Score: {calculateScore()}</h3>
                   </>
                 )}

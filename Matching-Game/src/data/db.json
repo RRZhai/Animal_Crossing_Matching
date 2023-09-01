@@ -58,7 +58,7 @@
       "price": 4000,
       "catch-phrase": "I caught a koi! I don't know why it's so shy... or such a bad speller...",
       "image_uri": "https://dodo.ac/np/images/thumb/2/24/Koi_NH.png/400px-Koi_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 7,
@@ -420,7 +420,7 @@
       "bubble-color": "#ffffff",
       "text-color": "#848484",
       "saying": "The gift says more about the giver.",
-      "collected": false
+      "collected": true
     },
     {
       "id": 39,
