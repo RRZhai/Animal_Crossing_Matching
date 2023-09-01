@@ -24,7 +24,6 @@ const customStyles = {
 function MainParent() {
   //state for cards ⮯
   const [cards, setCards] = useState([]);
-  const [home, setHome] = useState(false);
   const [turns, setTurns] = useState(0);
   const [choice1, setChoice1] = useState(null);
   const [choice2, setChoice2] = useState(null);
@@ -36,10 +35,10 @@ function MainParent() {
   const [scoreList, setScoreList] = useState([]);
   const [newCard, setNewCard] = useState(null);
   const [userName, setUserName] = useState("");
-  const history = useHistory();
   const [modalIsOpen, setIsOpen] = useState(false);
   const [matches, setMatches] = useState(0);
   const [matchedCards, setMatchedCards] = useState([{}]);
+  const [counter, setCounter] = useState(null);
 
   function openModal() {
     setIsOpen(true);
@@ -86,9 +85,21 @@ function MainParent() {
       });
   };
 
+  // timer
+  useEffect(() => {
+    if (counter !== null) {
+      const intervalId = setInterval(() => {
+        setCounter((prev) => prev - 1);
+      }, 1000);
+      return () => {
+        clearInterval(intervalId);
+      };
+    }
+  }, [counter]);
+
   //randomize ⮯
   const shuffledCards = () => {
-    setToggleStart((value) => !value);
+    setCounter(30);
     const shuffleCards = cardsHolder
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
@@ -108,6 +119,7 @@ function MainParent() {
     setCards(reshuffledArray);
     setTurns(0);
   };
+
   //handle users card selection
   const handleChoice = (card) => {
     choice1 ? setChoice2(card) : setChoice1(card);
@@ -204,16 +216,21 @@ function MainParent() {
             />
             <div className="game-block">
               <div id="game-bar">
-                <button onClick={shuffledCards}>
+                <button
+                  onClick={(e) => {
+                    shuffledCards();
+                    setToggleStart(false);
+                  }}
+                >
                   {toggleStart ? "Start Game" : "New Game"}
                 </button>
                 <h3>Turns: {turns}</h3>
-                {toggleStart ? (
+                {toggleStart ? null : (
                   <>
-                  <h3>Timer:</h3>
-                  <h3>Score: {calculateScore()}</h3>
+                    <h3>Timer: {counter}s</h3>
+                    <h3>Score: {calculateScore()}</h3>
                   </>
-                ) : null}
+                )}
               </div>
               <div className="container">{displayCards}</div>
             </div>

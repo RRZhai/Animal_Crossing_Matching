@@ -178,7 +178,7 @@
       "price": 150,
       "catch-phrase": "I caught a horse mackerel! Of course, Mack...er...el.",
       "image_uri": "https://dodo.ac/np/images/7/77/Horse_Mackerel_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 19,
@@ -264,7 +264,7 @@
       "bubble-color": "#fff98f",
       "text-color": "#879b96",
       "saying": "Always go for the burn!",
-      "collected": false
+      "collected": true
     },
     {
       "id": 27,
@@ -438,7 +438,7 @@
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
       "image_uri": "https://dodo.ac/np/images/c/c5/Ankylo_Tail_CF_Model.png",
       "part-of": "Ankylosaurus",
-      "collected": false
+      "collected": true
     },
     {
       "id": 41,
@@ -627,7 +627,7 @@
       "price": 1900,
       "catch-phrase": "I got a Dungeness crab! Dun dun duuuun...geness.",
       "image_uri": "https://dodo.ac/np/images/6/67/Dungeness_Crab_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 62,
@@ -672,9 +672,9 @@
       "rarity": "Uncommon",
       "price": 4500,
       "catch-phrase": "Whoo hoo! Did you see that? Did you? I caught a banded dragonfly!",
-      "description":"These got their name because of their tigerlike banding and evasion skills.",
+      "description": "These got their name because of their tigerlike banding and evasion skills.",
       "image_uri": "https://dodo.ac/np/images/6/6e/Banded_Dragonfly_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 67,
@@ -683,7 +683,7 @@
       "rarity": "Common",
       "price": 200,
       "catch-phrase": "I caught a ladybug! Sorry to disturb you, ma'am.",
-      "description":"Also called ladybirds or lady beetles, these help gardens by controlling pests.",
+      "description": "Also called ladybirds or lady beetles, these help gardens by controlling pests.",
       "image_uri": "https://dodo.ac/np/images/3/33/Ladybug_NH.png",
       "collected": false
     },
@@ -694,7 +694,7 @@
       "rarity": "Common",
       "price": 100,
       "catch-phrase": "I caught a common butterfly! They often flutter by!",
-      "description":"Though all look white to the naked eye, males and females are different colors.",
+      "description": "Though all look white to the naked eye, males and females are different colors.",
       "image_uri": "https://dodo.ac/np/images/9/9f/Common_Butterfly_NH.png",
       "collected": false
     },
@@ -705,7 +705,7 @@
       "rarity": "Common",
       "price": 90,
       "catch-phrase": "I  caught a yellow butterfly! Shouldn't all BUTTERflies be yellow?",
-      "description":"All males of the species are white- females can be yellow or white.",
+      "description": "All males of the species are white- females can be yellow or white.",
       "image_uri": "https://dodo.ac/np/images/7/74/Yellow_Butterfly_NH.png",
       "collected": false
     },
@@ -716,7 +716,7 @@
       "rarity": "Uncommon",
       "price": 160,
       "catch-phrase": "I caught a tiger butterfly! I've earned my stripes!",
-      "description":"Wherever there are orange trees, these butterflies are likely to be found.It features yellow and black-striped patterns, with a blue band on the bottom",
+      "description": "Wherever there are orange trees, these butterflies are likely to be found.It features yellow and black-striped patterns, with a blue band on the bottom",
       "image_uri": "https://dodo.ac/np/images/e/e1/Tiger_Butterfly_NH.png",
       "collected": false
     },
@@ -727,7 +727,7 @@
       "painter": "Leonardo da Vinci, circa 1487",
       "rarity": "Very Rare",
       "price": 4980,
-      "description":"In the forgery, there is a coffee stain in the top right corner. The forgery also has a key taped to the back of the canvas. If there is no stain and key, it is genuine.",
+      "description": "In the forgery, there is a coffee stain in the top right corner. The forgery also has a key taped to the back of the canvas. If there is no stain and key, it is genuine.",
       "image_uri": "https://dodo.ac/np/images/b/b5/NH_Academic_Painting.jpg",
       "collected": false
     },
@@ -834,7 +834,7 @@
       "rarity": "Uncommon",
       "price": 220,
       "catch-phrase": "I caught a peacock butterfly! Now it's my turn to strut my stuff!",
-      "description":"Papilio bianor, or Chinese peacock, is a species of butterfly that is native to East Asia. The female has more prominent markings than the male, and is roughly 7-8 centimeters long. Caterpillars feed on Zanthoxylum (prickly-ash) and Phellodendron (cork tree) plants.",
+      "description": "Papilio bianor, or Chinese peacock, is a species of butterfly that is native to East Asia. The female has more prominent markings than the male, and is roughly 7-8 centimeters long. Caterpillars feed on Zanthoxylum (prickly-ash) and Phellodendron (cork tree) plants.",
       "image_uri": "https://dodo.ac/np/images/thumb/8/8e/Peacock_Butterfly_NH.png/400px-Peacock_Butterfly_NH.png",
       "collected": false
     },
@@ -845,7 +845,7 @@
       "rarity": "Rare",
       "price": 2500,
       "catch-phrase": "I caught an emperor butterfly! It's not your average monarch!",
-      "description":"Morpho menelaus, more commonly known as the Blue Morpho, is an exotic butterfly that can be found in Central and South America. It feeds primarily on rotten fruit, but in the larval stage, frequently eats other larvae of the same species. ",
+      "description": "Morpho menelaus, more commonly known as the Blue Morpho, is an exotic butterfly that can be found in Central and South America. It feeds primarily on rotten fruit, but in the larval stage, frequently eats other larvae of the same species. ",
       "image_uri": "https://dodo.ac/np/images/thumb/f/f1/Emperor_Butterfly_NH.png/400px-Emperor_Butterfly_NH.png",
       "collected": false
     },
@@ -856,7 +856,7 @@
       "rarity": "Common",
       "price": 160,
       "catch-phrase": "I caught a long locust! It got the short end of the stick!",
-      "description":"It is naturally camouflaged by its green exterior and the green grass that surrounds it and will occasionally make a sound.",
+      "description": "It is naturally camouflaged by its green exterior and the green grass that surrounds it and will occasionally make a sound.",
       "image_uri": "https://dodo.ac/np/images/8/8c/Long_Locust_NH.png",
       "collected": false
     },
@@ -867,9 +867,9 @@
       "rarity": "Uncommon",
       "price": 160,
       "catch-phrase": "I caught a grasshopper! No vacationing for these guys, even in the summer!",
-      "description":"These eat until their stomachs bulge. When hungry, they may eat each other.",
+      "description": "These eat until their stomachs bulge. When hungry, they may eat each other.",
       "image_uri": "https://dodo.ac/np/images/1/1d/Grasshopper_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 84,
@@ -878,9 +878,9 @@
       "rarity": "Common",
       "price": 130,
       "catch-phrase": "I caught a cricket! That's a sticky wicket, isn't it?",
-      "description":"These have ears—not on their heads, but on their front legs.",
+      "description": "These have ears—not on their heads, but on their front legs.",
       "image_uri": "https://dodo.ac/np/images/1/1c/Cricket_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 85,
@@ -900,7 +900,7 @@
       "rarity": "Rare",
       "price": 2500,
       "catch-phrase": "I caught a bee! Bzzz! Bzzz! Bzzz! Phew! ...But why am I still holding it?!",
-      "description":"These poison-carrying bees will attack big foes to protect the queen.",
+      "description": "These poison-carrying bees will attack big foes to protect the queen.",
       "image_uri": "https://dodo.ac/np/images/b/bb/Wasp_NH.png",
       "collected": false
     },
@@ -911,7 +911,7 @@
       "rarity": "Common",
       "price": 500,
       "catch-phrase": "I caught a giant cicada! I guess it's PRETTY big...",
-      "description":"As the name might indicate, giant cicadas are one of the largest species of cicada in the world. They used to live mostly in warmer western Japan, but they've now also moved to urban eastern Japan. Though they're now common in these areas, they aren't well known in other parts of the world.",
+      "description": "As the name might indicate, giant cicadas are one of the largest species of cicada in the world. They used to live mostly in warmer western Japan, but they've now also moved to urban eastern Japan. Though they're now common in these areas, they aren't well known in other parts of the world.",
       "image_uri": "https://dodo.ac/np/images/5/59/Giant_Cicada_NH.png",
       "collected": false
     },
@@ -922,7 +922,7 @@
       "rarity": "Very common",
       "price": 10,
       "catch-phrase": "I found a cicada shell! I'm glad the little guy came out of it!",
-      "description":"Cicada larvae emerge from the ground in the evening and molt on trees, leaving behind empty shells. It's possible to find out the species of cicadas just by looking at these shells. Collecting the shells will tell you how many and what kind of cicadas inhabit a certain area.",
+      "description": "Cicada larvae emerge from the ground in the evening and molt on trees, leaving behind empty shells. It's possible to find out the species of cicadas just by looking at these shells. Collecting the shells will tell you how many and what kind of cicadas inhabit a certain area.",
       "image_uri": "https://dodo.ac/np/images/7/77/Cicada_Shell_NH.png",
       "collected": false
     },
@@ -933,7 +933,7 @@
       "rarity": "Common",
       "price": 80,
       "catch-phrase": "I caught a red dragonfly! Didn't even have to roll for initiative!",
-      "description":"Ever looked into the eyes of a red dragonfly, or any dragonfly, for that matter? They've compound eyes, where multiple eyeballs are stuck together, wot! Just think of all those beady little eyes on you! Blech! How very vile... To be honest, bugs with only TWO eyes make me gag.",
+      "description": "Ever looked into the eyes of a red dragonfly, or any dragonfly, for that matter? They've compound eyes, where multiple eyeballs are stuck together, wot! Just think of all those beady little eyes on you! Blech! How very vile... To be honest, bugs with only TWO eyes make me gag.",
       "image_uri": "https://dodo.ac/np/images/1/1d/Red_Dragonfly_NH.png",
       "collected": false
     },
@@ -944,7 +944,7 @@
       "rarity": "Rare",
       "price": 800,
       "catch-phrase": "I caught a dung beetle! This species likes feces!",
-      "description":"These beetles are also known as scarabs and were once revered in some parts of the world. Looking at it now, I must admit there IS something a bit refined about its antennae and legs...",
+      "description": "These beetles are also known as scarabs and were once revered in some parts of the world. Looking at it now, I must admit there IS something a bit refined about its antennae and legs...",
       "image_uri": "https://dodo.ac/np/images/f/f8/Dung_Beetle_NH.png",
       "collected": false
     },
@@ -955,7 +955,7 @@
       "rarity": "Very Rare",
       "price": 6000,
       "catch-phrase": "I  caught a scarab beetle! It's just a dung beetle with better hobbies.",
-      "description":"From the gorgeous to the grotesque, the fruit-beetle family has a wide variety of members, indeed... Among them, the shiniest by far is the scarab beetle. Not that it makes any bit of difference to me. If it has antennae, it's most unconscionably vile...",
+      "description": "From the gorgeous to the grotesque, the fruit-beetle family has a wide variety of members, indeed... Among them, the shiniest by far is the scarab beetle. Not that it makes any bit of difference to me. If it has antennae, it's most unconscionably vile...",
       "image_uri": "https://dodo.ac/np/images/d/db/Scarab_Beetle_NH.png",
       "collected": false
     },
@@ -977,7 +977,7 @@
       "rarity": "Uncommon",
       "price": 250,
       "catch-phrase": "I caught a snail! Seriously, though... Could you fail to catch a snail?",
-      "description":"They have tiny, tiny teeth--20,000 of them--which they scrape across their food to eat.",
+      "description": "They have tiny, tiny teeth--20,000 of them--which they scrape across their food to eat.",
       "image_uri": "https://dodo.ac/np/images/0/0b/Snail_NH.png",
       "collected": false
     },
@@ -999,7 +999,7 @@
       "rarity": "Common",
       "price": 300,
       "catch-phrase": "I caught a spider! Look at all those eyes!",
-      "description":"They have eight legs. Their heads and chests are connected. Baby spiders can spin thread to fly.",
+      "description": "They have eight legs. Their heads and chests are connected. Baby spiders can spin thread to fly.",
       "image_uri": "https://dodo.ac/np/images/e/e5/Spider_NH.png",
       "collected": false
     },
@@ -1010,7 +1010,7 @@
       "rarity": "Rare",
       "price": 8000,
       "catch-phrase": "I caught a tarantula! Don't try this at home!",
-      "description":"Their poison isn't potent enough to be lethal, but their belly hair causes itchiness.",
+      "description": "Their poison isn't potent enough to be lethal, but their belly hair causes itchiness.",
       "image_uri": "https://dodo.ac/np/images/thumb/b/bf/Tarantula_NH.png/400px-Tarantula_NH.png",
       "collected": false
     },
@@ -1021,7 +1021,7 @@
       "rarity": "Rare",
       "price": 8000,
       "catch-phrase": "I caught a scorpion! It looks kind of crabby to me...",
-      "description":"Their tail is actually part of their stomach.",
+      "description": "Their tail is actually part of their stomach.",
       "image_uri": "https://dodo.ac/np/images/f/fe/Scorpion_NH.png",
       "collected": false
     },
@@ -1031,7 +1031,7 @@
       "rarity": "Common",
       "price": 600,
       "catch-phrase": "I got some sea grapes! Can't let these go sour.",
-      "description":"Sea grapes are small spheres attached to slender stems on branches, similar to normal grapes. However, despite looking like and being called grapes, they aren't much like the land-based variety. They grow in warm oceans and are very susceptible to cold conditions, meaning refrigeration is difficult.",
+      "description": "Sea grapes are small spheres attached to slender stems on branches, similar to normal grapes. However, despite looking like and being called grapes, they aren't much like the land-based variety. They grow in warm oceans and are very susceptible to cold conditions, meaning refrigeration is difficult.",
       "image_uri": "https://dodo.ac/np/images/5/56/Sea_Grapes_NH.png",
       "collected": false
     },
@@ -1042,7 +1042,7 @@
       "rarity": "Common",
       "price": 100,
       "catch-phrase": "I caught a jellyfish! Now all I need is a peanut-butter fish.",
-      "description":"These plankton have a vicious sting!",
+      "description": "These plankton have a vicious sting!",
       "image_uri": "https://dodo.ac/np/images/f/f5/Moon_Jellyfish_NH.png",
       "collected": false
     },
@@ -1052,7 +1052,7 @@
       "rarity": "Very common",
       "price": 100,
       "catch-phrase": "I got a sea star! Is a group called a constellation?",
-      "description":"These star-shaped creatures have hundreds of tiny feet attached to their mobile arms. This allows them to slowly walk and open shellfish for food, making them effective predators. If an arm gets caught and ripped off by another predator, the sea star's arm will just grow back. Some sea stars eat by extending their stomachs out of their mouths to trap and then digest prey.",
+      "description": "These star-shaped creatures have hundreds of tiny feet attached to their mobile arms. This allows them to slowly walk and open shellfish for food, making them effective predators. If an arm gets caught and ripped off by another predator, the sea star's arm will just grow back. Some sea stars eat by extending their stomachs out of their mouths to trap and then digest prey.",
       "image_uri": "https://dodo.ac/np/images/f/f8/Sea_Star_NH.png",
       "collected": false
     }
