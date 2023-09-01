@@ -114,9 +114,7 @@ function MainParent() {
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-    console.log(difficulty)
     const newShuffledCards = shuffleCards.slice(0, difficulty);
-    console.log(newShuffledCards)
     //duplicate the array ⮯
     const newCardArray = [...newShuffledCards, ...newShuffledCards];
     const reshuffledArray = newCardArray
