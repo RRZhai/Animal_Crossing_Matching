@@ -58,7 +58,7 @@ function MainParent() {
       .then((data) => {
         setCards(data);
         setCardsHolder(data);
-        setMatchedCards(data.filter((card) => card.collected))
+        setMatchedCards(data.filter((card) => card.collected));
       })
       .then(setShowCards(true))
       .catch((err) => console.error(err));
@@ -74,16 +74,17 @@ function MainParent() {
 
   const handleMatched = (id) => {
     fetch(`http://localhost:3000/all/${id}`, {
-      method: 'PATCH',
+      method: "PATCH",
       body: JSON.stringify({ collected: true }),
       headers: {
-        'Content-Type': 'application/json'
-      }})
+        "Content-Type": "application/json",
+      },
+    })
       .then((response) => response.json())
-      .then(data => {
-        setMatchedCards([...matchedCards, choice1])
-      })
-  }
+      .then((data) => {
+        setMatchedCards([...matchedCards, choice1]);
+      });
+  };
 
   //randomize ⮯
   const shuffledCards = () => {
@@ -117,7 +118,7 @@ function MainParent() {
       if (choice1 && choice2) {
         setDisabled(true);
         if (choice1.id === choice2.id) {
-          handleMatched(choice1.id)
+          handleMatched(choice1.id);
           setCards((prevCards) => {
             return prevCards.map((card) => {
               if (card.id === choice1.id) {
@@ -202,10 +203,18 @@ function MainParent() {
               matchedCards={matchedCards}
             />
             <div className="game-block">
-              <button onClick={shuffledCards}>
-                {toggleStart ? "Start Game" : "New Game"}
-              </button>
-              <h3>Turns: {turns}</h3>
+              <div id="game-bar">
+                <button onClick={shuffledCards}>
+                  {toggleStart ? "Start Game" : "New Game"}
+                </button>
+                <h3>Turns: {turns}</h3>
+                {toggleStart ? (
+                  <>
+                  <h3>Timer:</h3>
+                  <h3>Score: {calculateScore()}</h3>
+                  </>
+                ) : null}
+              </div>
               <div className="container">{displayCards}</div>
             </div>
             <Modal
@@ -217,7 +226,7 @@ function MainParent() {
             >
               <button onClick={closeModal}>close</button>
               <h2 className="container">Enter Your Name</h2>
-              <form onSubmit={handleSubmit} className='container'>
+              <form onSubmit={handleSubmit} className="container">
                 <input
                   type="text"
                   onChange={(e) => setUserName(e.target.value)}
@@ -228,7 +237,7 @@ function MainParent() {
           </div>
         </Route>
         <Route path="/high-score">
-          <HighScore scoreList ={scoreList} />
+          <HighScore scoreList={scoreList} />
         </Route>
         <Route path="/collection">
           <div className="collection-homepage">
