@@ -18,7 +18,7 @@
       "price": 200,
       "catch-phrase": "I caught a pale chub! That name seems a bit judgy...",
       "image_uri": "https://dodo.ac/np/images/8/8a/Pale_Chub_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "price": 160,
       "catch-phrase": "I caught a crucian carp! My skills are sharp!",
       "image_uri": "https://dodo.ac/np/images/5/5c/Crucian_Carp_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 4,
@@ -148,7 +148,7 @@
       "price": 5000,
       "catch-phrase": "I caught a blowfish! I'm blown away!",
       "image_uri": "https://dodo.ac/np/images/2/29/Blowfish_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 16,
@@ -168,7 +168,7 @@
       "price": 100,
       "catch-phrase": "I caught an tadpole... I'm sure it will grow on me.",
       "image_uri": "https://dodo.ac/np/images/9/9f/Tadpole_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 18,
@@ -218,7 +218,7 @@
       "price": 4500,
       "catch-phrase": "I caught a giant trevally! Yeah, I'm pretty well-trevalled.",
       "image_uri": "https://dodo.ac/np/images/thumb/1/1a/Giant_Trevally_NH.png/400px-Giant_Trevally_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 23,
@@ -228,7 +228,7 @@
       "price": 6000,
       "catch-phrase": "I caught a mahi-mahi! It's all mahine-mahine.",
       "image_uri": "https://dodo.ac/np/images/thumb/c/ce/Mahi-Mahi_NH.png/400px-Mahi-Mahi_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 24,
@@ -251,7 +251,7 @@
       "bubble-color": "#194c89",
       "text-color": "#fffad4",
       "saying": "Don't punch your nose to spite your face.",
-      "collected": false
+      "collected": true
     },
     {
       "id": 26,
@@ -303,7 +303,7 @@
       "bubble-color": "#fff98f",
       "text-color": "#879b96",
       "saying": "Time spent with friends is time well spent.",
-      "collected": false
+      "collected": true
     },
     {
       "id": 30,
@@ -355,7 +355,7 @@
       "bubble-color": "#d86808",
       "text-color": "#fffce9",
       "saying": "You're not living unless you're sweating!",
-      "collected": false
+      "collected": true
     },
     {
       "id": 34,
@@ -465,7 +465,7 @@
       "museum-phrase": "Archaeopteryx's feathers led many people to believe it was the progenitor of the birds, eh wot... Sadly, further evidence indicates it's likely not a direct ancestor—more an evolutionary \"uncle\", if you will. Every time a specimen is found, new theories pop up. And new relatives come to roost in the family tree!",
       "image_uri": "https://dodo.ac/np/images/4/49/Archaeopteryx_NH_Icon.png",
       "part-of": "archaeopteryx",
-      "collected": false
+      "collected": true
     },
     {
       "id": 44,
@@ -492,7 +492,7 @@
       "museum-phrase": "Good old Diplodocus, what would we do without you? This stout fellow embodied all the best in dinosaurs. Those sturdy legs, that magnificent tail, and, above all, that extraordinary neck! Did you know that its center of gravity was such that sitting up on its hind legs was probably easy? What's more, paired with its long neck, this ability greatly increased its reach for eating plants! Best of all, Diplodocus probably grew its entire life, having no \"adult size\". Would that we were all so gifted!",
       "image_uri": "https://dodo.ac/np/images/9/94/Diplo_Chest_NL_Model.png",
       "part-of": "Diplodocus",
-      "collected": false
+      "collected": true
     },
     {
       "id": 47,
@@ -555,7 +555,7 @@
       "price": 1500,
       "catch-phrase": "I got a mussel! It's been working out",
       "image_uri": "https://dodo.ac/np/images/a/a9/Mussel_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 54,
@@ -582,7 +582,7 @@
       "price": 2000,
       "catch-phrase": "I got an abalone! Why do I want a sandwich now?",
       "image_uri": "https://dodo.ac/np/images/f/fd/Abalone_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 57,
@@ -664,13 +664,381 @@
       "catch-phrase": "I got a lobster! Lobjective complete.",
       "image_uri": "https://dodo.ac/np/images/b/b6/Lobster_NH.png",
       "collected": false
-    }
+    },
+    {
+      "id": 66,
+      "name": "banded dragonfly",
+      "location": "Flying near water",
+      "rarity": "Uncommon",
+      "price": 4500,
+      "catch-phrase": "Whoo hoo! Did you see that? Did you? I caught a banded dragonfly!",
+      "description":"These got their name because of their tigerlike banding and evasion skills.",
+      "image_uri": "https://dodo.ac/np/images/6/6e/Banded_Dragonfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 67,
+      "name": "ladybug",
+      "location": "On flowers",
+      "rarity": "Common",
+      "price": 200,
+      "catch-phrase": "I caught a ladybug! Sorry to disturb you, ma'am.",
+      "description":"Also called ladybirds or lady beetles, these help gardens by controlling pests.",
+      "image_uri": "https://dodo.ac/np/images/3/33/Ladybug_NH.png",
+      "collected": false
+    },
+    {
+      "id": 68,
+      "name": "common butterfly",
+      "location": "Flying",
+      "rarity": "Common",
+      "price": 100,
+      "catch-phrase": "I caught a common butterfly! They often flutter by!",
+      "description":"Though all look white to the naked eye, males and females are different colors.",
+      "image_uri": "https://dodo.ac/np/images/9/9f/Common_Butterfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 69,
+      "name": "yellow butterfly",
+      "location": "Flying near flowers",
+      "rarity": "Common",
+      "price": 90,
+      "catch-phrase": "I  caught a yellow butterfly! Shouldn't all BUTTERflies be yellow?",
+      "description":"All males of the species are white- females can be yellow or white.",
+      "image_uri": "https://dodo.ac/np/images/7/74/Yellow_Butterfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 70,
+      "name": "tiger butterfly",
+      "location": "Flying near red and pink flowers",
+      "rarity": "Uncommon",
+      "price": 160,
+      "catch-phrase": "I caught a tiger butterfly! I've earned my stripes!",
+      "description":"Wherever there are orange trees, these butterflies are likely to be found.It features yellow and black-striped patterns, with a blue band on the bottom",
+      "image_uri": "https://dodo.ac/np/images/e/e1/Tiger_Butterfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 80,
+      "name": "peacock butterfly",
+      "location": "Flying near blue, purple, and black flowers",
+      "rarity": "Uncommon",
+      "price": 220,
+      "catch-phrase": "I caught a peacock butterfly! Now it's my turn to strut my stuff!",
+      "description":"Papilio bianor, or Chinese peacock, is a species of butterfly that is native to East Asia. The female has more prominent markings than the male, and is roughly 7-8 centimeters long. Caterpillars feed on Zanthoxylum (prickly-ash) and Phellodendron (cork tree) plants.",
+      "image_uri": "https://dodo.ac/np/images/thumb/8/8e/Peacock_Butterfly_NH.png/400px-Peacock_Butterfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 81,
+      "name": "emperor butterfly",
+      "location": "Near flowers",
+      "rarity": "Rare",
+      "price": 2500,
+      "catch-phrase": "I caught an emperor butterfly! It's not your average monarch!",
+      "description":"Morpho menelaus, more commonly known as the Blue Morpho, is an exotic butterfly that can be found in Central and South America. It feeds primarily on rotten fruit, but in the larval stage, frequently eats other larvae of the same species. ",
+      "image_uri": "https://dodo.ac/np/images/thumb/f/f1/Emperor_Butterfly_NH.png/400px-Emperor_Butterfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 82,
+      "name": "long locust",
+      "location": "On grass",
+      "rarity": "Common",
+      "price": 160,
+      "catch-phrase": "I caught a long locust! It got the short end of the stick!",
+      "description":"It is naturally camouflaged by its green exterior and the green grass that surrounds it and will occasionally make a sound.",
+      "image_uri": "https://dodo.ac/np/images/8/8c/Long_Locust_NH.png",
+      "collected": false
+    },
+    {
+      "id": 83,
+      "name": "grasshopper",
+      "location": "On grass",
+      "rarity": "Uncommon",
+      "price": 160,
+      "catch-phrase": "I caught a grasshopper! No vacationing for these guys, even in the summer!",
+      "description":"These eat until their stomachs bulge. When hungry, they may eat each other.",
+      "image_uri": "https://dodo.ac/np/images/1/1d/Grasshopper_NH.png",
+      "collected": false
+    },
+    {
+      "id": 84,
+      "name": "cricket",
+      "location": "On the ground",
+      "rarity": "Common",
+      "price": 130,
+      "catch-phrase": "I caught a cricket! That's a sticky wicket, isn't it?",
+      "description":"These have ears—not on their heads, but on their front legs.",
+      "image_uri": "https://dodo.ac/np/images/1/1c/Cricket_NH.png",
+      "collected": false
+    },
+    {
+      "id": 85,
+      "name": "honeybee",
+      "location": "Flying near flowers",
+      "rarity": "Uncommon",
+      "price": 100,
+      "catch-phrase": "I caught a honeybee! Ah, sweet success!",
+      "description": "All worker bees are female. Their honey has an almost indefinite shelf life.",
+      "image_uri": "https://dodo.ac/np/images/8/8b/Honeybee_NH.png",
+      "collected": false
+    },
+    {
+      "id": 86,
+      "name": "wasp",
+      "location": "In trees",
+      "rarity": "Rare",
+      "price": 2500,
+      "catch-phrase": "I caught a bee! Bzzz! Bzzz! Bzzz! Phew! ...But why am I still holding it?!",
+      "description":"These poison-carrying bees will attack big foes to protect the queen.",
+      "image_uri": "https://dodo.ac/np/images/b/bb/Wasp_NH.png",
+      "collected": false
+    },
+    {
+      "id": 87,
+      "name": "giant cicada",
+      "location": "On trees",
+      "rarity": "Common",
+      "price": 500,
+      "catch-phrase": "I caught a giant cicada! I guess it's PRETTY big...",
+      "description":"As the name might indicate, giant cicadas are one of the largest species of cicada in the world. They used to live mostly in warmer western Japan, but they've now also moved to urban eastern Japan. Though they're now common in these areas, they aren't well known in other parts of the world.",
+      "image_uri": "https://dodo.ac/np/images/5/59/Giant_Cicada_NH.png",
+      "collected": false
+    },
+    {
+      "id": 88,
+      "name": "cicada shell",
+      "location": "On trees",
+      "rarity": "Very common",
+      "price": 10,
+      "catch-phrase": "I found a cicada shell! I'm glad the little guy came out of it!",
+      "description":"Cicada larvae emerge from the ground in the evening and molt on trees, leaving behind empty shells. It's possible to find out the species of cicadas just by looking at these shells. Collecting the shells will tell you how many and what kind of cicadas inhabit a certain area.",
+      "image_uri": "https://dodo.ac/np/images/7/77/Cicada_Shell_NH.png",
+      "collected": false
+    },
+    {
+      "id": 89,
+      "name": "red dragonfly",
+      "location": "Flying",
+      "rarity": "Common",
+      "price": 80,
+      "catch-phrase": "I caught a red dragonfly! Didn't even have to roll for initiative!",
+      "description":"Ever looked into the eyes of a red dragonfly, or any dragonfly, for that matter? They've compound eyes, where multiple eyeballs are stuck together, wot! Just think of all those beady little eyes on you! Blech! How very vile... To be honest, bugs with only TWO eyes make me gag.",
+      "image_uri": "https://dodo.ac/np/images/1/1d/Red_Dragonfly_NH.png",
+      "collected": false
+    },
+    {
+      "id": 90,
+      "name": "dung beetle",
+      "location": "Pushing snowballs",
+      "rarity": "Rare",
+      "price": 800,
+      "catch-phrase": "I caught a dung beetle! This species likes feces!",
+      "description":"These beetles are also known as scarabs and were once revered in some parts of the world. Looking at it now, I must admit there IS something a bit refined about its antennae and legs...",
+      "image_uri": "https://dodo.ac/np/images/f/f8/Dung_Beetle_NH.png",
+      "collected": false
+    },
+    {
+      "id": 91,
+      "name": "scarab beetle",
+      "location": "On trees",
+      "rarity": "Very Rare",
+      "price": 6000,
+      "catch-phrase": "I  caught a scarab beetle! It's just a dung beetle with better hobbies.",
+      "description":"From the gorgeous to the grotesque, the fruit-beetle family has a wide variety of members, indeed... Among them, the shiniest by far is the scarab beetle. Not that it makes any bit of difference to me. If it has antennae, it's most unconscionably vile...",
+      "image_uri": "https://dodo.ac/np/images/d/db/Scarab_Beetle_NH.png",
+      "collected": false
+    },
+    {
+      "id": 92,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
+    {
+      "id": ,
+      "name": "",
+      "location": "",
+      "rarity": "",
+      "price": ,
+      "catch-phrase": "",
+      "description":"",
+      "image_uri": "",
+      "collected": false
+    },
   ],
   "highscore": [
     {
       "id": 1,
       "score": 100,
       "username": "Ashley"
+    },
+    {
+      "username": "Shiyao",
+      "score": 8,
+      "id": 2
     }
   ],
   "songs": [

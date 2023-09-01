@@ -178,7 +178,7 @@ function MainParent() {
       .then((res) => res.json())
       .then((scoreObj) => {
         closeModal();
-        history.push("/high-score");
+        setScoreList((current) => [...current, scoreObj]);
       });
   };
   const displayCards = cards.map((card, index) => (
@@ -216,8 +216,8 @@ function MainParent() {
               contentLabel="Score Modal"
             >
               <button onClick={closeModal}>close</button>
-              <div>Enter Your Name</div>
-              <form onSubmit={handleSubmit}>
+              <h2 className="container">Enter Your Name</h2>
+              <form onSubmit={handleSubmit} className='container'>
                 <input
                   type="text"
                   onChange={(e) => setUserName(e.target.value)}
@@ -228,7 +228,7 @@ function MainParent() {
           </div>
         </Route>
         <Route path="/high-score">
-          <HighScore />
+          <HighScore scoreList ={scoreList} />
         </Route>
         <Route path="/collection">
           <div className="collection-homepage">
