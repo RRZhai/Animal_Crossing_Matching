@@ -41,7 +41,7 @@ function MainParent() {
   const [matchedOneCard, setMatchedOneCard] = useState(null);
   const [counter, setCounter] = useState(null);
   const [coin, setCoin] = useState(0);
-  const [difficulty, setDifficulty] = useState(0);
+  const [difficulty, setDifficulty] = useState(null);
 
   function openModal() {
     setIsOpen(true);
@@ -88,6 +88,24 @@ function MainParent() {
         setMatchedCards([...matchedCards, data]);
       });
   };
+
+  // changecolor
+  const notification = document.getElementById("notification");
+  // const changecolor = () => {
+  //   const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF", "#FF33FF"];
+  //   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  //   notification.style.color = randomColor;
+  // }
+  // setInterval(changecolor, 3000)
+  useEffect(() => {
+    if (notification){
+    const changecolor = () => {
+      const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF", "#FF33FF"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      notification.style.color = randomColor;
+    }
+    setInterval(changecolor, 3000)}
+  }, [notification]);
 
   // timer
   useEffect(() => {
@@ -239,16 +257,20 @@ function MainParent() {
             <div className="game-block">
               <div id="game-bar">
                 <button
-                  onClick={(e) => {
-                    shuffledCards();
-                    setToggleStart(false);
-                  }}
+                  onClick={
+                    difficulty
+                      ? ((e) => {
+                          shuffledCards();
+                          setToggleStart((current) => !current);
+                        })
+                      : null
+                  }
                 >
                   {toggleStart ? "Start Game" : "New Game"}
                 </button>
-                <h3>Turns: {turns}</h3>
                 {toggleStart ? null : (
                   <>
+                    <h3>Turns: {turns}</h3>
                     <h3>Timer: {counter}s</h3>
                     <h3>Coin: {coin}</h3>
                   </>
@@ -256,6 +278,11 @@ function MainParent() {
               </div>
               {toggleStart ? (
                 <div>
+                  <div className="container">
+                    {difficulty ? null : (
+                      <h2 id="notification">Please select game difficulty~</h2>
+                    )}
+                  </div>
                   <div className="container">
                     <button
                       onClick={(e) => handleDifficulty(e.target.value)}

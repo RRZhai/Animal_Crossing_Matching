@@ -226,6 +226,11 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
+
+#notification{
+  transition: color 0.5s ease;
+}
+
 .card-grid {
   background-color: #fff;
   display: flex;
