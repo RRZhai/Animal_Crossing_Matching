@@ -55,7 +55,7 @@ function MainParent() {
   }
   //fetch request ⮯
   useEffect(() => {
-    fetch("http://localhost:3000/all")
+    fetch("http://localhost:3001/all")
       .then((r) => r.json())
       .then((data) => {
         setCards(data);
@@ -67,7 +67,7 @@ function MainParent() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/highscore")
+    fetch("http://localhost:3001/highscore")
       .then((response) => response.json())
       .then((data) => {
         setScoreList(data);
@@ -75,7 +75,7 @@ function MainParent() {
   }, []);
 
   const handleMatched = (id) => {
-    fetch(`http://localhost:3000/all/${id}`, {
+    fetch(`http://localhost:3001/all/${id}`, {
       method: "PATCH",
       body: JSON.stringify({ collected: true }),
       headers: {
@@ -91,20 +91,22 @@ function MainParent() {
 
   // changecolor
   const notification = document.getElementById("notification");
-  // const changecolor = () => {
-  //   const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF", "#FF33FF"];
-  //   const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  //   notification.style.color = randomColor;
-  // }
-  // setInterval(changecolor, 3000)
   useEffect(() => {
-    if (notification){
-    const changecolor = () => {
-      const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF", "#FF33FF"];
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      notification.style.color = randomColor;
+    if (notification) {
+      const changecolor = () => {
+        const colors = [
+          "#FF5733",
+          "#33FF57",
+          "#5733FF",
+          "#FFFF33",
+          "#33FFFF",
+          "#FF33FF",
+        ];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        notification.style.color = randomColor;
+      };
+      setInterval(changecolor, 3000);
     }
-    setInterval(changecolor, 3000)}
   }, [notification]);
 
   // timer
@@ -154,7 +156,7 @@ function MainParent() {
   };
   //compare the 2 cards
   useEffect(() => {
-    if (matches !== 8) {
+    if (matches !== difficulty) {
       if (choice1 && choice2) {
         setDisabled(true);
         if (choice1.id === choice2.id) {
@@ -175,10 +177,13 @@ function MainParent() {
         }
       }
     } else {
+      debugger;
+      setDifficulty(null);
       openModal();
       setMatches(0);
     }
   }, [choice1, choice2]);
+
   //reset turns
   const resetTurn = () => {
     setChoice1(null);
@@ -189,7 +194,7 @@ function MainParent() {
 
   const handleSubmitNew = (e, submitForm) => {
     e.preventDefault();
-    fetch("http://localhost:3000/all", {
+    fetch("http://localhost:3001/all", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(submitForm),
@@ -204,7 +209,7 @@ function MainParent() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/highscore", {
+    fetch("http://localhost:3001/highscore", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: userName, score: calculateScore() }),
@@ -236,12 +241,11 @@ function MainParent() {
 
   // Score
   const calculateScore = () => {
-    let maxScore = 8;
-    const extraTurns = turns - 16;
-    if (extraTurns > 0) {
-      return maxScore - extraTurns * 0.3;
-    }
-    return maxScore;
+    const trunScore = (difficulty - turns) * 100;
+    const coinScore = coin;
+    const timeScore = counter * 100;
+    const difficultyScore = difficulty * 100;
+    return trunScore + coinScore + timeScore + difficultyScore;
   };
 
   return (
@@ -256,20 +260,30 @@ function MainParent() {
             />
             <div className="game-block">
               <div id="game-bar">
-                <button
-                  onClick={
-                    difficulty
-                      ? ((e) => {
-                          shuffledCards();
-                          setToggleStart((current) => !current);
-                        })
-                      : null
-                  }
-                >
-                  {toggleStart ? "Start Game" : "New Game"}
-                </button>
+                {toggleStart ? (
+                  difficulty ? (
+                    <button
+                      onClick={(e) => {
+                        shuffledCards();
+                        setToggleStart((current) => !current);
+                      }}
+                    >
+                      Start Game
+                    </button>
+                  ) : null
+                ) : (
+                  <button
+                    onClick={(e) => {
+                      setToggleStart((current) => !current);
+                      setDifficulty(null);
+                    }}
+                  >
+                    New Game
+                  </button>
+                )}
                 {toggleStart ? null : (
                   <>
+                    <h3>Difficulty: {difficulty}</h3>
                     <h3>Turns: {turns}</h3>
                     <h3>Timer: {counter}s</h3>
                     <h3>Coin: {coin}</h3>
@@ -283,32 +297,34 @@ function MainParent() {
                       <h2 id="notification">Please select game difficulty~</h2>
                     )}
                   </div>
-                  <div className="container">
-                    <button
-                      onClick={(e) => handleDifficulty(e.target.value)}
-                      value="2"
-                    >
-                      Easy
-                    </button>
-                    <button
-                      onClick={(e) => handleDifficulty(e.target.value)}
-                      value="8"
-                    >
-                      Normal
-                    </button>
-                    <button
-                      onClick={(e) => handleDifficulty(e.target.value)}
-                      value="18"
-                    >
-                      Hard
-                    </button>
-                    <button
-                      onClick={(e) => handleDifficulty(e.target.value)}
-                      value="32"
-                    >
-                      Hell
-                    </button>
-                  </div>
+                  {difficulty ? null : (
+                    <div className="container">
+                      <button
+                        onClick={(e) => handleDifficulty(e.target.value)}
+                        value="2"
+                      >
+                        Easy
+                      </button>
+                      <button
+                        onClick={(e) => handleDifficulty(e.target.value)}
+                        value="8"
+                      >
+                        Normal
+                      </button>
+                      <button
+                        onClick={(e) => handleDifficulty(e.target.value)}
+                        value="18"
+                      >
+                        Hard
+                      </button>
+                      <button
+                        onClick={(e) => handleDifficulty(e.target.value)}
+                        value="32"
+                      >
+                        Hell
+                      </button>
+                    </div>
+                  )}
                 </div>
               ) : (
                 <div className="container">{displayCards}</div>
@@ -323,12 +339,13 @@ function MainParent() {
             >
               <button onClick={closeModal}>close</button>
               <h2 className="container">Enter Your Name</h2>
+              <h3 className="container">Your Score: {calculateScore()}</h3>
               <form onSubmit={handleSubmit} className="container">
                 <input
                   type="text"
                   onChange={(e) => setUserName(e.target.value)}
                 />
-                <button type="submit">Check Out Scores!</button>
+                <button type="submit">Check Out Your Ranking!</button>
               </form>
             </Modal>
           </div>

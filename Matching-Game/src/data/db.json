@@ -88,7 +88,7 @@
       "price": 4500,
       "catch-phrase": "I caught a ranchu goldfish! But I prefer balsamicu goldfish!",
       "image_uri": "https://dodo.ac/np/images/4/41/Ranchu_Goldfish_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 10,
@@ -238,7 +238,7 @@
       "price": 12000,
       "catch-phrase": "I caught a saw shark! You could call it a sea saw!",
       "image_uri": "https://dodo.ac/np/images/thumb/4/44/Saw_Shark_NH.png/400px-Saw_Shark_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 25,
@@ -277,7 +277,7 @@
       "bubble-color": "#00d1bd",
       "text-color": "#fffce9",
       "saying": "A thing of beauty is a joy forever.",
-      "collected": false
+      "collected": true
     },
     {
       "id": 28,
@@ -290,7 +290,7 @@
       "bubble-color": "#ff791f",
       "text-color": "#fff2bb",
       "saying": "No pain, no gain!",
-      "collected": false
+      "collected": true
     },
     {
       "id": 29,
@@ -447,7 +447,7 @@
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
       "image_uri": "https://dodo.ac/np/images/5/5c/Ankylo_Torso_CF_Model.png",
       "part-of": "Ankylosaurus",
-      "collected": false
+      "collected": true
     },
     {
       "id": 42,
@@ -537,7 +537,7 @@
       "museum-phrase": "Trilobites were ancient and extinct before the dinosaurs ever appeared! It boggles the mind! Hoo! They were also one of the most successful classes of animal ever, existing for over 300 million years. Some 50,000 species have been identified in sizes ranging from three millimeters to over two feet! Alas, that is the very limit of my enthusiasm for them, though, they look rather too much like bugs.",
       "image_uri": "https://dodo.ac/np/images/a/ac/Trilobite_NH_Icon.png",
       "part-of": "trilobite",
-      "collected": false
+      "collected": true
     },
     {
       "id": 52,
@@ -591,7 +591,7 @@
       "price": 6000,
       "catch-phrase": "I got an umbrella octopus! Too bad I'm already soaked.",
       "image_uri": "https://dodo.ac/np/images/c/c0/Umbrella_Octopus_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 58,
@@ -600,7 +600,7 @@
       "price": 10000,
       "catch-phrase": "I got a vampire squid! A lot was at stake.",
       "image_uri": "https://dodo.ac/np/images/0/0d/Vampire_Squid_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 59,
@@ -891,7 +891,7 @@
       "catch-phrase": "I caught a honeybee! Ah, sweet success!",
       "description": "All worker bees are female. Their honey has an almost indefinite shelf life.",
       "image_uri": "https://dodo.ac/np/images/8/8b/Honeybee_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 86,
@@ -946,7 +946,7 @@
       "catch-phrase": "I caught a dung beetle! This species likes feces!",
       "description": "These beetles are also known as scarabs and were once revered in some parts of the world. Looking at it now, I must admit there IS something a bit refined about its antennae and legs...",
       "image_uri": "https://dodo.ac/np/images/f/f8/Dung_Beetle_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 91,
