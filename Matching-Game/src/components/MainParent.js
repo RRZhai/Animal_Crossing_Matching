@@ -42,6 +42,7 @@ function MainParent() {
   const [counter, setCounter] = useState(null);
   const [coin, setCoin] = useState(0);
   const [difficulty, setDifficulty] = useState(null);
+  const [time, setTime] = useState(0);
 
   function openModal() {
     setIsOpen(true);
@@ -156,7 +157,9 @@ function MainParent() {
   };
   //compare the 2 cards
   useEffect(() => {
-    if (matches !== difficulty) {
+    if (matches !== parseInt(difficulty)) {
+      console.log(difficulty);
+      console.log(matches);
       if (choice1 && choice2) {
         setDisabled(true);
         if (choice1.id === choice2.id) {
@@ -177,10 +180,10 @@ function MainParent() {
         }
       }
     } else {
-      debugger;
-      setDifficulty(null);
       openModal();
       setMatches(0);
+      setTime(counter);
+      setDifficulty(null);
     }
   }, [choice1, choice2]);
 
@@ -243,9 +246,10 @@ function MainParent() {
   const calculateScore = () => {
     const trunScore = (difficulty - turns) * 100;
     const coinScore = coin;
-    const timeScore = counter * 100;
+    const timeScore = time * 100;
     const difficultyScore = difficulty * 100;
-    return trunScore + coinScore + timeScore + difficultyScore;
+    const totalScore = trunScore + coinScore + timeScore + difficultyScore;
+    return totalScore;
   };
 
   return (
@@ -339,7 +343,9 @@ function MainParent() {
             >
               <button onClick={closeModal}>close</button>
               <h2 className="container">Enter Your Name</h2>
-              <h3 className="container">Your Score: {calculateScore()}</h3>
+              <h3 className="container" id="notification">
+                Your Score: {calculateScore()}
+              </h3>
               <form onSubmit={handleSubmit} className="container">
                 <input
                   type="text"

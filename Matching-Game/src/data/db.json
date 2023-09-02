@@ -118,7 +118,7 @@
       "price": 6000,
       "catch-phrase": "I caught a gar! Yar! It's a gar! Har har!",
       "image_uri": "https://dodo.ac/np/images/thumb/c/c8/Gar_NH.png/400px-Gar_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 13,
@@ -407,7 +407,7 @@
       "bubble-color": "#ffffff",
       "text-color": "#848484",
       "saying": "A glamour shot is worth a thousand words.",
-      "collected": false
+      "collected": true
     },
     {
       "id": 38,
@@ -564,7 +564,7 @@
       "price": 1000,
       "catch-phrase": "I got a whelk! Happy snails to ya.",
       "image_uri": "https://dodo.ac/np/images/5/54/Whelk_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 55,
@@ -729,7 +729,7 @@
       "price": 4980,
       "description": "In the forgery, there is a coffee stain in the top right corner. The forgery also has a key taped to the back of the canvas. If there is no stain and key, it is genuine.",
       "image_uri": "https://dodo.ac/np/images/b/b5/NH_Academic_Painting.jpg",
-      "collected": false
+      "collected": true
     },
     {
       "id": 72,
@@ -836,7 +836,7 @@
       "catch-phrase": "I caught a peacock butterfly! Now it's my turn to strut my stuff!",
       "description": "Papilio bianor, or Chinese peacock, is a species of butterfly that is native to East Asia. The female has more prominent markings than the male, and is roughly 7-8 centimeters long. Caterpillars feed on Zanthoxylum (prickly-ash) and Phellodendron (cork tree) plants.",
       "image_uri": "https://dodo.ac/np/images/thumb/8/8e/Peacock_Butterfly_NH.png/400px-Peacock_Butterfly_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 81,
@@ -968,7 +968,7 @@
       "catch-phrase": "I caught an ant! TELL ME WHERE THE QUEEN IS!",
       "description": "Twenty percent of worker ants actually don't do anything... They are lazy ants.",
       "image_uri": "https://dodo.ac/np/images/4/4a/Ant_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 93,
@@ -990,7 +990,7 @@
       "catch-phrase": "I caught a centipede! 99 more and I'll have a dollarpede!",
       "description": "Very few of these actually have more than 100 legs. They have nasty bites.",
       "image_uri": "https://dodo.ac/np/images/8/89/Centipede_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 95,
