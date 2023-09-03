@@ -2,7 +2,8 @@ import React from "react";
 import { useState, useEffect, useId } from "react";
 import GameCards from "./GameCards";
 import CustomerService from "./CustomerService";
-import { Switch, Route, Link, useHistory } from "react-router-dom";
+import { Routes, Route, Link, useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import CardContainer from "./CardContainer";
 import Card from "./Card";
 import HighScore from "./HighScore";
@@ -10,6 +11,7 @@ import NewForm from "./NewForm";
 import MenuBar from "./MenuBar";
 import Modal from "react-modal";
 import Home from "./Home";
+
 Modal.setAppElement("#root");
 const customStyles = {
   content: {
@@ -44,6 +46,8 @@ function MainParent() {
   const [difficulty, setDifficulty] = useState(null);
   const [time, setTime] = useState(0);
   const [playerScore, setPlayerScore] = useState(0);
+
+  const navigate = useNavigate();
 
   function openModal() {
     setIsOpen(true);
@@ -227,9 +231,10 @@ function MainParent() {
     })
       .then((res) => res.json())
       .then((scoreObj) => {
-        closeModal();
         setScoreList((current) => [...current, scoreObj]);
         setPlayerScore(scoreObj);
+        closeModal();
+        navigate("/high-score");
       });
   };
   const displayCards = cards.map((card, index) => (
@@ -264,133 +269,139 @@ function MainParent() {
   return (
     <div>
       <MenuBar />
-      <Switch>
-        <Route path="/game">
-          <div className="game">
-            <CardContainer
-              cardsHolder={cardsHolder}
-              matchedCards={matchedCards}
-            />
-            <div className="game-block">
-              <div id="game-bar">
-                {toggleStart ? (
-                  difficulty ? (
+      <Routes>
+        <Route
+          path="/game"
+          element={
+            <div className="game">
+              <CardContainer
+                cardsHolder={cardsHolder}
+                matchedCards={matchedCards}
+              />
+              <div className="game-block">
+                <div id="game-bar">
+                  {toggleStart ? (
+                    difficulty ? (
+                      <button
+                        onClick={(e) => {
+                          shuffledCards();
+                          setToggleStart((current) => !current);
+                        }}
+                      >
+                        Start Game
+                      </button>
+                    ) : null
+                  ) : (
                     <button
                       onClick={(e) => {
-                        shuffledCards();
                         setToggleStart((current) => !current);
+                        setDifficulty(null);
                       }}
                     >
-                      Start Game
+                      New Game
                     </button>
-                  ) : null
-                ) : (
-                  <button
-                    onClick={(e) => {
-                      setToggleStart((current) => !current);
-                      setDifficulty(null);
-                    }}
-                  >
-                    New Game
-                  </button>
-                )}
-                {toggleStart ? null : (
-                  <>
-                    <h3>Difficulty: {difficulty}</h3>
-                    <h3>Turns: {turns}</h3>
-                    <h3>Timer: {counter}s</h3>
-                    <h3>Coin: {coin}</h3>
-                  </>
-                )}
-              </div>
-              {toggleStart ? (
-                <div>
-                  <div className="container">
-                    {difficulty ? null : (
-                      <h2 id="notification">Please select game difficulty~</h2>
-                    )}
-                  </div>
-                  {difficulty ? null : (
-                    <div className="container">
-                      <button
-                        onClick={(e) => handleDifficulty(e.target.value)}
-                        value="2"
-                      >
-                        Easy
-                      </button>
-                      <button
-                        onClick={(e) => handleDifficulty(e.target.value)}
-                        value="8"
-                      >
-                        Normal
-                      </button>
-                      <button
-                        onClick={(e) => handleDifficulty(e.target.value)}
-                        value="18"
-                      >
-                        Hard
-                      </button>
-                      <button
-                        onClick={(e) => handleDifficulty(e.target.value)}
-                        value="32"
-                      >
-                        Hell
-                      </button>
-                    </div>
+                  )}
+                  {toggleStart ? null : (
+                    <>
+                      <h3>Difficulty: {difficulty}</h3>
+                      <h3>Turns: {turns}</h3>
+                      <h3>Timer: {counter}s</h3>
+                      <h3>Coin: {coin}</h3>
+                    </>
                   )}
                 </div>
-              ) : (
-                <div className="container">{displayCards}</div>
-              )}
+                {toggleStart ? (
+                  <div>
+                    <div className="container">
+                      {difficulty ? null : (
+                        <h2 id="notification">
+                          Please select game difficulty~
+                        </h2>
+                      )}
+                    </div>
+                    {difficulty ? null : (
+                      <div className="container">
+                        <button
+                          onClick={(e) => handleDifficulty(e.target.value)}
+                          value="2"
+                        >
+                          Easy
+                        </button>
+                        <button
+                          onClick={(e) => handleDifficulty(e.target.value)}
+                          value="8"
+                        >
+                          Normal
+                        </button>
+                        <button
+                          onClick={(e) => handleDifficulty(e.target.value)}
+                          value="18"
+                        >
+                          Hard
+                        </button>
+                        <button
+                          onClick={(e) => handleDifficulty(e.target.value)}
+                          value="32"
+                        >
+                          Hell
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="container">{displayCards}</div>
+                )}
+              </div>
+              <Modal
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                style={customStyles}
+                contentLabel="Score Modal"
+              >
+                <button onClick={closeModal}>close</button>
+                {/* <h2 className="container">Enter Your Name</h2> */}
+                <h3 className="container" id="notification">
+                  Your Score: {calculateScore()}
+                </h3>
+                <form onSubmit={handleSubmitScore} className="container">
+                  <input
+                    type="text"
+                    placeholder="Please enter your name ..."
+                    onChange={(e) => setUserName(e.target.value)}
+                  />
+                  <button type="submit">Check Out Your Ranking!</button>
+                </form>
+              </Modal>
             </div>
-            <Modal
-              isOpen={modalIsOpen}
-              onAfterOpen={afterOpenModal}
-              onRequestClose={closeModal}
-              style={customStyles}
-              contentLabel="Score Modal"
-            >
-              <button onClick={closeModal}>close</button>
-              {/* <h2 className="container">Enter Your Name</h2> */}
-              <h3 className="container" id="notification">
-                Your Score: {calculateScore()}
-              </h3>
-              <form onSubmit={handleSubmitScore} className="container">
-                <input
-                  type="text"
-                  placeholder="Please enter your name ..."
-                  onChange={(e) => setUserName(e.target.value)}
-                />
-                <button type="submit">Check Out Your Ranking!</button>
-              </form>
-            </Modal>
-          </div>
-        </Route>
-        <Route path="/high-score">
-          <HighScore scoreList={scoreList} playerScore={playerScore} />
-        </Route>
-        <Route path="/collection">
-          <div className="collection-homepage">
-            <CardContainer
-              cardsHolder={cardsHolder}
-              matchedCards={matchedCards}
-            />
-            <NewForm handleSubmitNew={handleSubmitNew} newCard={newCard} />
-          </div>
-        </Route>
-        <Route path="/cards/:id">
-          <Card />
-        </Route>
-        <Route path="/high-scores">
-          <HighScore scoreList={scoreList} />
-        </Route>
-        <Route path="/care">
-          <CustomerService />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+          }
+        />
+        <Route
+          path="/high-score"
+          element={
+            <HighScore scoreList={scoreList} playerScore={playerScore} />
+          }
+        />
+        <Route
+          path="/collection"
+          element={
+            <div className="collection-homepage">
+              <CardContainer
+                cardsHolder={cardsHolder}
+                matchedCards={matchedCards}
+              />
+              <NewForm handleSubmitNew={handleSubmitNew} newCard={newCard} />
+            </div>
+          }
+        />
+        <Route path="/cards/:id" element={<Card />} />
+        <Route
+          path="/high-scores"
+          element={<HighScore scoreList={scoreList} playerScore={playerScore}/>}
+        />
+        <Route path="/care" element={<CustomerService />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }

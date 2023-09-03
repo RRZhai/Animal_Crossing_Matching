@@ -847,7 +847,7 @@
       "catch-phrase": "I caught an emperor butterfly! It's not your average monarch!",
       "description": "Morpho menelaus, more commonly known as the Blue Morpho, is an exotic butterfly that can be found in Central and South America. It feeds primarily on rotten fruit, but in the larval stage, frequently eats other larvae of the same species. ",
       "image_uri": "https://dodo.ac/np/images/thumb/f/f1/Emperor_Butterfly_NH.png/400px-Emperor_Butterfly_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 82,
@@ -902,7 +902,7 @@
       "catch-phrase": "I caught a bee! Bzzz! Bzzz! Bzzz! Phew! ...But why am I still holding it?!",
       "description": "These poison-carrying bees will attack big foes to protect the queen.",
       "image_uri": "https://dodo.ac/np/images/b/bb/Wasp_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 87,
@@ -1072,6 +1072,24 @@
       "username": "Shiyao",
       "score": 2700,
       "id": 3
+    },
+    {
+      "username": "Shiyao testing",
+      "score": 2700,
+      "turns": -200,
+      "coinScore": 400,
+      "timeScore": 2500,
+      "difficultyScore": 0,
+      "id": 4
+    },
+    {
+      "username": "aaaaa",
+      "score": 2700,
+      "turns": -200,
+      "coinScore": 400,
+      "timeScore": 2500,
+      "difficultyScore": 0,
+      "id": 5
     }
   ],
   "songs": [
