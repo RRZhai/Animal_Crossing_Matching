@@ -342,13 +342,14 @@ function MainParent() {
               contentLabel="Score Modal"
             >
               <button onClick={closeModal}>close</button>
-              <h2 className="container">Enter Your Name</h2>
+              {/* <h2 className="container">Enter Your Name</h2> */}
               <h3 className="container" id="notification">
                 Your Score: {calculateScore()}
               </h3>
               <form onSubmit={handleSubmit} className="container">
                 <input
                   type="text"
+                  placeholder="Please enter your name ..."
                   onChange={(e) => setUserName(e.target.value)}
                 />
                 <button type="submit">Check Out Your Ranking!</button>

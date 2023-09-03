@@ -14,6 +14,14 @@ ul {
   font-size: 150%;
 }
 
+input {
+  width: 80%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 150%;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
 /* Menu */
 .header {
   display: flex;
@@ -349,9 +357,9 @@ form {
   width: 100%;
 }
 
-.form input {
+/* .form input {
   width: 200%;
-}
+} */
 
 .btn {
   margin-left: 2rem;

@@ -546,7 +546,7 @@
       "price": 2800,
       "catch-phrase": "I got a pearl oyster! Aw, shucks. Don't clam up now!",
       "image_uri": "https://dodo.ac/np/images/5/52/Pearl_Oyster_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 53,
@@ -707,7 +707,7 @@
       "catch-phrase": "I  caught a yellow butterfly! Shouldn't all BUTTERflies be yellow?",
       "description": "All males of the species are white- females can be yellow or white.",
       "image_uri": "https://dodo.ac/np/images/7/74/Yellow_Butterfly_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 70,
@@ -1067,6 +1067,11 @@
       "username": "Shiyao",
       "score": 8,
       "id": 2
+    },
+    {
+      "username": "Shiyao",
+      "score": 2700,
+      "id": 3
     }
   ],
   "songs": [
