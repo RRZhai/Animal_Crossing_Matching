@@ -43,6 +43,7 @@ function MainParent() {
   const [coin, setCoin] = useState(0);
   const [difficulty, setDifficulty] = useState(null);
   const [time, setTime] = useState(0);
+  const [playerScore, setPlayerScore] = useState(0);
 
   function openModal() {
     setIsOpen(true);
@@ -210,17 +211,25 @@ function MainParent() {
       .then();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmitScore = (e) => {
     e.preventDefault();
     fetch("http://localhost:3001/highscore", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username: userName, score: calculateScore() }),
+      body: JSON.stringify({
+        username: userName,
+        score: calculateScore(),
+        turns: (difficulty - turns) * 100,
+        coinScore: coin,
+        timeScore: time * 100,
+        difficultyScore: difficulty * 100,
+      }),
     })
       .then((res) => res.json())
       .then((scoreObj) => {
         closeModal();
         setScoreList((current) => [...current, scoreObj]);
+        setPlayerScore(scoreObj);
       });
   };
   const displayCards = cards.map((card, index) => (
@@ -346,7 +355,7 @@ function MainParent() {
               <h3 className="container" id="notification">
                 Your Score: {calculateScore()}
               </h3>
-              <form onSubmit={handleSubmit} className="container">
+              <form onSubmit={handleSubmitScore} className="container">
                 <input
                   type="text"
                   placeholder="Please enter your name ..."
@@ -358,7 +367,7 @@ function MainParent() {
           </div>
         </Route>
         <Route path="/high-score">
-          <HighScore scoreList={scoreList} />
+          <HighScore scoreList={scoreList} playerScore={playerScore} />
         </Route>
         <Route path="/collection">
           <div className="collection-homepage">
