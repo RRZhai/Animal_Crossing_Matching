@@ -6,7 +6,7 @@ function MenuBar() {
   const [songUrl, setSongUrl] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/songs/${Math.floor(Math.random() * 10)}`)
+    fetch(`http://localhost:3001/songs/${Math.floor(Math.random() * 10) + 1}`)
       .then((r) => r.json())
       .then((data) => setSongUrl(data.url));
   }, []);
@@ -36,14 +36,7 @@ function MenuBar() {
           Score
         </Link>
       </div>
-      <audio
-        controls
-        autoPlay
-        muted
-        id="player"
-        src={songUrl}
-      >
-      </audio>
+      <audio autoPlay controls id="player" src={songUrl}></audio>
     </div>
   );
 }

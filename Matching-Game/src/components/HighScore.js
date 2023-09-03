@@ -15,7 +15,10 @@ function HighScore({ scoreList, playerScore }) {
               <>
                 <h3 id="notification">Your Score Detail</h3>
                 <div className="score">
-                  <h3></h3>
+                  <h3>{score.turns}</h3>
+                  <h3>{score.coinScore}</h3>
+                  <h3>{score.timeScore}</h3>
+                  <h3>{score.difficultyScore}</h3>
                 </div>
               </>
             ) : null}
