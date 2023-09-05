@@ -6,7 +6,7 @@ function MenuBar() {
   const [songUrl, setSongUrl] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/songs/${Math.floor(Math.random() * 10) + 1}`)
+    fetch(`https://acm-api.onrender.com/songs/${Math.floor(Math.random() * 10) + 1}`)
       .then((r) => r.json())
       .then((data) => setSongUrl(data.url));
   }, []);

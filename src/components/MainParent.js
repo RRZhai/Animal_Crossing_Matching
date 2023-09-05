@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect, useId } from "react";
 import GameCards from "./GameCards";
 import CustomerService from "./CustomerService";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link, useHistory } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import CardContainer from "./CardContainer";
 import Card from "./Card";
@@ -11,6 +11,7 @@ import NewForm from "./NewForm";
 import MenuBar from "./MenuBar";
 import Modal from "react-modal";
 import Home from "./Home";
+import { useParams } from "react-router-dom";
 
 Modal.setAppElement("#root");
 const customStyles = {
@@ -61,7 +62,7 @@ function MainParent() {
   }
   //fetch request ⮯
   useEffect(() => {
-    fetch("http://localhost:3001/all")
+    fetch("https://acm-api.onrender.com/all")
       .then((r) => r.json())
       .then((data) => {
         setCards(data);
@@ -73,7 +74,7 @@ function MainParent() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3001/highscore")
+    fetch("https://acm-api.onrender.com/highscore")
       .then((response) => response.json())
       .then((data) => {
         setScoreList(data);
@@ -81,7 +82,7 @@ function MainParent() {
   }, []);
 
   const handleMatched = (id) => {
-    fetch(`http://localhost:3001/all/${id}`, {
+    fetch(`https://acm-api.onrender.com/all/${id}`, {
       method: "PATCH",
       body: JSON.stringify({ collected: true }),
       headers: {
@@ -200,7 +201,7 @@ function MainParent() {
 
   const handleSubmitNew = (e, submitForm) => {
     e.preventDefault();
-    fetch("http://localhost:3001/all", {
+    fetch("https://acm-api.onrender.com/all", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(submitForm),
@@ -215,7 +216,7 @@ function MainParent() {
 
   const handleSubmitScore = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/highscore", {
+    fetch("https://acm-api.onrender.com/highscore", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

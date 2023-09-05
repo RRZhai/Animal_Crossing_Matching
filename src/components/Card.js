@@ -9,7 +9,7 @@ function Card() {
 
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:3001/all/${id}`)
+      fetch(`https://acm-api.onrender.com/all/${id}`)
         .then((resp) => resp.json())
         .then((item) => setCard(item));
     }
