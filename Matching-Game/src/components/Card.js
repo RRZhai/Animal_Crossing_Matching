@@ -10,7 +10,7 @@ function Card() {
 
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:3000/all/${id}`)
+      fetch(`http://localhost:3001/all/${id}`)
         .then((resp) => resp.json())
         .then((item) => setCard(item));
     }

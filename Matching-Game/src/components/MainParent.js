@@ -11,6 +11,7 @@ import NewForm from "./NewForm";
 import MenuBar from "./MenuBar";
 import Modal from "react-modal";
 import Home from "./Home";
+import { useParams } from "react-router-dom";
 
 Modal.setAppElement("#root");
 const customStyles = {
@@ -163,8 +164,6 @@ function MainParent() {
   //compare the 2 cards
   useEffect(() => {
     if (matches !== parseInt(difficulty)) {
-      console.log(difficulty);
-      console.log(matches);
       if (choice1 && choice2) {
         setDisabled(true);
         if (choice1.id === choice2.id) {
