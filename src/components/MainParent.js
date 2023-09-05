@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect, useId } from "react";
 import GameCards from "./GameCards";
 import CustomerService from "./CustomerService";
-import { Routes, Route, Link, useHistory } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import CardContainer from "./CardContainer";
 import Card from "./Card";
@@ -11,7 +11,6 @@ import NewForm from "./NewForm";
 import MenuBar from "./MenuBar";
 import Modal from "react-modal";
 import Home from "./Home";
-import { useParams } from "react-router-dom";
 
 Modal.setAppElement("#root");
 const customStyles = {
