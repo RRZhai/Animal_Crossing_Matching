@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function CardContainer({ cardsHolder, matchedCards }) {
-
   return (
     <div className="collection">
       <h3 className="title">Collection</h3>
@@ -16,6 +15,7 @@ function CardContainer({ cardsHolder, matchedCards }) {
                 className="icon-card"
               >
                 <img
+                  alt="iconimage"
                   className="icon"
                   id="show_icon"
                   src={card["image_uri"]}
@@ -26,6 +26,7 @@ function CardContainer({ cardsHolder, matchedCards }) {
             return (
               <div className="icon-card" key={card.id}>
                 <img
+                  alt="iconimage"
                   onClick={() => alert("You need to find me first!")}
                   className="icon"
                   id="hide_icon"

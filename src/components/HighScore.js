@@ -17,28 +17,28 @@ function HighScore({ scoreList, playerScore }) {
                 <div className="detail-score">
                   <div className="score">
                     <div className="category">
-                      <img src="/RecipeCard.png" />
+                      <img src="/RecipeCard.png" alt="round"/>
                       <h3>Turn</h3>
                     </div>
                     <h3>{score.turns}</h3>
                   </div>
                   <div className="score">
                     <div className="category">
-                      <img src="/Moneybag.png" />
+                      <img src="/Moneybag.png" alt="moneybag"/>
                       <h3>Coin</h3>
                     </div>
                     <h3>{score.coinScore}</h3>
                   </div>
                   <div className="score">
                     <div className="category">
-                      <img src="/Timer_NH_Inv_Icon.png" />
+                      <img src="/Timer_NH_Inv_Icon.png" alt="timer"/>
                       <h3>Time</h3>
                     </div>
                     <h3>{score.timeScore}</h3>
                   </div>
                   <div className="score">
                     <div className="category">
-                      <img src="/Leaf.png" />
+                      <img src="/Leaf.png" alt="leaf"/>
                       <h3>Difficulty</h3>
                     </div>
                     <h3>{score.difficultyScore}</h3>

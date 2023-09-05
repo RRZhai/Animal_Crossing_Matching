@@ -6,7 +6,6 @@ function Card() {
   const { id } = useParams();
   const [card, setCard] = useState(null);
   const [ifOver, setIfOver] = useState(false);
-  const [edit, setEdit] = useState("");
 
   useEffect(() => {
     if (id) {
@@ -19,11 +18,6 @@ function Card() {
     setIfOver((current) => !current);
   };
 
-  const handleEdit = (e) => {
-    e.preventDefault();
-    setEdit(e.target.value);
-  };
-
   if (!card) {
     return <h1>Loading...</h1>;
   } else {
@@ -32,6 +26,7 @@ function Card() {
         <div id="info-container">
           <div id="card-img">
             <img
+              alt="cardimage"
               onMouseEnter={handleOver}
               onMouseLeave={handleOver}
               src={card["image_uri"]}

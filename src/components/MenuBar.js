@@ -15,6 +15,7 @@ function MenuBar() {
     <div className="header">
       <Link to={""}>
         <img
+          alt="gamelogo"
           id="gamename"
           src="https://upload.wikimedia.org/wikipedia/en/9/9e/Animal_Crossing_Logo.png"
         />
