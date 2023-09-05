@@ -5,8 +5,8 @@ function HighScore({ scoreList, playerScore }) {
       <h2 id="notification">Top 100 Highest Score</h2>
       <div id="score-container">
         {sortedScore.map((score) => (
-          <div className="score">
-            <div className="basic-score" key={score.id}>
+          <div className="score" key={score.id}>
+            <div className="basic-score">
               <h3>{sortedScore.indexOf(score) + 1}</h3>
               <h3>{score.username}</h3>
               <h3>{score.score}</h3>
@@ -16,19 +16,31 @@ function HighScore({ scoreList, playerScore }) {
                 <h3 id="notification">Your Score Detail</h3>
                 <div className="detail-score">
                   <div className="score">
-                    <img src=".../public/Recipe Card.png" />
+                    <div className="category">
+                      <img src="/RecipeCard.png" />
+                      <h3>Turn</h3>
+                    </div>
                     <h3>{score.turns}</h3>
                   </div>
                   <div className="score">
-                    <img src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/30px-99k_Bells_NH_Inv_Icon_cropped.png" />
+                    <div className="category">
+                      <img src="/Moneybag.png" />
+                      <h3>Coin</h3>
+                    </div>
                     <h3>{score.coinScore}</h3>
                   </div>
                   <div className="score">
-                    <img src="https://dodo.ac/np/images/2/2c/Timer_NH_Inv_Icon.png" />
+                    <div className="category">
+                      <img src="/Timer_NH_Inv_Icon.png" />
+                      <h3>Time</h3>
+                    </div>
                     <h3>{score.timeScore}</h3>
                   </div>
                   <div className="score">
-                    <img src="https://dodo.ac/np/images/c/c2/Timer_NH_Icon.png" />
+                    <div className="category">
+                      <img src="/Leaf.png" />
+                      <h3>Difficulty</h3>
+                    </div>
                     <h3>{score.difficultyScore}</h3>
                   </div>
                 </div>

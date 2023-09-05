@@ -405,6 +405,8 @@ h3 {
 
 .score img{
   width: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .basic-score{

@@ -281,14 +281,19 @@ function MainParent() {
                 <div id="game-bar">
                   {toggleStart ? (
                     difficulty ? (
-                      <button
-                        onClick={(e) => {
-                          shuffledCards();
-                          setToggleStart((current) => !current);
-                        }}
-                      >
-                        Start Game
-                      </button>
+                      <div className="container">
+                        <button
+                          onClick={(e) => {
+                            shuffledCards();
+                            setToggleStart((current) => !current);
+                          }}
+                        >
+                          Start Game
+                        </button>
+                        <h2 id="notification">
+                          Please click button to start the game~
+                        </h2>
+                      </div>
                     ) : null
                   ) : (
                     <button
@@ -396,7 +401,9 @@ function MainParent() {
         <Route path="/cards/:id" element={<Card />} />
         <Route
           path="/high-scores"
-          element={<HighScore scoreList={scoreList} playerScore={playerScore}/>}
+          element={
+            <HighScore scoreList={scoreList} playerScore={playerScore} />
+          }
         />
         <Route path="/care" element={<CustomerService />} />
         <Route path="/" element={<Home />} />
