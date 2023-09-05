@@ -290,7 +290,7 @@ function MainParent() {
                         >
                           Start Game
                         </button>
-                        <h2 id="notification">
+                        <h2 className="notification">
                           Please click button to start the game~
                         </h2>
                       </div>
@@ -318,7 +318,7 @@ function MainParent() {
                   <div>
                     <div className="container">
                       {difficulty ? null : (
-                        <h2 id="notification">
+                        <h2 className="notification">
                           Please select game difficulty~
                         </h2>
                       )}
@@ -365,7 +365,7 @@ function MainParent() {
               >
                 <button onClick={closeModal}>close</button>
                 {/* <h2 className="container">Enter Your Name</h2> */}
-                <h3 className="container" id="notification">
+                <h3 className="container notification" >
                   Your Score: {calculateScore()}
                 </h3>
                 <form onSubmit={handleSubmitScore} className="container">

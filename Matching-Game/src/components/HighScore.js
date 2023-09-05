@@ -2,7 +2,7 @@ function HighScore({ scoreList, playerScore }) {
   const sortedScore = [...scoreList].sort((a, b) => b.score - a.score);
   return (
     <div className="high-score">
-      <h2 id="notification">Top 100 Highest Score</h2>
+      <h2 className="notification">Top 100 Highest Score</h2>
       <div id="score-container">
         {sortedScore.map((score) => (
           <div className="score" key={score.id}>
@@ -13,7 +13,7 @@ function HighScore({ scoreList, playerScore }) {
             </div>
             {score.id === playerScore?.id ? (
               <>
-                <h3 id="notification">Your Score Detail</h3>
+                <h3 className="notification">Your Score Detail</h3>
                 <div className="detail-score">
                   <div className="score">
                     <div className="category">
