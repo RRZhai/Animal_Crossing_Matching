@@ -58,7 +58,7 @@
       "price": 4000,
       "catch-phrase": "I caught a koi! I don't know why it's so shy... or such a bad speller...",
       "image_uri": "https://dodo.ac/np/images/thumb/2/24/Koi_NH.png/400px-Koi_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 7,
@@ -98,7 +98,7 @@
       "price": 10000,
       "catch-phrase": "I caught an arowana! I'd make a joke, but I don't 'wana.",
       "image_uri": "https://dodo.ac/np/images/thumb/9/9a/Arowana_NH.png/400px-Arowana_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 11,
@@ -118,7 +118,7 @@
       "price": 6000,
       "catch-phrase": "I caught a gar! Yar! It's a gar! Har har!",
       "image_uri": "https://dodo.ac/np/images/thumb/c/c8/Gar_NH.png/400px-Gar_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 13,
@@ -168,7 +168,7 @@
       "price": 100,
       "catch-phrase": "I caught an tadpole... I'm sure it will grow on me.",
       "image_uri": "https://dodo.ac/np/images/9/9f/Tadpole_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 18,
@@ -198,7 +198,7 @@
       "price": 400,
       "catch-phrase": "I caught a sea bass! No, wait- it's at least a C+!",
       "image_uri": "https://dodo.ac/np/images/thumb/d/d6/Sea_Bass_NH.png/400px-Sea_Bass_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 21,
@@ -228,7 +228,7 @@
       "price": 6000,
       "catch-phrase": "I caught a mahi-mahi! It's all mahine-mahine.",
       "image_uri": "https://dodo.ac/np/images/thumb/c/ce/Mahi-Mahi_NH.png/400px-Mahi-Mahi_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 24,
@@ -303,7 +303,7 @@
       "bubble-color": "#fff98f",
       "text-color": "#879b96",
       "saying": "Time spent with friends is time well spent.",
-      "collected": true
+      "collected": false
     },
     {
       "id": 30,
@@ -355,7 +355,7 @@
       "bubble-color": "#d86808",
       "text-color": "#fffce9",
       "saying": "You're not living unless you're sweating!",
-      "collected": true
+      "collected": false
     },
     {
       "id": 34,
@@ -407,7 +407,7 @@
       "bubble-color": "#ffffff",
       "text-color": "#848484",
       "saying": "A glamour shot is worth a thousand words.",
-      "collected": true
+      "collected": false
     },
     {
       "id": 38,
@@ -438,7 +438,7 @@
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
       "image_uri": "https://dodo.ac/np/images/c/c5/Ankylo_Tail_CF_Model.png",
       "part-of": "Ankylosaurus",
-      "collected": true
+      "collected": false
     },
     {
       "id": 41,
@@ -447,7 +447,7 @@
       "museum-phrase": "Oho! Ankylosaurus was the herbivore hero, the grazing gladiator, the vegetarian barbarian of antiquity! Between its club-like tail, heavy armor, and honest-to-goodness SPIKES, it was a formidable beast! Can you keep a secret? I have even heard recent theories that it actively ATTACKED predators. Can you imagine such behavior in an herbivore? It simply beggars the imagination!",
       "image_uri": "https://dodo.ac/np/images/5/5c/Ankylo_Torso_CF_Model.png",
       "part-of": "Ankylosaurus",
-      "collected": true
+      "collected": false
     },
     {
       "id": 42,
@@ -519,7 +519,7 @@
       "museum-phrase": "This shark-tooth pattern comes from the lower jaw of an ancient shark of the genus Helicoprion. Its teeth seem to have grown in a distinctive arrangement rather disturbingly termed a \"tooth-whorl\". I say \"seem\" because shark skeletons are made not of bone, but cartilage, except for their teeth. Consequently, their bodies are never preserved as fossils, and questions about their jaws remain unanswered. The size and placement in the stone of the shark's teeth are actually the only things we have to work with. Sometimes in research we must maintain a stiff upper lip, even in the absence of a stiff lower jaw!",
       "image_uri": "https://dodo.ac/np/images/b/b1/Shark-Tooth_Pattern_NH_Icon.png",
       "part-of": "shark-tooth pattern",
-      "collected": true
+      "collected": false
     },
     {
       "id": 50,
@@ -564,7 +564,7 @@
       "price": 1000,
       "catch-phrase": "I got a whelk! Happy snails to ya.",
       "image_uri": "https://dodo.ac/np/images/5/54/Whelk_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 55,
@@ -627,7 +627,7 @@
       "price": 1900,
       "catch-phrase": "I got a Dungeness crab! Dun dun duuuun...geness.",
       "image_uri": "https://dodo.ac/np/images/6/67/Dungeness_Crab_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 62,
@@ -801,7 +801,7 @@
       "price": 3920,
       "description": "Van Gogh painted this piece when he moved to the south of France in search of more vibrant colors. Yellow was Van Gogh's favorite color, and he made seven paintings that featured sunflowers during this time.",
       "image_uri": "https://dodo.ac/np/images/thumb/d/d5/Sunflowers.jpg/400px-Sunflowers.jpg",
-      "collected": true
+      "collected": false
     },
     {
       "id": 78,
@@ -847,7 +847,7 @@
       "catch-phrase": "I caught an emperor butterfly! It's not your average monarch!",
       "description": "Morpho menelaus, more commonly known as the Blue Morpho, is an exotic butterfly that can be found in Central and South America. It feeds primarily on rotten fruit, but in the larval stage, frequently eats other larvae of the same species. ",
       "image_uri": "https://dodo.ac/np/images/thumb/f/f1/Emperor_Butterfly_NH.png/400px-Emperor_Butterfly_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 82,
@@ -869,7 +869,7 @@
       "catch-phrase": "I caught a grasshopper! No vacationing for these guys, even in the summer!",
       "description": "These eat until their stomachs bulge. When hungry, they may eat each other.",
       "image_uri": "https://dodo.ac/np/images/1/1d/Grasshopper_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 84,
@@ -880,7 +880,7 @@
       "catch-phrase": "I caught a cricket! That's a sticky wicket, isn't it?",
       "description": "These have ears—not on their heads, but on their front legs.",
       "image_uri": "https://dodo.ac/np/images/1/1c/Cricket_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 85,
@@ -891,7 +891,7 @@
       "catch-phrase": "I caught a honeybee! Ah, sweet success!",
       "description": "All worker bees are female. Their honey has an almost indefinite shelf life.",
       "image_uri": "https://dodo.ac/np/images/8/8b/Honeybee_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 86,
@@ -902,7 +902,7 @@
       "catch-phrase": "I caught a bee! Bzzz! Bzzz! Bzzz! Phew! ...But why am I still holding it?!",
       "description": "These poison-carrying bees will attack big foes to protect the queen.",
       "image_uri": "https://dodo.ac/np/images/b/bb/Wasp_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 87,
@@ -924,7 +924,7 @@
       "catch-phrase": "I found a cicada shell! I'm glad the little guy came out of it!",
       "description": "Cicada larvae emerge from the ground in the evening and molt on trees, leaving behind empty shells. It's possible to find out the species of cicadas just by looking at these shells. Collecting the shells will tell you how many and what kind of cicadas inhabit a certain area.",
       "image_uri": "https://dodo.ac/np/images/7/77/Cicada_Shell_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 89,
@@ -946,7 +946,7 @@
       "catch-phrase": "I caught a dung beetle! This species likes feces!",
       "description": "These beetles are also known as scarabs and were once revered in some parts of the world. Looking at it now, I must admit there IS something a bit refined about its antennae and legs...",
       "image_uri": "https://dodo.ac/np/images/f/f8/Dung_Beetle_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 91,
@@ -990,7 +990,7 @@
       "catch-phrase": "I caught a centipede! 99 more and I'll have a dollarpede!",
       "description": "Very few of these actually have more than 100 legs. They have nasty bites.",
       "image_uri": "https://dodo.ac/np/images/8/89/Centipede_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 95,
@@ -1071,42 +1071,6 @@
       "timeScore": 2500,
       "difficultyScore": 0,
       "id": 2
-    },
-    {
-      "username": "SS",
-      "score": 2600,
-      "turns": -200,
-      "coinScore": 400,
-      "timeScore": 2400,
-      "difficultyScore": 0,
-      "id": 3
-    },
-    {
-      "username": "aaaa",
-      "score": 2700,
-      "turns": -200,
-      "coinScore": 400,
-      "timeScore": 2500,
-      "difficultyScore": 0,
-      "id": 4
-    },
-    {
-      "username": "test1",
-      "score": 2700,
-      "turns": -200,
-      "coinScore": 400,
-      "timeScore": 2500,
-      "difficultyScore": 0,
-      "id": 5
-    },
-    {
-      "username": "aaaaaaa",
-      "score": 2700,
-      "turns": -200,
-      "coinScore": 400,
-      "timeScore": 2500,
-      "difficultyScore": 0,
-      "id": 6
     }
   ],
   "songs": [

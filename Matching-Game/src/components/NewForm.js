@@ -123,7 +123,7 @@ function NewForm({ handleSubmitNew, newCard }) {
           <label className="label">*</label>
         </div>
         <div className="form-group">
-          <label className="label">Image</label>
+          <label className="label" placeholder="Add Name">Image</label>
           <input
             onChange={handleAdd}
             name="image_uri"

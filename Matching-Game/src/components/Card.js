@@ -50,25 +50,11 @@ function Card() {
             ) : null}
             <div id="detail">
               <div className="details">
-                {card.location ? (
-                  <p>
-                    Location: {card.location} <FiEdit3 />
-                  </p>
-                ) : null}
-                {card.rarity ? (
-                  <p>
-                    Rarity : {card.rarity} <FiEdit3 />
-                  </p>
-                ) : null}
-                {card.price ? (
-                  <p>
-                    Price: {card.price} <FiEdit3 />
-                  </p>
-                ) : null}
+                {card.location ? <p>Location: {card.location}</p> : null}
+                {card.rarity ? <p>Rarity : {card.rarity}</p> : null}
+                {card.price ? <p>Price: {card.price}</p> : null}
                 {card.personality ? (
-                  <p>
-                    Personality: {card.personality} <FiEdit3 />
-                  </p>
+                  <p>Personality: {card.personality}</p>
                 ) : null}
                 {card.birthday ? (
                   <p>
