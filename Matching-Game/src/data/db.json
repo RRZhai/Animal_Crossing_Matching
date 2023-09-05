@@ -8,7 +8,7 @@
       "price": 900,
       "catch-phrase": "I caught a bitterling! It's mad at me, but only a little.",
       "image_uri": "https://dodo.ac/np/images/8/86/Bitterling_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "price": 200,
       "catch-phrase": "I caught a pale chub! That name seems a bit judgy...",
       "image_uri": "https://dodo.ac/np/images/8/8a/Pale_Chub_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "price": 160,
       "catch-phrase": "I caught a crucian carp! My skills are sharp!",
       "image_uri": "https://dodo.ac/np/images/5/5c/Crucian_Carp_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 4,
@@ -88,7 +88,7 @@
       "price": 4500,
       "catch-phrase": "I caught a ranchu goldfish! But I prefer balsamicu goldfish!",
       "image_uri": "https://dodo.ac/np/images/4/41/Ranchu_Goldfish_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 10,
@@ -128,7 +128,7 @@
       "price": 10000,
       "catch-phrase": "I caught an arapaima! How did it get here? Arapaiknow!",
       "image_uri": "https://dodo.ac/np/images/thumb/8/89/Arapaima_NH.png/400px-Arapaima_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 14,
@@ -148,7 +148,7 @@
       "price": 5000,
       "catch-phrase": "I caught a blowfish! I'm blown away!",
       "image_uri": "https://dodo.ac/np/images/2/29/Blowfish_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 16,
@@ -178,7 +178,7 @@
       "price": 150,
       "catch-phrase": "I caught a horse mackerel! Of course, Mack...er...el.",
       "image_uri": "https://dodo.ac/np/images/7/77/Horse_Mackerel_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 19,
@@ -198,7 +198,7 @@
       "price": 400,
       "catch-phrase": "I caught a sea bass! No, wait- it's at least a C+!",
       "image_uri": "https://dodo.ac/np/images/thumb/d/d6/Sea_Bass_NH.png/400px-Sea_Bass_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 21,
@@ -218,7 +218,7 @@
       "price": 4500,
       "catch-phrase": "I caught a giant trevally! Yeah, I'm pretty well-trevalled.",
       "image_uri": "https://dodo.ac/np/images/thumb/1/1a/Giant_Trevally_NH.png/400px-Giant_Trevally_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 23,
@@ -238,7 +238,7 @@
       "price": 12000,
       "catch-phrase": "I caught a saw shark! You could call it a sea saw!",
       "image_uri": "https://dodo.ac/np/images/thumb/4/44/Saw_Shark_NH.png/400px-Saw_Shark_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 25,
@@ -251,7 +251,7 @@
       "bubble-color": "#194c89",
       "text-color": "#fffad4",
       "saying": "Don't punch your nose to spite your face.",
-      "collected": true
+      "collected": false
     },
     {
       "id": 26,
@@ -264,7 +264,7 @@
       "bubble-color": "#fff98f",
       "text-color": "#879b96",
       "saying": "Always go for the burn!",
-      "collected": true
+      "collected": false
     },
     {
       "id": 27,
@@ -277,7 +277,7 @@
       "bubble-color": "#00d1bd",
       "text-color": "#fffce9",
       "saying": "A thing of beauty is a joy forever.",
-      "collected": true
+      "collected": false
     },
     {
       "id": 28,
@@ -290,7 +290,7 @@
       "bubble-color": "#ff791f",
       "text-color": "#fff2bb",
       "saying": "No pain, no gain!",
-      "collected": true
+      "collected": false
     },
     {
       "id": 29,
@@ -420,7 +420,7 @@
       "bubble-color": "#ffffff",
       "text-color": "#848484",
       "saying": "The gift says more about the giver.",
-      "collected": true
+      "collected": false
     },
     {
       "id": 39,
@@ -456,7 +456,7 @@
       "museum-phrase": "Anomalocaris lived in the water long before the dinosaurs and are known for their, er, \"distinctive\" look. Flat bodies over three feet in length, bulging eyes like a...dragonfly, antennae like shrimp tails... They looked so peculiar that people originally thought they were multiple fossils stacked on top of each other! As a delightful side note, \"anomalocaris\" means \"abnormal shrimp\". Obviously this animal has a certain reputation in the scientific community!",
       "image_uri": "https://dodo.ac/np/images/d/d8/Anomalocaris_NH_Icon.png",
       "part-of": "anomalocaris",
-      "collected": true
+      "collected": false
     },
     {
       "id": 43,
@@ -465,7 +465,7 @@
       "museum-phrase": "Archaeopteryx's feathers led many people to believe it was the progenitor of the birds, eh wot... Sadly, further evidence indicates it's likely not a direct ancestor—more an evolutionary \"uncle\", if you will. Every time a specimen is found, new theories pop up. And new relatives come to roost in the family tree!",
       "image_uri": "https://dodo.ac/np/images/4/49/Archaeopteryx_NH_Icon.png",
       "part-of": "archaeopteryx",
-      "collected": true
+      "collected": false
     },
     {
       "id": 44,
@@ -492,7 +492,7 @@
       "museum-phrase": "Good old Diplodocus, what would we do without you? This stout fellow embodied all the best in dinosaurs. Those sturdy legs, that magnificent tail, and, above all, that extraordinary neck! Did you know that its center of gravity was such that sitting up on its hind legs was probably easy? What's more, paired with its long neck, this ability greatly increased its reach for eating plants! Best of all, Diplodocus probably grew its entire life, having no \"adult size\". Would that we were all so gifted!",
       "image_uri": "https://dodo.ac/np/images/9/94/Diplo_Chest_NL_Model.png",
       "part-of": "Diplodocus",
-      "collected": true
+      "collected": false
     },
     {
       "id": 47,
@@ -510,7 +510,7 @@
       "museum-phrase": "The mighty Pteranodon! Among the very largest animals ever to fly, they were role models to us all. With a wingspan of over 23 feet in some cases, I find it simply stunning that they ever did more than glide! But fly they did, soaring dynamically and dramatically over land and sea! I wish I could have seen it...",
       "image_uri": "https://dodo.ac/np/images/6/68/Ptera_Right_Wing_PG_Model.png",
       "part-of": "Pteranodon",
-      "collected": true
+      "collected": false
     },
     {
       "id": 49,
@@ -537,7 +537,7 @@
       "museum-phrase": "Trilobites were ancient and extinct before the dinosaurs ever appeared! It boggles the mind! Hoo! They were also one of the most successful classes of animal ever, existing for over 300 million years. Some 50,000 species have been identified in sizes ranging from three millimeters to over two feet! Alas, that is the very limit of my enthusiasm for them, though, they look rather too much like bugs.",
       "image_uri": "https://dodo.ac/np/images/a/ac/Trilobite_NH_Icon.png",
       "part-of": "trilobite",
-      "collected": true
+      "collected": false
     },
     {
       "id": 52,
@@ -546,7 +546,7 @@
       "price": 2800,
       "catch-phrase": "I got a pearl oyster! Aw, shucks. Don't clam up now!",
       "image_uri": "https://dodo.ac/np/images/5/52/Pearl_Oyster_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 53,
@@ -555,7 +555,7 @@
       "price": 1500,
       "catch-phrase": "I got a mussel! It's been working out",
       "image_uri": "https://dodo.ac/np/images/a/a9/Mussel_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 54,
@@ -573,7 +573,7 @@
       "price": 1000,
       "catch-phrase": "I got a turban shell! It's totally TURB...ular!",
       "image_uri": "https://dodo.ac/np/images/6/63/Turban_Shell_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 56,
@@ -582,7 +582,7 @@
       "price": 2000,
       "catch-phrase": "I got an abalone! Why do I want a sandwich now?",
       "image_uri": "https://dodo.ac/np/images/f/fd/Abalone_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 57,
@@ -591,7 +591,7 @@
       "price": 6000,
       "catch-phrase": "I got an umbrella octopus! Too bad I'm already soaked.",
       "image_uri": "https://dodo.ac/np/images/c/c0/Umbrella_Octopus_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 58,
@@ -600,7 +600,7 @@
       "price": 10000,
       "catch-phrase": "I got a vampire squid! A lot was at stake.",
       "image_uri": "https://dodo.ac/np/images/0/0d/Vampire_Squid_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 59,
@@ -654,7 +654,7 @@
       "price": 1400,
       "catch-phrase": "I got a sweet shrimp! It's being very considerate.",
       "image_uri": "https://dodo.ac/np/images/8/80/Sweet_Shrimp_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 65,
@@ -674,7 +674,7 @@
       "catch-phrase": "Whoo hoo! Did you see that? Did you? I caught a banded dragonfly!",
       "description": "These got their name because of their tigerlike banding and evasion skills.",
       "image_uri": "https://dodo.ac/np/images/6/6e/Banded_Dragonfly_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 67,
@@ -707,7 +707,7 @@
       "catch-phrase": "I  caught a yellow butterfly! Shouldn't all BUTTERflies be yellow?",
       "description": "All males of the species are white- females can be yellow or white.",
       "image_uri": "https://dodo.ac/np/images/7/74/Yellow_Butterfly_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 70,
@@ -729,7 +729,7 @@
       "price": 4980,
       "description": "In the forgery, there is a coffee stain in the top right corner. The forgery also has a key taped to the back of the canvas. If there is no stain and key, it is genuine.",
       "image_uri": "https://dodo.ac/np/images/b/b5/NH_Academic_Painting.jpg",
-      "collected": true
+      "collected": false
     },
     {
       "id": 72,
@@ -801,7 +801,7 @@
       "price": 3920,
       "description": "Van Gogh painted this piece when he moved to the south of France in search of more vibrant colors. Yellow was Van Gogh's favorite color, and he made seven paintings that featured sunflowers during this time.",
       "image_uri": "https://dodo.ac/np/images/thumb/d/d5/Sunflowers.jpg/400px-Sunflowers.jpg",
-      "collected": false
+      "collected": true
     },
     {
       "id": 78,
@@ -836,7 +836,7 @@
       "catch-phrase": "I caught a peacock butterfly! Now it's my turn to strut my stuff!",
       "description": "Papilio bianor, or Chinese peacock, is a species of butterfly that is native to East Asia. The female has more prominent markings than the male, and is roughly 7-8 centimeters long. Caterpillars feed on Zanthoxylum (prickly-ash) and Phellodendron (cork tree) plants.",
       "image_uri": "https://dodo.ac/np/images/thumb/8/8e/Peacock_Butterfly_NH.png/400px-Peacock_Butterfly_NH.png",
-      "collected": true
+      "collected": false
     },
     {
       "id": 81,
@@ -924,7 +924,7 @@
       "catch-phrase": "I found a cicada shell! I'm glad the little guy came out of it!",
       "description": "Cicada larvae emerge from the ground in the evening and molt on trees, leaving behind empty shells. It's possible to find out the species of cicadas just by looking at these shells. Collecting the shells will tell you how many and what kind of cicadas inhabit a certain area.",
       "image_uri": "https://dodo.ac/np/images/7/77/Cicada_Shell_NH.png",
-      "collected": false
+      "collected": true
     },
     {
       "id": 89,
@@ -1064,17 +1064,25 @@
       "username": "Ashley"
     },
     {
-      "username": "Shiyao",
-      "score": 8,
+      "username": "rr",
+      "score": 2700,
+      "turns": -200,
+      "coinScore": 400,
+      "timeScore": 2500,
+      "difficultyScore": 0,
       "id": 2
     },
     {
-      "username": "Shiyao",
-      "score": 2700,
+      "username": "SS",
+      "score": 2600,
+      "turns": -200,
+      "coinScore": 400,
+      "timeScore": 2400,
+      "difficultyScore": 0,
       "id": 3
     },
     {
-      "username": "Shiyao testing",
+      "username": "aaaa",
       "score": 2700,
       "turns": -200,
       "coinScore": 400,
@@ -1083,7 +1091,7 @@
       "id": 4
     },
     {
-      "username": "aaaaa",
+      "username": "test1",
       "score": 2700,
       "turns": -200,
       "coinScore": 400,

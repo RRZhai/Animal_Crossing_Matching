@@ -112,7 +112,7 @@ function MainParent() {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
         notification.style.color = randomColor;
       };
-      setInterval(changecolor, 3000);
+      setInterval(changecolor, 1000);
     }
   }, [notification]);
 

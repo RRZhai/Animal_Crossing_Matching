@@ -1,7 +1,7 @@
 /* App */
 h2 {
   font-family: "comic Sans MS";
-  font-size: 200%;
+  /* font-size: 200%; */
 }
 
 p {
@@ -391,20 +391,34 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  gap: 1rem;
+  gap: 10px;;
 }
 
 .score {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  background-color: #fdc0c7;
+  border-radius: 40px;
+}
+
+.score img{
+  width: 40px;
+}
+
+.basic-score{
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 75%;
-  background-color: #fdc0c7;
-  border-radius: 10rem;
-  font-family: "Gill Sans", sans-serif;
-  color: #fffffa;
 }
+
+.detail-score{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
 /* Modal */
 /* form .container{
