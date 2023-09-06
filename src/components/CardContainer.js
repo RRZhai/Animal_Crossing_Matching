@@ -10,7 +10,7 @@ function CardContainer({ cardsHolder, matchedCards }) {
           if (matchedCards.find((item) => item.id === card.id)) {
             return (
               <Link
-                to={`/cards/${card.id}`}
+                to={`/Animal_Crossing_Matching/cards/${card.id}`}
                 key={card.id}
                 className="icon-card"
               >
