@@ -97,10 +97,10 @@ function MainParent() {
   };
 
   // changecolor
-  const notification = document.getElementById("notification");
   useEffect(() => {
-    if (notification) {
-      console.log(notification);
+    const notificationElements =
+      document.getElementsByClassName("notification");
+    if (notificationElements.length > 0) {
       const changecolor = () => {
         const colors = [
           "#FF5733",
@@ -111,11 +111,17 @@ function MainParent() {
           "#FF33FF",
         ];
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        notification.style.color = randomColor;
+        for (const element of notificationElements) {
+          element.style.color = randomColor;
+        }
       };
-      setInterval(changecolor, 2000);
+      const intervalId = setInterval(changecolor, 2000);
+
+      return () => {
+        clearInterval(intervalId);
+      };
     }
-  }, [notification]);
+  }, []);
 
   // timer
   useEffect(() => {
@@ -291,7 +297,7 @@ function MainParent() {
                         >
                           Start Game
                         </button>
-                        <h2 id="notification">
+                        <h2 className="notification">
                           Please click button to start the game~
                         </h2>
                       </div>
@@ -319,7 +325,7 @@ function MainParent() {
                   <div>
                     <div className="container">
                       {difficulty ? null : (
-                        <h2 id="notification">
+                        <h2 className="notification">
                           Please select game difficulty~
                         </h2>
                       )}
@@ -366,7 +372,7 @@ function MainParent() {
               >
                 <button onClick={closeModal}>close</button>
                 {/* <h2 className="container">Enter Your Name</h2> */}
-                <h3 className="container" id="notification">
+                <h3 className="container notification" >
                   Your Score: {calculateScore()}
                 </h3>
                 <form onSubmit={handleSubmitScore} className="container">
@@ -406,7 +412,10 @@ function MainParent() {
             <HighScore scoreList={scoreList} playerScore={playerScore} />
           }
         />
-        <Route path="/Animal_Crossing_Matching/care" element={<CustomerService />} />
+        <Route
+          path="/Animal_Crossing_Matching/care"
+          element={<CustomerService />}
+        />
         <Route path="/Animal_Crossing_Matching" element={<Home />} />
       </Routes>
     </div>
