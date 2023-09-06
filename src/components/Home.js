@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 function Home() {
   return (
-    <Link to={`/game`}>
+    <Link to={`/Animal_Crossing_Matching/game`}>
       <img
         alt="homepage"
         id="homepage"

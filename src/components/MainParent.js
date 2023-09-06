@@ -234,7 +234,7 @@ function MainParent() {
         setScoreList((current) => [...current, scoreObj]);
         setPlayerScore(scoreObj);
         closeModal();
-        navigate("/high-score");
+        navigate("/Animal_Crossing_Matching/high-score");
       });
   };
   const displayCards = cards.map((card, index) => (
@@ -271,7 +271,7 @@ function MainParent() {
       <MenuBar />
       <Routes>
         <Route
-          path="/game"
+          path="/Animal_Crossing_Matching/game"
           element={
             <div className="game">
               <CardContainer
@@ -382,13 +382,13 @@ function MainParent() {
           }
         />
         <Route
-          path="/high-score"
+          path="/Animal_Crossing_Matching/high-score"
           element={
             <HighScore scoreList={scoreList} playerScore={playerScore} />
           }
         />
         <Route
-          path="/collection"
+          path="/Animal_Crossing_Matching/collection"
           element={
             <div className="collection-homepage">
               <CardContainer
@@ -399,14 +399,14 @@ function MainParent() {
             </div>
           }
         />
-        <Route path="/cards/:id" element={<Card />} />
+        <Route path="/Animal_Crossing_Matching/cards/:id" element={<Card />} />
         <Route
-          path="/high-scores"
+          path="/Animal_Crossing_Matching/high-scores"
           element={
             <HighScore scoreList={scoreList} playerScore={playerScore} />
           }
         />
-        <Route path="/care" element={<CustomerService />} />
+        <Route path="/Animal_Crossing_Matching/care" element={<CustomerService />} />
         <Route path="/Animal_Crossing_Matching" element={<Home />} />
       </Routes>
     </div>

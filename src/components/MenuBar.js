@@ -13,7 +13,7 @@ function MenuBar() {
 
   return (
     <div className="header">
-      <Link to={""}>
+      <Link to={"/Animal_Crossing_Matching"}>
         <img
           alt="gamelogo"
           id="gamename"
@@ -21,19 +21,19 @@ function MenuBar() {
         />
       </Link>
       <div id="nav-bar">
-        <Link to={``} className="menu">
+        <Link to={`/Animal_Crossing_Matching`} className="menu">
           Main
         </Link>
-        <Link to={`/game`} className="menu">
+        <Link to={`/Animal_Crossing_Matching/game`} className="menu">
           Game
         </Link>
-        <Link to={`/collection`} className="menu">
+        <Link to={`/Animal_Crossing_Matching/collection`} className="menu">
           Collection
         </Link>
-        <Link to={`/care`} className="menu">
+        <Link to={`/Animal_Crossing_Matching/care`} className="menu">
           Customer
         </Link>
-        <Link to="/high-scores" className="menu">
+        <Link to="/Animal_Crossing_Matching/high-scores" className="menu">
           Score
         </Link>
       </div>
