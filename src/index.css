@@ -235,7 +235,7 @@ body {
   gap: 10px;
 }
 
-.notification{
+#notification{
   transition: color 0.5s ease;
 }
 

@@ -100,6 +100,7 @@ function MainParent() {
   const notification = document.getElementById("notification");
   useEffect(() => {
     if (notification) {
+      console.log(notification);
       const changecolor = () => {
         const colors = [
           "#FF5733",
@@ -112,7 +113,7 @@ function MainParent() {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
         notification.style.color = randomColor;
       };
-      setInterval(changecolor, 1000);
+      setInterval(changecolor, 2000);
     }
   }, [notification]);
 
@@ -290,7 +291,7 @@ function MainParent() {
                         >
                           Start Game
                         </button>
-                        <h2 className="notification">
+                        <h2 id="notification">
                           Please click button to start the game~
                         </h2>
                       </div>
@@ -318,7 +319,7 @@ function MainParent() {
                   <div>
                     <div className="container">
                       {difficulty ? null : (
-                        <h2 className="notification">
+                        <h2 id="notification">
                           Please select game difficulty~
                         </h2>
                       )}
@@ -365,7 +366,7 @@ function MainParent() {
               >
                 <button onClick={closeModal}>close</button>
                 {/* <h2 className="container">Enter Your Name</h2> */}
-                <h3 className="container notification" >
+                <h3 className="container" id="notification">
                   Your Score: {calculateScore()}
                 </h3>
                 <form onSubmit={handleSubmitScore} className="container">
@@ -406,7 +407,7 @@ function MainParent() {
           }
         />
         <Route path="/care" element={<CustomerService />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/Animal_Crossing_Matching" element={<Home />} />
       </Routes>
     </div>
   );
