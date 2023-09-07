@@ -13,100 +13,12 @@ function NewForm({ handleSubmitNew, newCard }) {
     enterPassword === password ? setAuthorize(true) : setAuthorize(false);
   };
 
-  const handleVillager = () => {
-    setSelectType(
-      <div>
-        <div className="form-group">
-          <label className="label">Personality</label>
-          <input
-            onChange={handleAdd}
-            name="personality"
-            className="input"
-          ></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Birthday</label>
-          <input onChange={handleAdd} name="birthday" className="input"></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Saying</label>
-          <input onChange={handleAdd} name="saying" className="input"></input>
-        </div>
-      </div>
-    );
-  };
-
-  const handleFish = () => {
-    setSelectType(
-      <div>
-        <div className="form-group">
-          <label className="label">Location</label>
-          <input onChange={handleAdd} name="location" className="input"></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Rarity</label>
-          <input onChange={handleAdd} name="rarity" className="input"></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Saying</label>
-          <input
-            onChange={handleAdd}
-            name="catch-phrase"
-            className="input"
-          ></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Price</label>
-          <input onChange={handleAdd} name="price" className="input"></input>
-        </div>
-      </div>
-    );
-  };
-
-  const handleFossil = () => {
-    setSelectType(
-      <div>
-        <div className="form-group">
-          <label className="label">Location</label>
-          <input onChange={handleAdd} name="location" className="input"></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Saying</label>
-          <input
-            onChange={handleAdd}
-            name="catch-phrase"
-            className="input"
-          ></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Price</label>
-          <input onChange={handleAdd} name="price" className="input"></input>
-        </div>
-      </div>
-    );
-  };
-
-  const handleSea = () => {
-    setSelectType(
-      <div>
-        <div className="form-group">
-          <label className="label">Speed</label>
-          <input onChange={handleAdd} name="speed" className="input"></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Part Of</label>
-          <input onChange={handleAdd} name="part-of" className="input"></input>
-        </div>
-        <div className="form-group">
-          <label className="label">Price</label>
-          <input onChange={handleAdd} name="price" className="input"></input>
-        </div>
-      </div>
-    );
-  };
-
   const handleAdd = (e) => {
-    setSubmitForm({ ...submitForm, [e.target.name]: e.target.value });
+    console.log(submitForm);
+    setSubmitForm((current) => ({
+      ...current,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   return (
@@ -136,10 +48,21 @@ function NewForm({ handleSubmitNew, newCard }) {
             Please Select Category First Before You Fill the Form ~
           </h3>
           <div className="category">
-            <button onClick={handleVillager}>Villager</button>
-            <button onClick={handleFish}>Fish</button>
-            <button onClick={handleFossil}>Fossil</button>
-            <button onClick={handleSea}>Sea Creature</button>
+            <button
+              name="villager"
+              onClick={(e) => setSelectType(e.target.name)}
+            >
+              Villager
+            </button>
+            <button name="fish" onClick={(e) => setSelectType(e.target.name)}>
+              Fish
+            </button>
+            <button name="fossil" onClick={(e) => setSelectType(e.target.name)}>
+              Fossil
+            </button>
+            <button name="sea" onClick={(e) => setSelectType(e.target.name)}>
+              Sea Creature
+            </button>
           </div>
           <form onSubmit={(e) => handleSubmitNew(e, submitForm)} id="form">
             <div className="form-group">
@@ -166,6 +89,126 @@ function NewForm({ handleSubmitNew, newCard }) {
               <label className="label">*</label>
             </div>
             {selectType}
+            {selectType === "villager" ? (
+              <div>
+                <div className="form-group">
+                  <label className="label">Personality</label>
+                  <input
+                    onChange={handleAdd}
+                    name="personality"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Birthday</label>
+                  <input
+                    onChange={handleAdd}
+                    name="birthday"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Saying</label>
+                  <input
+                    onChange={handleAdd}
+                    name="saying"
+                    className="input"
+                  ></input>
+                </div>
+              </div>
+            ) : null}
+            {selectType === "fish" ? (
+              <div>
+                <div className="form-group">
+                  <label className="label">Location</label>
+                  <input
+                    onChange={handleAdd}
+                    name="location"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Rarity</label>
+                  <input
+                    onChange={handleAdd}
+                    name="rarity"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Saying</label>
+                  <input
+                    onChange={handleAdd}
+                    name="catch-phrase"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Price</label>
+                  <input
+                    onChange={handleAdd}
+                    name="price"
+                    className="input"
+                  ></input>
+                </div>
+              </div>
+            ) : null}
+            {selectType === "fossil" ? (
+              <div>
+                <div className="form-group">
+                  <label className="label">Location</label>
+                  <input
+                    onChange={handleAdd}
+                    name="location"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Saying</label>
+                  <input
+                    onChange={handleAdd}
+                    name="catch-phrase"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Price</label>
+                  <input
+                    onChange={handleAdd}
+                    name="price"
+                    className="input"
+                  ></input>
+                </div>
+              </div>
+            ) : null}
+            {selectType === "sea" ? (
+              <div>
+                <div className="form-group">
+                  <label className="label">Speed</label>
+                  <input
+                    onChange={handleAdd}
+                    name="speed"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Part Of</label>
+                  <input
+                    onChange={handleAdd}
+                    name="part-of"
+                    className="input"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label className="label">Price</label>
+                  <input
+                    onChange={handleAdd}
+                    name="price"
+                    className="input"
+                  ></input>
+                </div>
+              </div>
+            ) : null}
             <div className="form-group">
               <button onClick={(e) => setEnterPassword(null)}>Submit</button>
             </div>
