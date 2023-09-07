@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Animal_Crossing_Matching/static/css/main.e547571d.css",
-    "main.js": "/Animal_Crossing_Matching/static/js/main.8122fc63.js",
+    "main.css": "/Animal_Crossing_Matching/static/css/main.b140f18f.css",
+    "main.js": "/Animal_Crossing_Matching/static/js/main.7fe67fc0.js",
     "index.html": "/Animal_Crossing_Matching/index.html",
-    "main.e547571d.css.map": "/Animal_Crossing_Matching/static/css/main.e547571d.css.map",
-    "main.8122fc63.js.map": "/Animal_Crossing_Matching/static/js/main.8122fc63.js.map"
+    "main.b140f18f.css.map": "/Animal_Crossing_Matching/static/css/main.b140f18f.css.map",
+    "main.7fe67fc0.js.map": "/Animal_Crossing_Matching/static/js/main.7fe67fc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e547571d.css",
-    "static/js/main.8122fc63.js"
+    "static/css/main.b140f18f.css",
+    "static/js/main.7fe67fc0.js"
   ]
 }
