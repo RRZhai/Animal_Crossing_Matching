@@ -216,7 +216,7 @@ function MainParent() {
       .then((res) => res.json())
       .then((card) => {
         setNewCard(card);
-        setCardsHolder((current) => [...current, card]);
+        setCardsHolder((current) => [card, ...current]);
       })
       .then();
   };

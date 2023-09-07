@@ -88,7 +88,6 @@ function NewForm({ handleSubmitNew, newCard }) {
               ></input>
               <label className="label">*</label>
             </div>
-            {selectType}
             {selectType === "villager" ? (
               <div>
                 <div className="form-group">
@@ -215,7 +214,7 @@ function NewForm({ handleSubmitNew, newCard }) {
           </form>
 
           {newCard ? (
-            <Link to={`/cards/${newCard.id}`}>
+            <Link to={`/Animal_Crossing_Matching/cards/${newCard.id}`}>
               <button className="btn">Check New</button>
             </Link>
           ) : (
