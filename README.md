@@ -1,5 +1,5 @@
 # Animal Crossing Matching Adventure
- 
+  
 INTRODUCTION:
 Hey there, and a warm welcome from Animal Crossing Mathing! Get ready to dive headfirst into a JavaScript application that not only lets you collect villagers, fossils, fish, and sea creatures but also helps you become a true Animal Crossing aficionado! By matching those sly little cards, you'll not only have a blast but also expand your knowledge of all things Animal Crossing. Hold onto your hats, because Animal Crossing Mathing is not just any ordinary game—it's a group cooperation extravaganza! Get ready to team up with your friends and embark on an epic journey together. 
 
