@@ -291,6 +291,7 @@ function MainParent() {
                       <div className="container">
                         <button
                           onClick={(e) => {
+                            setMatches(0);
                             shuffledCards();
                             setToggleStart((current) => !current);
                           }}
